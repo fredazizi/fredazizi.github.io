@@ -8,4 +8,4 @@ He inspired me to have a notebook on my own page. I obviously don't understand e
 
 I might have some errors here...Please enlight me! I want to learn. I am accessible via email.
 
-[How to create your personal page with R and github pages (the easy way!)](namespaces-demo.html) (2022-10-08)
+[How to create your personal page with R and github pages (the easy way!)](Notebook/namespaces-demo.html) (2022-10-08)
