@@ -5,7 +5,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Notebook"
-      href: notebook.html
+      href: Notebook.html
     - text: 'CV'
       href: cv.pdf
 output:
