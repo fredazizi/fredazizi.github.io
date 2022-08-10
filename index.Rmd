@@ -1,6 +1,14 @@
-I am a PhD candidate in the Department of Mathemtics and Statistics at UMBC. 
+Hello visitors! Welcome to my personal page!
 
-My research involves statistical inference on graphs and networks, particularly in the context of clustering and community detection.
+## **About me:**
 
-Email: fazizi1@umbc.edu  
-GitHub: https://github.com/fredazizi
+I am a PhD student in the Department of Mathematics and Statistics at UMBC.
+
+My research interest involves statistical inference on graphs and networks, particularly in the context of clustering and community detection.
+
+I am also very interested in statistical education and developing educational tools using R and Shinny.
+
+In my free time, I enjoy reading, cooking, traveling and playing fantasy football/basketball.
+
+Email: [fazizi1\@umbc.edu](mailto:fazizi1@umbc.edu){.email}\
+GitHub: <https://github.com/fredazizi>
