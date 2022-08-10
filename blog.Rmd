@@ -1,0 +1,11 @@
+---
+title: "Notebook"
+---
+
+I always loved and admired [Dr. Shalizi's notebook](http://bactra.org/notebooks/). I was introduced to his notebook by his former PhD student ([DJM](https://dajmcdon.github.io/)) in one of his classes. From that day, if I want to know about something statistical, I check the notebook first.
+
+He inspired me to have a notebook on my own page. I obviously don't understand everything and my knowledge is nowhere near his...but it is good to have a record of my understanding of things, or how to do stuffs in general in case I forget later.
+
+I might have some errors here...Please enlight me! I want to learn. I am accessible via email.
+
+[How to create your personal page with R and github pages (the easy way!)](namespaces-demo.html) (2022-10-08)
