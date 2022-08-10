@@ -1,0 +1,10 @@
+name: "personal-website"
+navbar:
+  title: "Fred Azizi"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: 'Blog'
+      href: blog.html
+    - text: 'CV'
+      href: cv.pdf

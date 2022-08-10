@@ -1,5 +1,6 @@
----
-site: blogdown:::blogdown_site
----
+I am a PhD candidate in the Department of Mathemtics and Statistics at UMBC. 
 
-<!-- This file is for blogdown only. Please do not edit it. -->
+My research involves statistical inference on graphs and networks, particularly in the context of clustering and community detection.
+
+Email: fazizi1@umbc.edu  
+GitHub: https://github.com/fredazizi
