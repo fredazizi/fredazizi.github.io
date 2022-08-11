@@ -10,5 +10,5 @@ navbar:
       href: cv.pdf
 output:
   html_document:
-    theme: cosmo
+    theme: united           
     highlight: textmate
