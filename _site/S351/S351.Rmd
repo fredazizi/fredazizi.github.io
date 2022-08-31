@@ -1,0 +1,12 @@
+---
+title: "S351"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Week 1:
+
+[Slides](test.pdf)
