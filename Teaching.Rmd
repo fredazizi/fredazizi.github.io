@@ -1,5 +1,5 @@
 ---
-title: "Teaching"
+title: ""
 output: html_document
 ---
 
@@ -7,6 +7,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Fall 2022:
+Fall 2022
 
-[STAT 351](S351/S351.html)
+[**STAT 351**](S351/S351.html)

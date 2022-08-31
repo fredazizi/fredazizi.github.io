@@ -1,5 +1,5 @@
 ---
-title: "S351"
+title: ""
 output: html_document
 ---
 
@@ -7,6 +7,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Week 1:
+### Week 1:
 
-[Slides](test.pdf)
+[Slides](slides_w1.pdf)
+
+[in-class worksheet](inclass-worksheet.pdf)
+
+[Week worksheet](Worksheet-week-1.pdf)
