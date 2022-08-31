@@ -6,8 +6,8 @@ navbar:
       href: index.html
     - text: "Notebook"
       href: Notebook.html
-    - text: 'CV'
-      href: cv.pdf
+    - text: 'Teaching'
+      href: Teaching.html
 output:
   html_document:
     theme: united           
