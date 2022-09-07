@@ -7,10 +7,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Week 1:
+### S351 Slides and worksheet
 
-[Slides](slides_w1.pdf)
-
-[in-class worksheet](inclass-worksheet.pdf)
-
-[Week worksheet](Worksheet-week-1.pdf)
+Class (9/7): [Slides](Week1slides.pdf), [Worksheet](Worksheet1.pdf), [solution (place holder)]()
