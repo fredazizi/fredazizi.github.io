@@ -9,4 +9,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### S351 Slides and worksheet
 
-Class (9/12): [Slides](Week1slides.pdf), [Worksheet](Worksheet1.pdf), [Worksheet 1 solution](worksheet1_solution.pdf)
+Class (9/12): [Slides](Week1slides.pdf), [Worksheet](Worksheet1.pdf), [Worksheet 1 solution placeholder](worksheet1.pdf)
