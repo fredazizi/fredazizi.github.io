@@ -1,0 +1,66 @@
+---
+title: "Worksheet 1 Solution"
+author: "Fred Azizi"
+date: "2022-09-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For questions 1-5, indicate the level of measurement being used in the given scenario: Nominal, ordinal, interval, or ratio.
+
+1.  A local animal shelter keeps track of the breeds of dogs that come in.
+
+> **Answer:** Nominal.
+
+2.  A local animal shelter keeps track of the weight of dogs that come in.
+
+> **Answer:** Ratio.
+
+3.  The number of miles joggers run per week.
+
+> **Answer:** Ratio.
+
+4.  The starting salaries of graduates of MBA programs.
+
+> **Answer:** Ratio.
+
+5.  Before leaving a restaurant, customers are provided a feedback form. For each question, determine the level of measurement:
+
+    a.  What is the approximate distance between this restaurant (in miles) & your residence?
+
+    > **Answer:** Ratio.
+
+    b.  Have you ever eaten at this restaurant before?
+
+    > **Answer:** Nominal.
+
+    c.  On how many occasions have you eaten at this restaurant before?
+
+    > **Answer:** Ratio.
+
+    d.  Which of the following attributes of this restaurant do you find most attractive: service, prices, quality of the food, or the menu?
+
+    > **Answer:** Nominal.
+
+    e.  What is your overall rating of this restaurant: excellent, good, fair or poor?
+
+    > **Answer:** Ordinal.
+
+ 
+
+6.  Fifteen students answered the question of how many siblings they have. The answers were:
+
+$$1, 1, 2, 0, 3, 2, 1, 4, 2, 3, 1, 0, 0, 1, 2.$$
+
+> Construct a simple frequency distribution which includes frequencies, relative frequencies, percent frequencies and cumulative relative frequencies.
+
+> **Answer:**
+
+> This data has a *discrete* structure. Therefore, our classes should be 0, 1, 2, 3, 4. Frequency column is filled by frequency of each class. Relative frequency is filled by dividing the frequency of each class by the total number of data (in this case 15). Percent frequencies are constructed by multiplying each relative frequency by 100. For cumulative relative frequencies, first cell would be the relative frequency of that cell. The rest would be filled as relative frequency of that cell+ cumulative relative frequency of the previous cell. Last cell must be 1.
+
+\vspace{2cm}
+
+![](Q2work1sol.png){width="672"}

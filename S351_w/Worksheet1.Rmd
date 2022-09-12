@@ -1,0 +1,54 @@
+---
+title: "Worksheet 1: Chapter 2 and 3"
+author: "Fred Azizi"
+date: "2022-09-07"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+For questions 1-5, indicate the level of measurement being used in the given scenario: Nominal, ordinal, interval, or ratio.
+
+
+1. A local animal shelter keeps track of the breeds of dogs that come in.
+
+
+2. A local animal shelter keeps track of the weight of dogs that come in.
+
+
+3. The number of miles joggers run per week.
+
+
+4. The starting salaries of graduates of MBA programs.
+
+
+5. Before leaving a restaurant, customers are provided a feedback form. For each question,
+determine the level of measurement:
+
+   a. What is the approximate distance between this restaurant (in miles) & your residence?
+   
+   
+   b. Have you ever eaten at this restaurant before?
+   
+   
+   c. On how many occasions have you eaten at this restaurant before?
+   
+   
+   d. Which of the following attributes of this restaurant do you find most attractive: service,
+prices, quality of the food, or the menu?
+
+
+   e. What is your overall rating of this restaurant: excellent, good, fair or poor?
+
+\newpage
+
+6. Fifteen students answered the question of how many siblings they have. The answers were:
+
+$$1, 1, 2, 0, 3, 2, 1, 4, 2, 3, 1, 0, 0, 1, 2.$$
+
+> Construct a simple frequency distribution which includes frequencies, relative frequencies,
+percent frequencies and cumulative relative frequencies.
+

@@ -9,4 +9,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Fall 2022
 
-[**STAT 351**](S351/S351.html)
+[**STAT 351- Monday class**](S351_m/S351.html)
+
+[**STAT 351- Wednesday class**](S351_W/S351.html)
