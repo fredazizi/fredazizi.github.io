@@ -1,0 +1,68 @@
+---
+title: "Week 2"
+author: "Fred Azizi"
+date: "2022-09-14"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution
+
+![](qrcode_fredazizi.github.io.png){width="167"}
+
+Or go to fredazizi.github.io/Teaching
+
+
+## Quick review 
+
+- We use \textcolor{red}{Grouped Frequency Distribution} when size of data ($n$) is very large and/or the range of the values is large
+
+* The steps necessary to define the classes:
+    + How to choose the number of non-overlapping classes?
+    + How to determine the width of each class?
+    + Where to start the first class?
+
+
+## Quick review (2)
+
+-   How to choose Number of classes? **Sturges's formula**. (Round up to an integer if necessary)
+
+$$
+\text{Number of classes}= 1+3.3 \log_{10}{n}
+$$
+
+-   Class width $=\frac{\text { Largest Observation }-\text { Smallest Observation }}{\text { Number of Classes }}$.
+
+-   Select a lower limit for the first class. If the measurements have $k$ places of decimals, you should deduct a number that has $k+1$ decimals, from the **minimum measurement**.
+
+## Quick review (3)
+
+Graphical representations:
+
+* Histogram
+   + Show the frequency distribution for quantitative data over a set of class intervals (Similar to bar chart but works over class intervals).
+   + Constructed by rectangles whose bases are the intervals and whose heights are the frequencies ( or relative frequencies or percent frequencies). 
+
+   + No gaps between bars. 
+
+\vspace{2cm}
+
+## Quick check (4)
+
+Graphical representations for Cumulative Frequency:
+
+* Ogive
+  + We plot the class end points on the horizontal axis and the cumulative frequencies on the vertical axis. Start from 0 go up to the amount of cumulative frequency toward the end of class.
+  + End point is always 1, 100 or total frequency depending on cumulative frequency we are using.  
+  
+\vspace{2cm}
+
