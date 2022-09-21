@@ -1,0 +1,52 @@
+---
+title: "Week 3"
+author: "Fred Azizi"
+date: "2022-09-21"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+## Quick review (1)
+
+-   Time series data are values that correspond to specific measurements taken over a range of time periods.
+
+-   Cross-section data are values collected from a number of subjects during a single time period
+
+![](time_serie_example.PNG){width="360"}
+
+## Quick review (2)
+
+-   Scatter plot: A graph that displays pairs of values as points on a two-dimensional grid.
+
+-   The independent/explanatory variable is placed on the horizontal axis, or x-axis. The dependent/response variable is placed on the vertical axis, or y-axis.
+
+![](scatterplot.PNG)
+
+
+## Quick review (3)
+
+ measure of central tendency: 
+ 
+* Compute the (Arithmetic) Mean to 
+   + Describe the central location of a single set of interval and ratio data
+
+* Compute the Median to
+   + Describe the central location of a single set of interval and ratio or ordinal data
+
+* Compute the Mode to 
+   + Describe a single set of nominal, ordinal, interval or ratio data

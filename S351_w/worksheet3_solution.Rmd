@@ -1,0 +1,134 @@
+---
+title: "Worksheet 3 Solution"
+author: "Fred Azizi"
+date: "2022-09-21"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
+
+    ![](worksheet2q1.PNG){width="334"}
+
+<!-- -->
+
+a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above?
+
+> **\underline{Answer:}**
+
+> Total number of apartment in this sample is 2+5+3+8+2= 20.
+
+> We need to look at the last two rectangles in the histogram. They represent a rent of 750 or greater. The total frequency for these two classes would be 8+2=10. In this case, percent frequency would be $\frac{10}{20}\times 100=50\%$
+
+b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
+
+    ![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
+
+> **\underline{Answer:}**
+
+> Plot on the left (histogram for years of experience) has a long tail on the right side. Hence, positively skewed.
+
+> Plot on the right (histogram for Daily returns for NASDAQs) has a long tail on the left side. Hence, negativity skewed.
+
+ 
+
+2.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
+
+```{=tex}
+\begin{center}
+\begin{tabular}{|r|r|}
+\hline \multicolumn{1}{|l|}{\text { Year }} & \text { Debt (in T) } \\
+\hline 1991 & 7.3 \\
+\hline 1992 & 7.9 \\
+\hline 1993 & 8.3 \\
+\hline 1994 & 8.6 \\
+\hline 1995 & 8.9 \\
+\hline 1996 & 9.1 \\
+\hline 1997 & 9.2 \\
+\hline 1998 & 9.3 \\
+\hline 1999 & 9.2 \\
+\hline 2000 & 9.0 \\
+\hline 2001 & 8.9 \\
+\hline
+\end{tabular}
+\end{center}
+```
+a.  Is this an example of time series data or cross sectional data?
+
+> **\underline{Answer:}**
+
+> This is an example of time series data.
+
+b.  Make an appropriate plot for this data.
+
+> **\underline{Answer:}**
+>
+> ![](ws2q2.PNG)
+
+c.  What can you conclude from this data?
+
+> **\underline{Answer:}**
+
+> We can see a slight increase in debt over the first half of the decade and after that it stayed almost the same over the second half. Note that **we can't use the graph of a time series over a period of time for making conclusions about future**. This decade shows no strong trend, but in the following years the U.S. debt increased dramatically due to wars.
+
+ 
+
+3.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
+
+```{=tex}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline City & Income ( $\boldsymbol{x})$ & Housing (y) \\
+\hline A & 26 & 109 \\
+\hline B & 29 & 97 \\
+\hline C & 25 & 115 \\
+\hline D & 28 & 99 \\
+\hline E & 38 & 122 \\
+\hline F & 32 & 145 \\
+\hline G & 25 & 100 \\
+\hline H & 22 & 76 \\
+\hline I & 29 & 113 \\
+\hline J & 42 & 144 \\
+\hline
+\end{tabular}
+\end{center}
+```
+a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
+
+> **\underline{Answer:}**
+>
+> ![](ws2q3.PNG)
+
+b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+
+> **\underline{Answer:}**
+
+> Points in the scatterplot are oriented toward the top right of the plot. Therefore, income and housing have a positive relationship. 
+
+\  
+
+4.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
+
+$$
+1,2.5,1.5,2,0,5,3,3.5,1,0.5
+$$
+
+a.  Compute the mean, median and mode for this.
+
+> **\underline{Answer:}**
+
+> Mean $=\bar{x}=\frac{\sum x}{n}=\frac{20}{10}=2$.
+
+> Median: Order the data points from low to high: 0, 0.5, 1, 1, 1.5, 2, 2.5, 3, 3.5, 5. $\Rightarrow \text{Position of median} =(n+1) \frac{50}{100}=11 \times 0.5=5.5$ th position $\Rightarrow$ Median $=(1.5+2) / 2=1.75$
+
+> Mode $=1$ (occurs twice).
+
+
+b.  Compute the range.
+
+> **\underline{Answer:}**
+
+> Range $=\max-\min=5-0=5$
