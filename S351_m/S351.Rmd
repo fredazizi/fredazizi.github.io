@@ -11,4 +11,4 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Class (9/12): [Slides](Week1slides.pdf), [Worksheet 1](Worksheet1.pdf), [Worksheet 1 solution](worksheet1_solution.pdf)\
 Class (9/19): [Slides](Week2Slides.pdf), [Worksheet 2](Worksheet2.pdf), [Worksheet 2 solution](worksheet2_solution.pdf)\
-Class (9/26): [Slides](Week3Slides.pdf), [Worksheet 3](Worksheet3.pdf), [Worksheet 3 solution (place holder)](worksheet2_solution.pdf)
+Class (9/26): [Slides](Week3slides.pdf), [Worksheet 3](Worksheet3.pdf), [Worksheet 3 solution (place holder)](worksheet2_solution.pdf)
