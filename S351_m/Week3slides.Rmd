@@ -40,8 +40,6 @@ Measure of variability:
 - Standard deviation: $s=\sqrt{s^2}$.
 - Coefficient of variation: cv $=\frac{s}{\bar{x}}$.
 
-The above measurements are for \textcolor{red}{Interval-Ratio-Ordinal data.}
-
 ## Quick review (3)
 
 Measures of Linear Relationship:
