@@ -74,16 +74,10 @@ Graphical representations for Cumulative Frequency:
 
 ![](scatterplot.PNG)
 
-
 ## Quick review (6)
 
- measure of central tendency: 
- 
-* Compute the (Arithmetic) Mean to 
-   + Describe the central location of a single set of interval and ratio data
+Measures of central location:
 
-* Compute the Median to
-   + Describe the central location of a single set of interval and ratio or ordinal data
-
-* Compute the Mode to 
-   + Describe a single set of nominal, ordinal, interval or ratio data
+-   Mean $\rightarrow$ Used for \textcolor{red}{Ordinal} and \textcolor{blue}{Interval}.
+-   Median$\rightarrow$ Used for \textcolor{red}{Ordinal} and \textcolor{blue}{Interval}.
+-   Mode$\rightarrow$ Used for \textcolor{red}{Ordinal} and \textcolor{blue}{Interval} and \textcolor{green}{Nominal}.
