@@ -1,0 +1,82 @@
+---
+title: "Worksheet 4"
+author: "Fred Azizi"
+date: "2022-09-28"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. You've applied to be an operations manager for Coca-Cola Consolidated. In the interview, they ask you we have two different systems of filling a can or a bottle. Which process is working better (in the sense of consistency)?
+
+> i. System 1: A sample of 50  $12$ oz bottles of Coke which are filled to a number between $11-13$ oz. The average of this sample is 12 and the standard deviation is 0.33.
+
+> ii. System 2: A sample of 120 $8$ oz  cans of Coke filled to a number between  $7.3-8.7$ oz. The average of the sample is 8 and the standard deviation is  0.23.
+
+\vspace{2cm}
+
+
+2.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
+
+$$
+1,2.5,1.5,2,0,5,3,3.5,1,0.5
+$$
+
+> We calculated the sample mean (2) in the previous worksheet. 
+
+> a. Compute the sample standard deviation.
+
+> b. Compute the coefficient of variation.
+
+\newpage
+
+3. A small sample of height (in cm) is collected as follow:
+
+$$
+164, 148, 137, 157, 173, 156, 177, 172.
+$$
+
+> a. Determine the location and values of the first, second and third quartiles.
+
+> b. Calculate the IQR.
+
+> c. Determine the location and value of the 60th percentile. What does the value signify?
+
+
+\newpage
+
+4.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
+
+```{=tex}
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline City & Income ($\boldsymbol{x})$ & Housing (y) \\
+\hline A & 26 & 109 \\
+\hline B & 29 & 97 \\
+\hline C & 25 & 115 \\
+\hline D & 28 & 99 \\
+\hline E & 38 & 122 \\
+\hline F & 32 & 145 \\
+\hline G & 25 & 100 \\
+\hline H & 22 & 76 \\
+\hline I & 29 & 113 \\
+\hline J & 42 & 144 \\
+\hline
+\end{tabular}
+\end{center}
+```
+
+> a. Calculate the correlation coefficient between x and y. What can you conclude about the
+relationship between the 2 variables?
+
+> b. Calculate the least square line. 
+
+> c. Calculate the coefficient of variation
+
+
+\newpage
+
+5. A sample of 30 observations has a standard deviation of 4. Find the sum of squared deviations
+from the sample mean.

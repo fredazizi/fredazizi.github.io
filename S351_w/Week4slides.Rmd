@@ -1,0 +1,52 @@
+---
+title: "Week 4"
+author: "Fred Azizi"
+date: "2022-09-28"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+## Quick review (1)
+
+Measures of relative standing: \textcolor{red}{Interval-Ratio-Ordinal data.}
+
+-   Percentile: The value for which $P$ percent are less than that value and $(100 - P)\%$ are greater than that value.
+    -   Location of percentile in ordered data: $L_P=(n+1) \frac{P}{100}$.
+-   Quartiles: Special case of percentiles$\rightarrow$ 25th ($Q_1$), 50th (Median-$Q_2$), and 75th percentiles($Q_3$).
+
+## Quick review (2)
+
+Measure of variability:
+
+- Range: $\max-\min$.
+-   $\text {Interquartile range }=Q_3-Q_1$.
+- Variance: $s^2=\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}{\color{red}{n-1}}$.
+- Standard deviation: $s=\sqrt{s^2}$.
+- Coefficient of variation: cv $=\frac{s}{\bar{x}}$.
+
+## Quick review (3)
+
+Measures of Linear Relationship:
+
+- Covariance: $s_{x y}=\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{n-1}$.
+
+- Correlation: $r=\frac{s_{x y}}{s_{x} s_y}$.
+
+- Least Square line: $\hat{y}=b_0+b_1 x$ where $b_1=\frac{s_{x y}}{s_x^2}$ and $b_0=\bar{y}-b_1 \bar{x}$. 
+
+- Coefficient of determination $r^2$.
