@@ -16,4 +16,4 @@ Class (9/14): [Slides](Week2slides.pdf), [Worksheet](Worksheet2.pdf), [Worksheet
 
 Class (9/21): [Slides](Week3slides.pdf), [Worksheet](Worksheet3.pdf), [Worksheet 3 solution](worksheet3_solution.pdf) \
 
-Class (9/28): [Slides](Week4slides.pdf), [Worksheet](Worksheet4.pdf), [Worksheet 4 solution (place holder)](worksheet3_solution.pdf) \
+Class (9/28): [Slides](Week4slides.pdf), [Worksheet](Worksheet4.pdf), [Worksheet 4 solution](worksheet4_solution.pdf) 
