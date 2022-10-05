@@ -1,0 +1,52 @@
+---
+title: "Worksheet 5"
+author: "Fred Azizi"
+date: "2022-10-05"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+1. 4 candidates are running for mayor; Adams, Brown, Collins and Dalton. The following probabilities are assigned:
+
+> $P[$ Adams wins $]=0.42 \quad P[$ Brown wins $]=0.09$
+
+> $P[$ Collins wins $]=0.27 \quad P[$ Dalton wins $]=0.22$
+
+>Determine the probabilities for the following events (use 2 decimal places):
+
+> a. Adams loses.
+
+> b. Either Brown or Dalton wins.
+
+> c. Adams, Brown, or Collins wins.
+
+\newpage
+
+2. $P[A]=0.30$ and $P[B]=0.40$. If $A$ and $B$ are mutually exclusive events, what is $P[A \cup B]$ ?
+
+
+3. $P[A]=0.60$ and $P[B]=0.70$. If $A$ and $B$ are independent events, what is $P[A \cup B]$ ?
+
+\newpage
+
+4. Assume you have applied for two scholarships, a Merit scholarship (M) and an Athletic scholarship (A). The probability that you receive an Athletic scholarship is $0.18$. The probability of receiving both scholarships is $0.11$. The probability of getting at least one of the scholarships is $0.3$.
+
+> a. What is the probability that you will receive a Merit scholarship?
+
+
+> b. Are events A and M mutually exclusive? Why or why not? Explain.
+
+
+> c. Are the two events A, and M, independent? Explain, using probabilities.
+
+
+> d. What is the probability of receiving the Athletic scholarship given that you have been
+awarded the Merit scholarship?
+
+> e. What is the probability of receiving the Merit scholarship given that you have been awarded
+the Athletic scholarship?
+
+\newpage

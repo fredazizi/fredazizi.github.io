@@ -1,0 +1,55 @@
+---
+title: "Week 5"
+author: "Fred Azizi"
+date: "2022-10-05"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+## Quick review (1)
+
+Given a sample space $S=\left\{O_1, O_2, \ldots, O_k\right\}$
+
+- $0 \leq P\left(O_i\right) \leq 1$ for each $i$
+
+- $\sum_{i=1}^k P\left(O_i\right)=1$.
+
+## Quick review (2)
+
+- Intersection of Events $A$ and $B$: the event that occurs when both $A$ and $B$ occur. 
+
+- Union of Events $A$ and $B$ is the event that occurs when either$A$ or $B$ or **both **occur. It is denoted as
+A or $B$.
+
+- Conditional Probability: The probability of event $A$ given event $B$ is
+$$
+P(A \mid B)=\frac{P(A \text { and } B)}{P(B)}
+$$
+- Independent Events: $A$ and $B$ are said to be independent if $P(A \mid B)=P(A)$ or $P(B \mid A)=P(B)$.
+
+- Mutually exclusive: no two outcomes can occur at the same time.
+
+## Quick review (3)
+
+- Complement Rule: $P\left(A^C\right)=1-P(A)$.
+
+- Multiplication Rule: $P(A \text { and } B)=P(B) P(A \mid B)$.
+
+- Addition Rule: $P(A$ or $B)=P(A)+P(B)-P(A$ and $B)$
+
+- Bayes Rule: $P\left(A_i \mid B\right)=\frac{P\left(A_i\right) P\left(B \mid A_i\right)}{P\left(A_1\right) P\left(B \mid A_1\right)+P\left(A_2\right) P\left(B \mid A_2\right)+\cdots+P\left(A_k\right) P\left(B \mid A_k\right)}$
