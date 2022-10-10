@@ -1,0 +1,53 @@
+---
+title: "Week 5"
+author: "Fred Azizi"
+date: "2022-10-10"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+
+## Quick review (1)
+
+- Probability Trees: Events in an experiment are represented by lines
+
+- Joint distribution table
+
+- Marginal probabilites 
+
+## Quick review (2)
+
+* Discrete Probability distribution
+   + $0 \leq P(x) \leq 1 \quad$ for all $x$
+   + $\sum_{\text {all } x} P(x)=1$
+   
+* Population Mean: $E(X)=\mu=\sum_{\text {all } x} x P(x)$
+
+* Population Variance: $V(X)=\sigma^2=\sum_{\text {all } x}(x-\mu)^2 P(x)$
+
+## Quick review (3)
+
+* Laws of Expected Value (note that $c$ means a constant, a number)
+  + $E(c)=c$
+  + $E(X+c)=E(X)+c$
+  + $E(c X)=c E(X)$
+  
+* Laws of Variance
+  + $V(c)=0$
+  + $V(X+c)=V(X)$
+  + $V(c X)=c^2 V(X)$

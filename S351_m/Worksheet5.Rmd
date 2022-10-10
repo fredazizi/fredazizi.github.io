@@ -1,0 +1,84 @@
+---
+title: "Worksheet 5"
+author: "Fred Azizi"
+date: "2022-10-10"
+output: pdf_document
+---
+
+1.  $60 \%$ of the student body at UTC is from the state of Tennessee (T), 30\% are from other states $(\mathrm{O})$, and the remainder constitutes international students (I). Twenty percent of students from Tennessee lives in the dormitories, whereas, $50 \%$ of students from other states live in the dormitories. Finally, $80 \%$ of the international students live in the dormitories.
+
+> (a) What percentage of UTC students lives in the dormitories?
+
+> (b) Given that a student lives in the dormitory, what is the probability that they are an international student?
+
+> (c) Given that a student does not live in the dormitory, what is the probability that they are an international student?
+
+\newpage
+
+2. A survey asked 100 residents in a town whether they are smokers. Given the following information on the residents' response:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline &  Daily Workout & No daily workout & Total \\
+\hline Non-smoker & 40 & 30 & 70 \\
+\hline Smoker & 20 & 10 & 30 \\
+\hline Total & 60 & 40 & 100 \\
+\hline
+\end{tabular}
+\end{center}
+
+> (a) Find the joint probability table.
+
+> (b) What is the probability that a randomly selected resident worksout daily?
+
+> (c) What is the probability that a randomly selected resident doesn't workout daily?
+
+> (d) What is the probability that a randomly selected resident worksout daily and is a smoker?
+
+> (e) What is the probability that a randomly selected resident worksout daily or is a smoker?
+
+> (f) A randomly selected resident doesn't workout daily. What is the probability that the resident is a smoker?
+
+\newpage
+
+3. The number of pizzas delivered to university students each month is a random variable with the following probability distribution.
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline $\mathrm{X}$ & 0 & 1 & 2 & 3 \text{ or more} \\
+\hline $\mathrm{P}(\mathrm{x})$ & $0.1$ & $0.3$ & $0.4$ & $0.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> (a) Find $\mathrm{P}(\mathrm{X} \leq 2)$.
+
+> (b) $\mathrm{P}(1 \leq \mathrm{X} \leq 2)$.
+
+> (c) Determine the mean and variance of $X$.
+
+
+
+\newpage
+
+
+4. The number of persons living per household in a city was collected and were summarized. The frequency table is given below:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline Number of persons & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline Number of households (millions) & $3.1$ & $4.5$ & $3.8$ & $2.5$ & $2.4$ & $2.5$ & $1.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> Define $X$ as the number of people per household.
+
+
+> (a) Write down the probability distribution of $X$.
+
+> (b) Find $P[X \geq 4]$
+
+> (c) Find $\mathrm{P}[2 \leq \mathrm{X}<4]$
+
+> (d) Find the mean, variance and standard deviation for number of people per household.
