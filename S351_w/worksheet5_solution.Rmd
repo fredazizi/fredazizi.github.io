@@ -1,0 +1,125 @@
+---
+title: "Worksheet 5 Solution"
+author: "Fred Azizi"
+date: "2022-10-05"
+output: pdf_document
+---
+
+1. 4 candidates are running for mayor; Adams, Brown, Collins and Dalton (We assume one of the mis going to win, there is no run off). The following probabilities are assigned:
+
+> $P[$ Adams wins $]=0.42 \quad P[$ Brown wins $]=0.09$
+
+> $P[$ Collins wins $]=0.27 \quad P[$ Dalton wins $]=0.22$
+
+>Determine the probabilities for the following events (use 2 decimal places):
+
+> a. Adams loses.
+
+>> **\underline{Answer:}**
+
+>> Use the complement Rule. 
+
+>> $P[$ Adams lose $]=1$ - P[Adams wins] $=1-0.42=0.58$.
+
+
+> b. Either Brown or Dalton wins.
+
+>> **\underline{Answer:}**
+
+>> Note that only one can win, therefore probability of both of them winning ($P$( brown win $\cap$ Dalton win)=0). Use the addition rule:
+
+$$
+P[\text{Brown win}]+P[\text{Dalton win}]=0.09+0.22=0.31
+$$
+
+> c. Adams, Brown, or Collins wins.
+
+>> **\underline{Answer:}**
+
+>> Two options. First one is the use of complement rule:
+
+>> $P$[Adams wins or Brown wins or Collins wins $]=1-p$ [Dalton win$]=1-0.22=0.78$ 
+
+>> Or user addition rule considering that probability of all intersections are zero.
+
+>> $P[$Adams wins or Brown wins or  Collins wins ]= $P[$Adams wins $]$+$P[$Brown wins $]$+$P[$Collins wins $]$=$0.42+0.09+0.27=0.78$.
+
+\  
+
+2. $P[A]=0.30$ and $P[B]=0.40$. If $A$ and $B$ are mutually exclusive events, what is $P[A \cup B]$ ?
+
+> **\underline{Answer:}**
+
+> Since $A$ and $B$ are mutually exclusive events, then $P(A \cap B)=0$. Using the addition rule: 
+ 
+$$
+P(A \cup B)=P(A)+P(B)-P(A \cap B)
+$$
+$$
+\quad=P(A)+P(B)-0=0.30+0.40=0.7 .
+$$
+
+\  
+
+3. $P[A]=0.60$ and $P[B]=0.70$. If $A$ and $B$ are independent events, what is $P[A \cup B]$ ?
+
+> **\underline{Answer:}**
+
+> Since $A$ and $B$ are independent events, then $P(A \cap B)=P(A) \cdot P(B)$. Using the addition rule again: 
+
+$$
+P(A \cup B)=P(A)+P(B)-P(A \cap B)
+$$
+$$
+P(A \cup B)=P(A)+P(B)-P(A)P(B)=0.6+0.7- .42=0.88
+$$
+\  
+
+
+4. Assume you have applied for two scholarships, a Merit scholarship (M) and an Athletic
+scholarship (A). The probability that you receive an Athletic scholarship is $0.18$. The probability of receiving both scholarships is $0.11$. The probability of getting at least one of the scholarships is 0.3. (i.e. $P(A)=0.18$, $P(A \cap M)=0.11$, and $P(A \cup M)=0.3$.)
+
+> (a) What is the probability that you will receive a Merit scholarship?
+
+>> **\underline{Answer:}**
+
+$$
+P(A \cup M)=P(A)+P(M)-P(A \cap M)
+$$
+
+$$\Rightarrow 0.3=0.18+P(M)-0.11 \Rightarrow P(M)=0.23$$
+
+\  
+
+> (b) Are events $\mathrm{A}$ and $\mathrm{M}$ mutually exclusive? Why or why not? Explain.
+
+>> **\underline{Answer:}**
+
+>> $P(A \cap M) \neq 0 \Rightarrow A$ and $M$ are not mutually exclusive.
+
+\  
+
+> (c) Are the two events $\mathrm{A}$, and $\mathrm{M}$, independent? Explain, using probabilities.
+
+>> **\underline{Answer:}**
+
+>> $P(A \cap M)=0.11$. But $P(A) \cdot P(M)=0.0414$. Therefore$P(A \cap M) \neq P(A) \cdot P(M)$.Hence $A$ and $M$ are not independent.
+
+\  
+
+
+> (d) What is the probability of receiving the Athletic scholarship given that you have been awarded the Merit scholarship?
+
+>> **\underline{Answer:}**
+
+$$P(A \mid M)=\frac{P(A \cap M)}{P(M)}=\frac{0.11}{0.23}=0.4783$$
+
+\  
+
+> (e) What is the probability of receiving the Merit scholarship given that you have been awarded the Athletic scholarship?
+
+>> **\underline{Answer:}**
+
+$$
+P(M \mid A)=\frac{P(M \cap A)}{P(A)}=\frac{0.11}{0.18}=0.6111
+$$
