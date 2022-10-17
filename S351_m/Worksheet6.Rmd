@@ -21,7 +21,7 @@ output: pdf_document
 
 > (c) Determine the mean and variance of $X$.
 
-> (d)  Calculate the mean and sd of $Y$.
+> (d)  Calculate the mean and sd of $Y=3X+4$.
 \newpage
 
 
