@@ -1,0 +1,178 @@
+---
+title: "Worksheet 6 Solution"
+author: "Fred Azizi"
+date: "2022-10-17"
+output: pdf_document
+---
+
+1. The number of pizzas delivered to university students each month is a random variable with the following probability distribution.
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline $\mathrm{X}$ & 0 & 1 & 2 & 3 \\
+\hline $\mathrm{P}(\mathrm{x})$ & $0.1$ & $0.3$ & $0.4$ & $0.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> (a) Find $\mathrm{P}(\mathrm{X} \leq 2)$.
+
+> (b) $\mathrm{P}(1 \leq \mathrm{X} \leq 2)$.
+
+> (c) Determine the mean and variance of $X$.
+
+> (d) Suppose $Y=3 X+4$ for each value of $X$, what is the probability distribution of $Y$ ?
+
+> (e)  Calculate the mean and sd of $Y$.
+
+> **\underline{Answer:}**
+
+> (a) $P(X \leq 2)=P(x=0)+P(x=1)+P(x=2)=0.1+0.3+0.4=0.8$
+
+> (b) $P(1 \leq x \leq 2)=P(x=1)+P(x=2)=0.7$
+
+> (c) 
+
+$$
+\begin{aligned}
+\mu=E(x)=\sum x \cdot P(x)=& 0 \times 0.1+1 \times 0.3+2 \times 0.4+3 \times 0.2=1.7 \\
+V(x)=\sum(x-\mu)^{2} \cdot P(x)=&(0-1.7)^{2} \times 0.1+(1-1-7)^{2} \times 0.3+(2-1.7)^{2} \times 0.4 \\
+&+3 \times(3-1.7)^{2} \times 0.2=0.81
+\end{aligned}
+$$
+
+
+> (d)
+
+\begin{center}
+\begin{tabular}{c|cccc}
+$x$ & 0 & 1 & 2 & 3 \\
+$3 x+4=y$ & 4 & 7 & 10 & 13 \\
+$P(y)$ & $0.1$ & $0.3$ & $0.4$ & $0.2$ \\
+\end{tabular}
+\end{center}
+
+> (e)
+
+$$
+\begin{aligned}
+&E(y)=E(3 x+4)=3 E(x)+4=3 \times 1 \cdot 7+4=9.1 \\
+&V(y)=V(3 x+4)=9 V(x)+0=7.29 \\
+&sd(y)=\sqrt{V(y)}=\sqrt{7.29}= 2.7
+\end{aligned}
+$$
+
+2. The number of persons living per household in a city was collected and were summarized. The frequency table is given below:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline Number of persons & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline Number of households (millions) & $3.1$ & $4.5$ & $3.8$ & $2.5$ & $2.4$ & $2.5$ & $1.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> Define $X$ as the number of people per household.
+
+
+> (a) Write down the probability distribution of $X$.
+
+> (b) Find $P[X \geq 4]$
+
+> (c) Find $\mathrm{P}[2 \leq \mathrm{X}<4]$
+
+> **\underline{Answer:}**
+
+> (a) 
+
+$$\begin{array}{cccccccc}X & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ P(x) & 0.155 & 0.225 & 0.19 & 0.125 & 0.12 & 0.125 & 0.06 \end{array}$$
+
+> (b) $P[X \geq 4]=P(x=4)+P(x=5)+P(x=6)+P(x=7)=0.125+0.12+0.125+0.06=0.43$
+
+> (c) $\mathrm{P}[2 \leq \mathrm{x}<4] .=P(x=2)+P(x=3)=0.225+0.19=0.415$
+
+
+3. Indicate whether each random variable is Binomial, Poisson or neither:
+
+> a. A random variable $X$ counts the number of visits to a webpage in a one-hour period. **Poisson**
+
+> b. A random variable $X$ counts the number of defectives in a sample of 100 stamps. **Binomial**
+
+> c. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn one at a time without replacement. **Neither**
+
+> d. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn with replacement. **Binomial**
+
+ 
+4. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
+
+> a. Identify the distribution of $X$ and its parameters.
+
+
+
+> b. What is the probability that none of the students score over 25 ?
+
+
+
+> c. What is the probability that at least one of them score over 25 ?
+
+
+> d. What is the probability that all of them score over 25 ?
+
+> **\underline{Answer:}**
+
+> (a) $X \sim \operatorname{Bin}(n=5, p=0.6)$
+
+> (b) $P[X=0]=P[X \leqslant 0]=0.0102$
+
+> (c) $P(x \geqslant 1)=1-P(x<1)=1-P(x \leqslant 0)=1-0.0102=0.9898$
+
+> (d) $P(x=5)=P(x \leqslant 5)-P(x \leqslant 4)=1-0.9222=0.0788$
+
+
+5. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
+
+> a. What is the probability of the event happening? That is, the probability of getting an even number. 
+
+> b. What distribution will $X$ follow? Identify the parameters.
+
+> c. Calculate $P[X=2]$.
+
+> d. Calculate $P[0 \leq X<3]$
+
+> **\underline{Answer:}**
+
+> (a) That is, the probability of getting an even number. $P(x)=\frac{1}{2}$ (for a single roll of the die).
+
+> (b) $X \sim \operatorname{Bin}(n=6, p=0.5)$
+
+> (c) $P[x=2]=P[x \leqslant 2]-P[x \leqslant 1]=0.3438-0.1094=0.2344$
+
+> (d)
+                                                                                                                           
+$$                                                                                                                  \begin{aligned}
+P[0 \leqslant x<3] &=P[x \leqslant 2]-P[x \leqslant 0]=P[x<3] \\
+&=-0.3438-0.0156=P[x \leqslant 2] \\
+\text { Calculate } P[0 \leq x<3]
+\end{aligned}                                                                                                       $$                                                                                                             
+6. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
+
+> a. What is the probability that they get 3 calls or less on a given day?
+
+> b. What is the probability that they get no calls on given day?
+
+> c. What is the probability that they get exactly 3 calls?
+
+> d. What is the expected number of calls in a week? 
+
+> e. What is the standard deviation for calls in a day?
+
+
+\newpage
+
+7. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
+
+> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
+
+> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
+
+> c. What is the probability of exactly one flaw in the first $50 \mathrm{~m}$ and exactly one flaw in the next $50 \mathrm{~m}$?
