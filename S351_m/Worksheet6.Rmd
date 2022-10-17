@@ -21,9 +21,7 @@ output: pdf_document
 
 > (c) Determine the mean and variance of $X$.
 
-> (d) Suppose $Y=3 X+4$ for each value of $X$, what is the probability distribution of $Y$ ?
-
-> (e)  Calculate the mean and sd of $Y$.
+> (d)  Calculate the mean and sd of $Y$.
 \newpage
 
 
