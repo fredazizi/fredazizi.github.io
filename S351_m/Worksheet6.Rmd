@@ -110,4 +110,3 @@ output: pdf_document
 
 > b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
 
-> c. What is the probability of exactly one flaw in the first $50 \mathrm{~m}$ and exactly one flaw in the next $50 \mathrm{~m}$?
