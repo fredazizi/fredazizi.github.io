@@ -1,0 +1,67 @@
+---
+title: "Week 7"
+author: "Fred Azizi"
+date: "2022-10-19"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+
+## Quick review (1)
+
+* Laws of Expected Value (note that $c$ means a constant, a number)
+  + $E(c)=c$
+  + $E(X+c)=E(X)+c$
+  + $E(c X)=c E(X)$
+  
+* Laws of Variance
+  + $V(c)=0$
+  + $V(X+c)=V(X)$
+  + $V(c X)=c^2 V(X)$
+  
+## Quick review (2)
+
+Binomial random variable
+
+* The binomial experiment consists of a **fixed number of trials** ($n$).
+
+* Each trial has **two possible outcomes**: S/F.
+
+* The probability of success is $p$ (**fixed**). The probability of failure is 1-$p$ (fixed). 
+
+* The trials are **independent**.
+
+* $P(x)= nCx \; \;p^x (1-p)^{n-x}$.
+
+* $E(x)=np$, $Var(x)=np(1-p)$.
+
+## Quick review (3)
+
+The Poisson  random  variable 
+
+* Defined as  **number  of  successes**  that  occur  in  a  period of time or an interval of space.
+
+* The number of successes that occur in any interval is **independent** of the number of successes that occur in any other interval.
+
+* The probability of a success in an interval is the same for all equal-size intervals.
+
+* The probability of a success in an interval is **proportional to the size of the interval**.
+
+* $P(x)=\frac{e^{-\mu}\mu^x}{x!}$ where $\mu$ is the mean number of successes in the interval or region.
+
+* $E(x)=\mu$, $Var(x)=\mu$.
