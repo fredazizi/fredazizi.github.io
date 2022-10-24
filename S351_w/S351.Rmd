@@ -20,4 +20,6 @@ Class (9/28): [Slides](Week4slides.pdf), [Worksheet](Worksheet4.pdf), [Worksheet
 
 Class (10/05): [Slides](Week5slides.pdf), [Worksheet](Worksheet5.pdf), [Worksheet 5 solution](worksheet5_solution.pdf) \
 
-Class (10/12): [Slides](Week6slides.pdf), [Worksheet](Worksheet6.pdf), [Worksheet 6 solution (place holder)](worksheet5_solution.pdf) \
+Class (10/12): [Slides](Week6slides.pdf), [Worksheet](Worksheet6.pdf), [Worksheet 6 solution](worksheet6_solution.pdf) \
+
+Class (10/19): [Slides](Week7slides.pdf), [Worksheet](Worksheet7.pdf), [Worksheet 7 solution (place holder)](worksheet6_solution.pdf) \
