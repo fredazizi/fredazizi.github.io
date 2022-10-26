@@ -1,0 +1,86 @@
+---
+title: "Worksheet 7"
+author: "Fred Azizi"
+date: "2022-10-4"
+output: pdf_document
+---
+
+1. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
+
+> a. What is the probability of the event happening? That is, the probability of getting an even number. 
+
+> b. What distribution will $X$ follow? Identify the parameters.
+
+> c. Calculate $P[X=2]$.
+
+> e. Calculate $P[0 \leq X<3]$
+
+\newpage
+
+
+2. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
+
+> a. What is the probability that they get 3 calls or less on a given day?
+
+> b. What is the probability that they get no calls on given day?
+
+> c. What is the probability that they get exactly 3 calls?
+
+> d. What is the expected number of calls in a week? 
+
+> e. What is the standard deviation for calls in a day?
+
+
+\newpage
+
+3. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
+
+> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
+
+> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
+
+\newpage
+
+4. $X$ is a Uniformly distributed random variable that has maximum and minimum values of 10 and 50.
+
+> a. What is the density function and its graph?
+
+> b. Calculate the mean of $X$.
+
+> c. Calculate $P[10<X<20]$ and mark the corresponding area on the graph from (a).
+
+> d. Calculate $P[25<X<45]$ and mark the corresponding area on the graph from (a).
+
+> e. Find $P[X=22.5]$.
+
+\newpage
+
+5. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
+
+> a. $P[Z < 0]$.
+
+> b. $P[Z < -1.5]$.
+
+> c. $P[Z > 1]$.
+
+> d. $P[Z > -1.44]$.
+
+> e. $P[Z > 3.09]$.
+
+> f. $P[-0.71 < Z < 0.92]$.
+
+> g. $P[-1.5 < Z < -1.44]$.
+
+> h. $P[Z < -0.71 or Z > 0.92]$.
+
+\newpage
+
+6. Find values of $z$ such that:
+
+> a. The area to the left is 0.0202.
+
+> b. The area to the left is 0.7517.
+
+> c. The area to the right is 0.025.
+
+> d. The area to the right is 0.3015.

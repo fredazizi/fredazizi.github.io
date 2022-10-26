@@ -74,39 +74,3 @@ output: pdf_document
 
 > d. What is the probability that all of them score over 25 ?
 
-\newpage
-
-5. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
-
-> a. What is the probability of the event happening? That is, the probability of getting an even number. 
-
-> b. What distribution will $X$ follow? Identify the parameters.
-
-> c. Calculate $P[X=2]$.
-
-> e. Calculate $P[0 \leq X<3]$
-
-\newpage
-
-
-6. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
-
-> a. What is the probability that they get 3 calls or less on a given day?
-
-> b. What is the probability that they get no calls on given day?
-
-> c. What is the probability that they get exactly 3 calls?
-
-> d. What is the expected number of calls in a week? 
-
-> e. What is the standard deviation for calls in a day?
-
-
-\newpage
-
-7. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
-
-> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
-
-> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
-

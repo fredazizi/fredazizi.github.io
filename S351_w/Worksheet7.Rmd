@@ -74,13 +74,3 @@ output: pdf_document
 
 > e. What is the standard deviation for calls in a day?
 
-
-\newpage
-
-6. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
-
-> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
-
-> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
-
-> c. What is the probability of exactly one flaw in the first $50 \mathrm{~m}$ and exactly one flaw in the next $50 \mathrm{~m}$?

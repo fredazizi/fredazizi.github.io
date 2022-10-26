@@ -1,7 +1,7 @@
 ---
-title: "Worksheet 6 Solution"
+title: "Worksheet 7 Solution"
 author: "Fred Azizi"
-date: "2022-10-17"
+date: "2022-10-19"
 output: pdf_document
 ---
 
@@ -126,4 +126,28 @@ P(x) & 0.155 & 0.225 & 0.19 & 0.125 & 0.12 & 0.125 & 0.06 \end{array}$$
 
 >> Or (again) you can calculte directly: $P[X=5]= 5C5 \;p^5 (1-p)^{5-5}=0.07776$
 
+5. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
+
+> a. What is the probability of the event happening? That is, the probability of getting an even number. 
+
+> b. What distribution will $X$ follow? Identify the parameters.
+
+> c. Calculate $P[X=2]$.
+
+> d. Calculate $P[0 \leq X<3]$
+
+> **\underline{Answer:}**
+
+> (a) That is, the probability of getting an even number. $P(x)=\frac{1}{2}$ (for a single roll of the die).
+
+> (b) $X \sim \operatorname{Bin}(n=6, p=0.5)$
+
+> (c) $P[x=2]=P[x \leqslant 2]-P[x \leqslant 1]=0.3438-0.1094=0.2344$
+
+> (d)
+                                                                                                                           
+$$                                                                                                                  \begin{aligned}
+P[0 \leqslant x<3] &=P[x \leqslant 2]-P[x \leqslant 0]=P[x<3] \\
+&=-0.3438-0.0156=P[x \leqslant 2] \\
+\end{aligned}                                                                                                       $$  
 
