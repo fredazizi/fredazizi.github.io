@@ -14,5 +14,5 @@ Class (9/19): [Slides](Week2Slides.pdf), [Worksheet 2](Worksheet2.pdf), [Workshe
 Class (9/26): [Slides](Week3slides.pdf), [Worksheet 3](Worksheet3.pdf), [Worksheet 3 solution](worksheet3_solution.pdf)\
 Class (10/3): [Slides](Week4slides.pdf), [Worksheet 4](Worksheet4.pdf), [Worksheet 4 solution](worksheet4_solution.pdf)\
 Class (10/10): [Slides](Week5slides.pdf), [Worksheet 5](Worksheet5.pdf), [Worksheet 5 solution](worksheet5_solution.pdf)\
-Class (10/17): [Slides](Week6slides.pdf), [Worksheet 6](Worksheet6.pdf)\
+Class (10/17): [Slides](Week6slides.pdf), [Worksheet 6](Worksheet6.pdf), [Worksheet 6 solution](worksheet6_solution.pdf)\
 Class (10/24): [Slides](Week7slides.pdf), [Worksheet 7](Worksheet7.pdf)\
