@@ -193,3 +193,7 @@ ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b 
            fill = "blue", alpha=0.5) 
 
 ```
+
+> (e) This is a continuous RV. Hence, P[X=22.5]=0$.
+
+
