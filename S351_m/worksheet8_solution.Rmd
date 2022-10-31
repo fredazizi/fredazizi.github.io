@@ -120,7 +120,7 @@ P[Z < -0.71 \cup Z > 0.92] &= P[Z < -0.71] + P[Z > 0.92] \notag\\
 &= 0.4177 \notag
 \end{align}
 
-\  
+\newpage
 
 2. Find values of $z$ such that:
 
@@ -163,13 +163,15 @@ P[Z < -0.71 \cup Z > 0.92] &= P[Z < -0.71] + P[Z > 0.92] \notag\\
 
 \newpage
 
-4. You want to see if you want to take a course with Prof. Azizi in the upcoming spring semester and you want to know the average score for his class. You can't find this data, so you contact him. He replied your email by saying his class grades are Normally distributed with $\sigma=3$ and more than 40% of students receive 90 or higher.   
+4. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher...You find the average for fun!
+
+> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
 
 > **\underline{Answer:}**
 
-> Let $X$ be wage in the company. We know that $X\sim$ N($\mu$, 5). We also know that $P(X>15)=0.1$. Therefore, $P\left(\frac{X-\mu}{\sigma}>\frac{15-\mu}{\sigma=5}\right)=P\left(Z>\frac{15-\mu}{5}\right)=0.1$. We can also conclude that $P\left(Z \leq \frac{15-\mu}{5}\right)=1-0.1=0.9$. Using table, we figure out that:
+> Let $X$ be grades of that course. We know that $X\sim$ N($\mu$, $\sigma$=3). We also know that $P(X\geq 90)=0.4$. Therefore, $P\left(\frac{X-\mu}{\sigma}\geq \frac{90-\mu}{\sigma=3}\right)=P\left(Z>\frac{90-\mu}{3}\right)=0.4$. We can also conclude that $P\left(Z \leq \frac{90-\mu}{3}\right)=1-0.4=0.6$. Using table, we figure out that:
 
-$$\frac{15-\mu}{5}=1.28 \rightarrow \mu=15-1.28\times 5=8.6$$
+$$\frac{90-\mu}{3}=0.255 \rightarrow \mu=90-0.255\times 3= 89.235$$
 
 
 \newpage
