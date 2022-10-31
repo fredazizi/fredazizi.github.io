@@ -103,3 +103,5 @@ Other distributions:
 * $F$ distribution with two parameters $\nu_1$ and $\nu_2$.
    + $E(F_{\nu_1,\nu_2})=\frac{\nu_2}{\nu_2-2} \quad \nu_2>2$ .
    + $V(F_{\nu_1,\nu_2})=\frac{2 \nu_2^2\left(\nu_1+\nu_2-2\right)}{\nu_1\left(\nu_2-2\right)^2\left(\nu_2-4\right)} \quad \nu_2>4$ 
+   
+   
