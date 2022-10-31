@@ -61,6 +61,7 @@ ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
    + $\mu=\sigma=\frac{1}{\lambda}$.
    + $P(X<x)=1-e^{-\lambda x}$ 
    + $P\left(x_1<X<x_2\right)=P\left(X<x_2\right)-P\left(X<x_1\right)=e^{-\lambda x_1}-e^{-\lambda x_2}$
+   + relationship between Poisson RV and Exp RV, read [this](https://medium.com/swlh/the-link-between-poisson-and-exponential-distribution-817e92344d1b).
    
 ```{r, echo=F, fig.align='center', out.width="50%"}
 x_lower <- 0
