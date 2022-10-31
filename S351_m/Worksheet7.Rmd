@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 7"
 author: "Fred Azizi"
-date: "2022-10-4"
+date: "2022-10-24"
 output: pdf_document
 ---
 
@@ -53,34 +53,3 @@ output: pdf_document
 
 > e. Find $P[X=22.5]$.
 
-\newpage
-
-5. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
-
-> a. $P[Z < 0]$.
-
-> b. $P[Z < -1.5]$.
-
-> c. $P[Z > 1]$.
-
-> d. $P[Z > -1.44]$.
-
-> e. $P[Z > 3.09]$.
-
-> f. $P[-0.71 < Z < 0.92]$.
-
-> g. $P[-1.5 < Z < -1.44]$.
-
-> h. $P[Z < -0.71 or Z > 0.92]$.
-
-\newpage
-
-6. Find values of $z$ such that:
-
-> a. The area to the left is 0.0202.
-
-> b. The area to the left is 0.7517.
-
-> c. The area to the right is 0.025.
-
-> d. The area to the right is 0.3015.

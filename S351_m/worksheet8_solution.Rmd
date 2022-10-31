@@ -1,0 +1,195 @@
+---
+title: "Worksheet 8 Solution"
+author: "Fred Azizi"
+date: "2022-10-31"
+output: pdf_document
+---
+
+1. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
+
+
+> a. $P[Z < 0]$.
+
+>> A: Using table, $P[Z < 0]=0.5$.
+
+> b. $P[Z < -1.5]$.
+
+>> A: Using table, $P[Z < -1.5]=0.0668$.
+
+> c. $P[Z > 1]$.
+
+>> A:  $P[Z > 1]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 1]= 1- 0.8413=0.1587$.
+
+
+> d. $P[Z > -1.44]$.
+
+>> A:  $P[Z > -1.44]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq -1.44]= 1- 0.0749=0.9251$.
+
+> e. $P[Z > 3.09]$.
+
+>> A:  $P[Z > 3.09]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 3.09]= 1- 0.9990=0.001$.
+
+> f. $P[-0.71 < Z < 0.92]$.
+
+>> A: $P[-0.71 < Z < 0.92]=P[Z<0.92]-P[Z<-0.71]=0.8212-0.2389=0.5823$. Why? See below:
+
+>> This is what we want:
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+library(ggplot2)
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(-0.71, 0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
+                     labels = c(-3, -0.71,0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+>> We note that P[Z<0.92] would be the red area on this plot: 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "red",
+                xlim = c(-3, 0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3, 0, 0.92, 3),
+                     labels = c(-3, 0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+
+>> We also note that P[Z<-0.71] would be the green area on this plot: 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "green",
+                xlim = c(-3,-0.71), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 3),
+                     labels = c(-3, -0.71,0,  3),
+                     limits = c(-3, 3)) 
+
+```
+
+>> If I get rid of the green area in the red area, what I am left with would be the blue area. 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "green",
+                xlim = c(-3,-0.71), alpha=0.5) +
+  stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(-0.71,0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
+                     labels = c(-3, -0.71,0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+
+> g. $P[-1.5 < Z < -1.44]$.
+
+>> A: $P[-1.5 < Z < -1.44]=P[Z<-1.44]-P[Z<-1.5]=0.0749-0.0668=0.0081$.
+
+> h. $P[Z < -0.71$ or $Z > 0.92]$.
+
+>> A: $P[Z < -0.71 \cup Z > 0.92] = P[Z < -0.71] + P[Z > 0.92] -P[Z < -0.71 \cap Z > 0.92]$. There is no common Z in the intersection, i.e $P[Z < -0.71 \cap Z > 0.92]=0$. Hence:
+
+\begin{align}
+P[Z < -0.71 \cup Z > 0.92] &= P[Z < -0.71] + P[Z > 0.92] \notag\\
+&= P[Z < -0.71]+1- P[Z \leq 0.92] \notag\\
+&=0.2389+1-0.8212\notag\\
+&= 0.4177 \notag
+\end{align}
+
+\  
+
+2. Find values of $z$ such that:
+
+> a. The area to the left is 0.0202.
+
+>> A: We are looking for the $z$ such that $P(Z<z)=0.0202$. We go to the table and find probability 0.0202 and then find the $z$ value. $z=-2.05$.
+
+> b. The area to the left is 0.7517.
+
+>> A: We are looking for the $z$ such that $P(Z<z)=0.7517$. We go to the table and find probability 0.7517 and then find the $z$ value. $z=0.68$.
+
+
+> c. The area to the right is 0.025.
+
+>> A: We are looking for the $z$ such that $P(Z>z)=0.025$. Table only have $P(Z\leq z)$ probabilities. So we need to convert it to something in that form. We note that $P(Z>z)=1-P(Z\leq z)$. Therefore, $1-P(Z\leq z)=0.025 \rightarrow P(Z\leq z)=1-0.025=0.975$. We go to the table and find probability 0.975 and then find the $z$ value. $z=1.96$.
+
+> d. The area to the right is 0.3015.
+
+>> A: We are looking for the $z$ such that $P(Z>z)=0.3015$. $1-P(Z\leq z)=0.3015 \rightarrow P(Z\leq z)=1-0.3015=0.6985$. We go to the table and find probability 0.6985 and then find the $z$ value. $z=0.52$.
+
+\newpage
+
+3. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
+
+> a. What is the probability that a call lasts less than 4 minutes? 
+
+> b. What is the probability that a call lasts between 5 to 10 minutes. 
+
+> c. What percentage of calls lasts more than 7 minutes?
+
+> **\underline{Answer:}**
+
+> We note that $T\sim$N$(\mu=6.5, \sigma=2)$. 
+
+> (a) $P(T<4)= P\left(\frac{T-\mu}{\sigma}<\frac{4-6.5}{2}\right)=P(Z<-1.25)=0.1056$.
+
+> (b) $P(5<T<10)= P(T<10)-P(T\leq 5)= P\left(\frac{T-\mu}{\sigma}<\frac{10-6.5}{2}\right)-P\left(\frac{T-\mu}{\sigma}<\frac{5-6.5}{2}\right)=P(Z<1.75)-P(ZX<-0.75)=0.9599 - 0.2266=0.7333$.
+
+> (c) $P(T>7)= 1-P \left(Z \leq \frac{7-6.5}{2}\right)=P(Z<0.25)=0.5987$.
+
+\newpage
+
+4. A worker earns $\$ 15$ per hour and is told that $10 \%$ of all workers make a higher wage. Assume the wage is Normally distributed with a standard deviation of 5 . What is the average wage of the company? 
+
+> **\underline{Answer:}**
+
+> Let $X$ be wage in the company. We know that $X\sim$ N($\mu$, 5). We also know that $P(X>15)=0.1$. Therefore, $P\left(\frac{X-\mu}{\sigma}>\frac{15-\mu}{\sigma=5}\right)=P\left(Z>\frac{15-\mu}{5}\right)=0.1$. We can also conclude that $P\left(Z \leq \frac{15-\mu}{5}\right)=1-0.1=0.9$. Using table, we figure out that:
+
+$$\frac{15-\mu}{5}=1.28 \rightarrow \mu=15-1.28\times 5=8.6$$
+
+
+\newpage
+
+5. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
+pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
+
+> a. What is the probability that a transaction is completed in less than 5 minutes?
+
+> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
+
+> c. What is the standard deviation of time until a transaction is completed?
+
+\newpage
+
+6. Find the mean and standard deviations:
+
+> a. $t_5$.
+
+> b. $\chi^2_9$.
+
+> c. $F_{5,15}$. 
+
