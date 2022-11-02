@@ -1,0 +1,62 @@
+---
+title: "Worksheet 9"
+author: "Fred Azizi"
+date: "2022-11-02"
+output: pdf_document
+---
+
+1. Find values of $z$ such that:
+
+> a. The area to the left is 0.0202.
+
+> b. The area to the left is 0.7517.
+
+> c. The area to the right is 0.025.
+
+> d. The area to the right is 0.3015.
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+library(ggplot2)
+ggplot(data = data.frame(x = c(-3.5, 3.5)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+theme_bw()+
+  scale_x_continuous(breaks = round(seq(-3.5, 3.5, by = 0.5),1)) 
+```
+
+\newpage
+
+2. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
+
+> a. What is the probability that a call lasts less than 4 minutes? 
+
+> b. What is the probability that a call lasts between 5 to 10 minutes. 
+
+> c. What percentage of calls lasts more than 7 minutes?
+
+\newpage
+
+3. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher You find the average for fun!
+
+> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
+
+\newpage
+
+4. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
+pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
+
+> a. What is the probability that a transaction is completed in less than 5 minutes?
+
+> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
+
+> c. What is the standard deviation of time until a transaction is completed?
+
+\newpage
+
+5. Find the mean and standard deviations:
+
+> a. $t_5$.
+
+> b. $\chi^2_9$.
+
+> c. $F_{5,15}$. 
+

@@ -1,0 +1,95 @@
+---
+title: "Worksheet 9 Solution"
+author: "Fred Azizi"
+date: "2022-11-02"
+output: pdf_document
+---
+
+1. Find values of $z$ such that:
+
+> a. The area to the left is 0.0202.
+
+>> A: We are looking for the $z$ such that $P(Z<z)=0.0202$. We go to the table and find probability 0.0202 and then find the $z$ value. $z=-2.05$.
+
+> b. The area to the left is 0.7517.
+
+>> A: We are looking for the $z$ such that $P(Z<z)=0.7517$. We go to the table and find probability 0.7517 and then find the $z$ value. $z=0.68$.
+
+
+> c. The area to the right is 0.025.
+
+>> A: We are looking for the $z$ such that $P(Z>z)=0.025$. Table only have $P(Z\leq z)$ probabilities. So we need to convert it to something in that form. We note that $P(Z>z)=1-P(Z\leq z)$. Therefore, $1-P(Z\leq z)=0.025 \rightarrow P(Z\leq z)=1-0.025=0.975$. We go to the table and find probability 0.975 and then find the $z$ value. $z=1.96$.
+
+> d. The area to the right is 0.3015.
+
+>> A: We are looking for the $z$ such that $P(Z>z)=0.3015$. $1-P(Z\leq z)=0.3015 \rightarrow P(Z\leq z)=1-0.3015=0.6985$. We go to the table and find probability 0.6985 and then find the $z$ value. $z=0.52$.
+
+\newpage
+
+2. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
+
+> a. What is the probability that a call lasts less than 4 minutes? 
+
+> b. What is the probability that a call lasts between 5 to 10 minutes. 
+
+> c. What percentage of calls lasts more than 7 minutes?
+
+> **\underline{Answer:}**
+
+> We note that $T\sim$N$(\mu=6.5, \sigma=2)$. 
+
+> (a) $P(T<4)= P\left(\frac{T-\mu}{\sigma}<\frac{4-6.5}{2}\right)=P(Z<-1.25)=0.1056$.
+
+> (b) $P(5<T<10)= P(T<10)-P(T\leq 5)= P\left(\frac{T-\mu}{\sigma}<\frac{10-6.5}{2}\right)-P\left(\frac{T-\mu}{\sigma}<\frac{5-6.5}{2}\right)=P(Z<1.75)-P(Z<-0.75)=0.9599 - 0.2266=0.7333$.
+
+> (c) $P(T>7)= 1-P \left(Z \leq \frac{7-6.5}{2}\right)=P(Z<0.25)=0.5987$.
+
+\newpage
+
+3. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher...You find the average for fun!
+
+> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
+
+> **\underline{Answer:}**
+
+> Let $X$ be grades of that course. We know that $X\sim$ N($\mu$, $\sigma$=3). We also know that $P(X\geq 90)=0.4$. Therefore, $P\left(\frac{X-\mu}{\sigma}\geq \frac{90-\mu}{\sigma=3}\right)=P\left(Z>\frac{90-\mu}{3}\right)=0.4$. We can also conclude that $P\left(Z \leq \frac{90-\mu}{3}\right)=1-0.4=0.6$. Using table, we figure out that:
+
+$$\frac{90-\mu}{3}=0.255 \rightarrow \mu=90-0.255\times 3= 89.235$$
+
+
+\newpage
+
+4. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
+pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
+
+> a. What is the probability that a transaction is completed in less than 5 minutes?
+
+> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
+
+> c. What is the standard deviation of time until a transaction is completed?
+
+> **\underline{Answer:}**
+
+> $\mu=7.5$. We know $\frac{1}{\lambda}=\mu$. Hence, $\lambda=\frac{1}{7.5}=0.13$. Therefore, $T\sim \text{exp}(\lambda=0.13)$.
+
+> (a) Using formula in the textbook or slides: $P(T<5)=1-e^{-0.13 \times 5}=0.4779542$.
+
+> (b)  Using formula in the textbook or slides: $P(5<T<10)=e^{-0.13 \times 5}-e^{-0.13 \times 10}=0.249514$.
+
+> (c) For Exponential distribution, $\sigma=\mu=7.5$.
+
+\newpage
+
+5. Find the mean and standard deviations:
+
+> a. $t_5$.
+
+>> A: $E(t)=0$ regardless of degrees of freedom. $V(t)=\frac{5}{5-2}=\frac{5}{3}$. $Sd(t)=\sqrt{\frac{5}{3}}=1.291$.
+
+> b. $\chi^2_9$.
+
+>> A: $E\left(\chi^2_{9}\right)=9$. $V\left(\chi^2_9\right)=2\times 9=18$. $Sd\left(\chi^2_9\right)=\sqrt{18}=4.243$.
+
+> c. $F_{5,15}$. 
+
+>> A: $E(F_{5,15})=\frac{15}{15-2}=\frac{15}{13}$. $V(F_{5,15})=\frac{2 \times 15^2\left(5+15-2\right)}{5\left(15-2\right)^2\left(15-4\right)} \approx 0.8714363$. $Sd(F_{5,15})=\sqrt{V(F_{5,15})}=0.935$.
