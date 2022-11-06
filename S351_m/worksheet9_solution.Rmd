@@ -1,0 +1,125 @@
+---
+title: "Worksheet 9 Solution"
+author: "Fred Azizi"
+date: "2022-11-07"
+output: pdf_document
+---
+
+1. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
+
+> a. What is the distribution of the sample mean? 
+
+>> **\underline{Answer:}**
+
+>> $\bar{X} \rightarrow$ mean age of retirees based on a sample of $n=40\rightarrow$ $\bar{X} \sim N(72 , \frac{9}{\sqrt{40}})=N(72,1.423)$
+
+> b. What is the probability that the mean age of the sample exceeds 73 years old?
+
+>> **\underline{Answer:}**
+
+
+\begin{align}
+P(\bar{X}> 73)&= 1- P(\bar{X}\leq 73) \notag\\
+&= 1- P(\frac{\bar{X}-72}{1.423}\leq \frac{73-72}{1.423}) \tag{Standardize to use table}\\
+&=1-P(Z \leq 0.70) \tag{From table, $P(Z<0.70)=0.758$}\\
+&=1-0.7580=0.242 \notag
+\end{align}
+
+
+> c. What is the probability that the mean age of the sample is at most 73 years old?
+
+>> **\underline{Answer:}**
+
+>>Using part b:
+
+$$P(\bar{X}\leq73)=1-P(\bar{X}>73)=0.7580$$ 
+
+> d. What is the probability that the mean age of the sample is between 72 and 75 years old?
+
+>> **\underline{Answer:}**
+
+\begin{align}
+P(72<\bar{X}<75) &=P(\bar{X}<75)-P(\bar{X}\leq 72)\notag\\
+&=P(\frac{\bar{X}-72}{1.423}<\frac{75-72}{1.423})-P(\frac{\bar{X}-72}{1.423}\leq \frac{72-72}{1.423})\notag\\
+&=P(Z<2.11)-P(Z<\leq 0) \notag \\
+&=0.9826-0.5=0.4826 \notag
+\end{align}
+
+
+> e. What is the probability that a randomly selected retiree is over 73 years old?
+
+>> **\underline{Answer:}**
+ 
+>> This question is asking for $P(X>73)$. We can't answer this question since we don't know the distribution of the population. We only know the distribution of $\bar X$, not $X$ itself (later, we will learn how we may be able to estimiate this from data).  
+
+\newpage
+
+2. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.
+
+> a. Find the probability that a randomly selected American adult plays Poker for more than 5 hours per week. 
+
+>> **\underline{Answer:}**
+
+>> If we define $X$ as the amount of time spent by American adults playing Poker, then $X \sim N\left(\mu=4, \sigma=1.25\right)$.
+
+$$
+P(X>5)=1-P(X\leq 5)=1-P(Z\leq 0.8)=1-0.7881=0.2119
+$$
+
+> b. If four American adults are randomly selected, find the probability that: 
+
+>> i. their average number of hours spent playing Poker is more than  5  hours per week. 
+
+>>> **\underline{Answer:}**
+
+>>> We know that $\bar{X} \sim N\left(4, \frac{1 \cdot 25}{\sqrt{4}}\right)$. Hence:
+
+\begin{align}
+P(\bar{X}>5)&=1-P[\bar{X}\leq 5]\notag\\
+&=1-P\left(\frac{\bar{X}-4}{0.625} \leq \frac{5-4}{0.625}\right) \notag\\
+&=1-P[Z<1.6]=1-0.9452=0.0548 \notag
+\end{align}
+
+>> ii. their average number of hours spent playing Poker is between 3 and 6 hours per week.
+
+>>> **\underline{Answer:}**
+
+\begin{align}
+P(3<\bar{X}<6)&=P(\bar{X}<6)-P(\bar{X}\leq 3)\notag\\
+&=P(Z<3.2)-P(Z<-1.6)\notag\\
+&= 0.9993 - 0.0548=0.9445 \notag
+\end{align}
+
+>> iii. all four play Poker for more than 5 hours per week.
+
+>>> **\underline{Answer:}**
+
+$$
+P(x>5) \cdot P(x>5) \cdot P(x>5) \cdot P(x>5)=\{P(x>5)\}^{4}=(0.2119)^{4}=0.002 
+$$
+\newpage
+
+3. To estimate the mean salary for a population of 500 employees, the president of a certain company selected at random a sample of 40 employees.
+
+> a. Would you use the finite population correction factor in calculating the standard error of the sample mean in this case? Explain.
+
+>> **\underline{Answer:}**
+
+>> $\frac{n}{N}=\frac{40}{500}=0.08>0.05 \Rightarrow$ FPC is needed.
+
+> b. If the population standard deviation is $\$ 800$, compute the standard error both with and without using the finite population correction factor.
+
+>> **\underline{Answer:}**
+
+>> With FPC:
+
+$$
+\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}} =\sqrt{\frac{500-40}{500-1}} \cdot \frac{800}{\sqrt{40}} =121.4475
+$$
+
+
+>> Without FPC:
+
+$$
+\sigma_{\bar{X}}=\frac{\sigma}{\sqrt{n}}=\frac{800}{\sqrt{40}}=126.4911
+$$
