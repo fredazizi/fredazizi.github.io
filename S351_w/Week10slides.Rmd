@@ -1,0 +1,56 @@
+---
+title: "Week 10"
+author: "Fred Azizi"
+date: "2022-11-09"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+
+
+## Quick review (1)
+
+A lot of confusing/similar terms...What they mean??
+
+* Population
+
+* Sample
+
+* Sample means
+
+* distribution of sample vs distribution of sample means vs distribution of population
+
+## Quick review (2)
+
+
+**Central Limit Theorem**
+
+ **The sampling distribution of the mean of a random sample drawn from any population is approximately normal for a sufficiently large sample size.**
+ 
+ * \textcolor{red}{Mean} of distribution of the sampling mean is the same as mean of the population, $\mu_{\bar{X}}=\mu$.
+ * Standard deviation of the sampling distribution (\textcolor{red}{standard error} of the mean is $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt n}$.
+ * $\bar{X} \sim N(\mu,\frac{\sigma}{\sqrt n})$.
+ * Finite population correction for standard error: 
+ $$\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}}$$
+    + Rule of thumb: Use for population that is at least 20 times larger than the sample size
+    
+## Quick review (3)
+
+Play with this applet for better understanding of CLT:
+
+https://onlinestatbook.com/stat_sim/sampling_dist/index.html

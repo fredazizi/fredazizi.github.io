@@ -27,3 +27,5 @@ Class (10/19): [Slides](Week7slides.pdf), [Worksheet](Worksheet7.pdf), [Workshee
 Class (10/26): [Slides](Week8slides.pdf), [Worksheet](Worksheet8.pdf), [Worksheet 8 solution](worksheet8_solution.pdf) \
 
 Class (11/02): [Slides](Week9slides.pdf), [Worksheet](Worksheet9.pdf), [Worksheet 9 solution](worksheet9_solution.pdf) \
+
+Class (11/09): [Slides](Week10slides.pdf), [Worksheet](Worksheet10.pdf), [Worksheet 10 solution](worksheet10_solution.pdf) \

@@ -1,0 +1,47 @@
+---
+title: "Worksheet 10"
+author: "Fred Azizi"
+date: "2022-11-09"
+output: pdf_document
+---
+
+1. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
+
+
+> a. What is the distribution of the sample mean? 
+
+> b. What is the probability that the mean age of the sample exceeds 73 years old?
+
+
+> c. What is the probability that the mean age of the sample is at most 73 years old?
+
+
+> d. What is the probability that the mean age of the sample is between 72 and 75 years old?
+
+
+> e. What is the probability that a randomly selected retiree is over 73 years old?
+
+
+\newpage
+
+2. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.
+
+> a. Find the probability that a randomly selected American adult plays Poker for more than 5 hours per week. 
+
+> b. If four American adults are randomly selected, find the probability that: 
+
+>> i. their average number of hours spent playing Poker is more than  5  hours per week. 
+
+>> ii. their average number of hours spent playing Poker is between 3 and 6 hours per week.
+
+>> iii. all four play Poker for more than 5 hours per week.
+
+\newpage
+
+3. To estimate the mean salary for a population of 500 employees, the president of a certain company selected at random a sample of 40 employees.
+
+> a. Would you use the finite population correction factor in calculating the standard error of the sample mean in this case? Explain.
+
+
+> b. If the population standard deviation is $\$ 800$, compute the standard error both with and without using the finite population correction factor.
+
