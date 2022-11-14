@@ -40,5 +40,5 @@ classes average 77%, with a standard deviation of 10%. What is the probability t
 
 > c. Use formula of binomial probability to compare the results. 
 
-> d. What is the probability that we have less than 95 heads? (Use continuity correction factor)
+> d. What is the probability that we have less than or equal to 95 heads? (Use continuity correction factor)
 

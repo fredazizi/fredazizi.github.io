@@ -18,4 +18,4 @@ Class (10/17): [Slides](Week6slides.pdf), [Worksheet 6](Worksheet6.pdf), [Worksh
 Class (10/24): [Slides](Week7slides.pdf), [Worksheet 7](Worksheet7.pdf), [Worksheet 7 solution](worksheet7_solution.pdf)\
 Class (10/31): [Slides](Week8slides.pdf), [Worksheet 8](Worksheet8.pdf), [Worksheet 8 solution](worksheet8_solution.pdf)\
 Class (11/07): [Slides](Week9slides.pdf), [Worksheet 9](Worksheet9.pdf), [Worksheet 9 solution](worksheet9_solution.pdf)\
-Class (11/14): [Slides](Week10slides.pdf), [Worksheet 10](Worksheet10.pdf), [Worksheet 10 solution(place holder)](worksheet9_solution.pdf)\
+Class (11/14): [Slides](Week10slides.pdf), [Worksheet 10](Worksheet10.pdf), [Worksheet 10 solution](worksheet10_solution.pdf)\
