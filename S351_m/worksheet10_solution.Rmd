@@ -1,0 +1,163 @@
+---
+title: "Worksheet 10 Solution"
+author: "Fred Azizi"
+date: "2022-11-14"
+output: pdf_document
+---
+
+1. Michael is running for president. The proportion of voters who favor Michael is 0.8. A random sample of 100 voters is taken.
+
+a. What is the distribution of the sample proportion $\hat{p}$ ?
+
+> **\underline{Answer:}**
+
+$$
+p=0.8 \quad n=100 \rightarrow n\times p=80, \quad n(1-p)=20 \geqslant 5
+$$
+
+> Therefore $\hat{p}$ is Normal. $\hat{\mu}_{\hat{p}}=p=0.8$
+
+$$
+\sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}=\sqrt{\frac{0.8 \times 0.2}{100}}=0.04 \quad \therefore \hat{p} \sim N\left(0.8,0.04^{2}\right)
+$$
+\  
+
+
+b. What is the probability that the number of voters in the sample who will vote for Michael will be between 80 and 90 ?
+
+> **\underline{Answer:}**
+
+> Let $X$ be the number of voters in the sample voting for Michad
+
+$$
+\begin{aligned}
+P[80<X<90] &=P\left[\frac{80}{100}<\frac{X}{100}<\frac{90}{100}\right] \notag \\
+&=P[0.8<\hat{p}<0.9] \notag\\
+&=P\left[\frac{0.8-0.8}{0.04}<\frac{\hat{p}-0.8}{0.04}<\frac{0.9 .0 .8}{0.04}\right] \notag\\
+&=P[0<z<2.5] \\
+&=P[z<2.5]-P[z<0] \\
+&=0.9938-0.5\\
+&=0.4938
+\end{aligned}
+$$
+
+c. What is the probability that the number of voters in the sample who will not favor Michael will be more than 16?
+
+> **\underline{Answer:}**
+
+> If we define $X$ as what we had in part b, then we are looking for the probability  of 100-$X$>16.
+
+$$
+\begin{aligned}
+P[100-X>16]&=p[100-16>X] \\
+&= P[X<84]\\
+&=P\left[\frac{X}{100}<\frac{84}{100}\right]\\
+&=P[\hat{p}<0.84]\\
+&=P\left[\frac{\hat{p}-0.8}{0.04}<\frac{0.84-0.8}{0.04}\right] \\
+&=P[Z<1]\\
+&=0.8413
+\end{aligned}
+$$
+
+\newpage
+
+2. The chairman of the Biology department in a certain college believes that $70 \%$ of the department's graduate internships are given to international students. A random sample of 50 graduate interns is taken.
+
+a. What is the distribution of the sample proportion? 
+
+> **\underline{Answer:}**
+
+
+$$
+\begin{aligned}
+&p=0.7 \quad n=50 \\
+&\rightarrow \;n p=35 \geq5 \\
+& \quad \quad n(1-p)=15 \geq 5
+\end{aligned}
+$$
+
+> Therefore, we can use Central Limit Theorem. 
+
+$$
+\begin{aligned}
+& \mu_{\hat{p}}=p=0.7 \quad \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}=\sqrt{\frac{0.7 \times 0.3}{50}}=0.065 \\
+& \therefore \hat{p} \sim N\left(0.7,0.065^{2}\right) 
+\end{aligned}
+$$
+
+\  
+
+
+b. What is the probability that the sample proportion $\hat{p}$ is between $0.65$ and $0.73$ ?
+
+> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+P[0.65<\hat{p}<0.73]&=P\left[\frac{0.65-0.7}{0.065}<Z<\frac{0.73-0.7}{0.065}\right] \\
+&= P[-0.77<Z<0.46]\\
+&=P[Z<0.46]-P[Z<-0.77] \\
+&= 0.6772-0.2206\\
+&=0.4566
+\end{aligned}
+$$
+
+\  
+
+c. What is the probability that the sample proportion $\hat{p}$ is within $\pm .05$ of the population proportion p?
+
+> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+ P[\hat{p} \text { is between } p \pm 0.05]&=P[p-0.05<\hat{p}<p+0.05] \\
+&= P[0.7-0.05<\hat{p}<0.7+0.05]\\
+&=P[0.65<\hat{p}<0.75] \\
+&= P\left[\frac{0.65-0.7}{0.065}<Z<\frac{0.75-0.7}{0.065}\right]\\
+&=P[-0.77<z<0.77] \\
+&= P[z<0.77]-P[z<-0.77]\\
+&=0.7794-0.2206 \\
+&= 0.5588
+\end{aligned}
+$$
+
+\newpage
+
+3. Suppose that about $13 \%$ of the population is left-handed. A 200-seat auditorium has been built with 15 "lefty seats," seats that have the builtin desk on the left rather than the right arm of the chair. In a class of 90 students, what's the probability that there will not be enough seats for the left-handed students?
+
+> **\underline{Answer:}**
+
+> $p=0.13\;, n=90$. Both $n$ and $p$ are for left handed students) $x p$ and $n(1-p) \geqslant 5 \Rightarrow \hat{p} \sim$ Normal
+
+$$
+\mu_{\hat{p}}=0.13\quad  \sigma_{\hat{p}}=\sqrt{\frac{0.13(0.87)}{90}}=0.035 \quad \therefore \hat{p} \sim N(0.3,0.035)
+$$
+
+\begin{align}
+P[\text{not enough seats for left handed students}]&=P[\# \;\text{left handed students} > \# \; \text{left handed seats}]\notag\\
+&=P[\text{proportion of left-handed students} > \text{proportion of left-handed}]\notag\\
+&=P\left[\hat{p}>\frac{15}{200}\right] \notag\\
+&=P[\hat{p}>0.075]\notag\\
+&=P\left[\frac{\hat{p}-0.13}{0.035}>\frac{0.075-0.13}{0.035}\right]\notag\\
+&=P[Z>-1.57] \notag\\
+&=1-P[Z<1.57]\notag\\
+&=0.9418\notag
+\end{align}
+
+\newpage
+
+4. A professor of statistics noticed that the marks in his course are normally distributed. He has also noticed
+that his morning classes average 73%, with a standard deviation of 12% on their final exams. His afternoon
+classes average 77%, with a standard deviation of 10%. What is the probability that the mean mark of four randomly selected students from a morning class is greater than the average mark of four randomly selected students from an afternoon class?
+
+> **\underline{Answer:}**
+
+> Since both populations are Normally distributed, we don't care that sample sizes are less than 30. 
+
+> We want $P(\bar{X}_{\text{Morning}}>\bar{X}_{\text{Afternoon}})$ or equivalently $P(\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}>0)$. We know that $\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}\sim N(.73-.77=-0.04,\sqrt{\frac{.12^2}{4}+\frac{.1^2}{4}}=.078)$.
+
+\begin{align}
+P(\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}>0)&=P(Z>\frac{0-(-0.04)}{.078}) \notag\\
+&= P(Z>0.51) \notag\\
+&=0.305\notag
+\end{align}
