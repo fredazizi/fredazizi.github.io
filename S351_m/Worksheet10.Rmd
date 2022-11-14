@@ -25,18 +25,14 @@ output: pdf_document
 
 \newpage
 
-3. Suppose that about $13 \%$ of the population is left-handed. A 200-seat auditorium has been built with 15 "lefty seats," seats that have the built-in desk on the left rather than the right arm of the chair. In a class of 90 students, what's the probability that there will not be enough seats for the left-handed students?
-
-\newpage
-
-4. A professor of statistics noticed that the marks in his course are normally distributed. He has also noticed
+3. A professor of statistics noticed that the marks in his course are normally distributed. He has also noticed
 that his morning classes average 73%, with a standard deviation of 12% on their final exams. His afternoon
 classes average 77%, with a standard deviation of 10%. What is the probability that the mean mark of four randomly selected students from a morning class is greater than the average mark of four randomly selected students from an afternoon class?
 
 
 \newpage
 
-5. In 200 tosses of a fair coin:
+4. In 200 tosses of a fair coin:
 
 > a. What is the expected value and standard deviation of number of heads?
 
