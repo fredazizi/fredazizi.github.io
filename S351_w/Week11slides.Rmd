@@ -1,0 +1,54 @@
+---
+title: "Week 10"
+author: "Fred Azizi"
+date: "2022-11-16"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+- \usepackage{xcolor}
+- \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+
+
+## Quick review (1)
+
+**Goal: Estimating population proportion (or number of) of successes**
+
+Examples: Proportion of people voting for a certain candidate, Number of defectives in a production system, etc. 
+
+* Our estimate: $\hat{p}= \frac{x}{n}$ where $x$ is the number of successes in sample and $n$ is sample size.
+
+* Distribution of $\hat{p}$:
+   + Under the conditions that $np\geq 5$ and $n(1-p) \geq 5$, by CLT, $\hat{p}\sim N(\mu=p, \sigma=\sqrt{\frac{p(1-p)}{n}}$.
+   + For calculation of $\sigma$ above, if $p$ is not known, replace it with $\hat{p}$. 
+   + What if conditions are not satisfied? 
+
+## Quick review (2)
+
+**Approximation of Binomial Probability using Normal distribution**
+
+* If $X\sim \text{Bin}(n,p)$, then We can use $Y\sim N\left(np, \sqrt{np(1-p)}\right)$ to approximate probabilities
+
+* $P(X=x)\approx P(x-0.5\leq Y \leq x+0.5)$ (0.5 is **continuity correction factor**)
+
+* $P(X\leq x) \approx P(Y< x+0.5)$
+
+## Quick review (3)
+
+Distribution of difference between two sample means. Now we are interested in $\mu_1-\mu_2$.
+
+* Using CLT and the fact that difference of Normally distributed RVs is Normal, $\bar{X}_1-\bar{X}_2\sim N\left(\mu=\mu_1-\mu_2, \sigma_{\bar{X}_1-\bar{X}_2}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}\right)$.
+* To use CLT, $n_1\geq30$ and $n_2\geq30$. If this is not satisfied, we need Normal populations for both samples.  
