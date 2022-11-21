@@ -101,6 +101,6 @@ Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$
 
 >>  **\underline{Answer:}**
 
->> If we know the true proportion $\frac{x}{N}$ of smokers is between $(0.2128,0.3798)$ then number of smokers among 150 people is $150 \times$ (0.2128, 0.3798)= (31.92, 56.97). But since we are the **number** of smokers, this should be an integer. We need to round it to (31, 57).  
+>> If we know the true proportion $\frac{x}{N}$ of smokers is between $(0.2128,0.3798)$ then number of smokers among 150 people is $150 \times$ (0.2128, 0.3798)= (31.92, 56.97). But since we want the **number** of smokers (i.e. an integer), this should be an integer. We need to round it to (31, 57).  
 
 

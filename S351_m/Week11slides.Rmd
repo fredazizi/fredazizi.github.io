@@ -7,8 +7,10 @@ output:
      theme: "Frankfurt"
      colortheme: "crane"
 header-includes:
-- \usepackage{xcolor}
-- \usepackage{adjustbox}
+  - \setbeamertemplate{navigation symbols}{}
+  - \setbeamertemplate{footline}[page number]
+  - \usepackage{xcolor}
+  - \usepackage{adjustbox}
 ---
 
 ```{r setup, include=FALSE}
