@@ -68,9 +68,9 @@ Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$
 
 >> **\underline{Answer:}**
 
->> It won't change since the width of confidence interval only depends on confidence level and sample size. So the confidence interval will only **shift** when we change the sample mean.
+>> It won't change since the width of the confidence interval depends only on confidence level and sample size. Therefore, the confidence interval will only **shift** when we change the sample mean.
 
-\newpage 
+\vspace{2cm}
 
 2. A sample of 121 cans of coffee showed an average weight of 16 ounces and a standard deviation of $1$ ounces. Find an 80\%  and a 98\% confidence interval for the population mean.
 
@@ -78,12 +78,12 @@ Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$
 
 > Since $\sigma$ is unknown, We must use $t$-distribution. $df=n-1= 121-1=120$. We note that for a $80\%$ CI, we need to find $t_{0.2/2}=t_{0.1, df=120}=1.289$ and for $98\%$ CI, we need to find $t_{0.02/2}=t_{0.01, df=120}=2.358$.
 
-> The 80% CI: $\bar{x} \pm t_{\alpha_2}\frac{s}{\sqrt n}= 16 \pm 1.289\times \frac{1}{\sqrt{121}}= (15.88, 16.12)$.
+> The 80% CI: $\bar{x} \pm t_{\alpha/2}\frac{s}{\sqrt n}= 16 \pm 1.289\times \frac{1}{\sqrt{121}}= (15.88, 16.12)$.
 
-> The 98% CI: $\bar{x} \pm t_{\alpha_2}\frac{s}{\sqrt n}= 16 \pm 2.358\times \frac{1}{\sqrt{121}}= (15.79, 16.21)$.
+> The 98% CI: $\bar{x} \pm t_{\alpha/2}\frac{s}{\sqrt n}= 16 \pm 2.358\times \frac{1}{\sqrt{121}}= (15.79, 16.21)$.
 
 
-\newpage 
+\vspace{2cm}
 
 3. Among 81 individuals sampled from the population, 24 smokers were observed. 
 
