@@ -1,0 +1,60 @@
+---
+title: "Worksheet 12"
+author: "Fred Azizi"
+date: "2022-11-23"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
+output: pdf_document
+---
+
+
+1. Suppose that the amount of time teenagers spend weekly working at part-time jobs is normally distributed with a mean of 300 minutes and standard deviation of 36 minutes. Suppose that we sampled this population with a sample size of $n$ and the average of the sample is $\bar{X}_n=360$. 
+
+> a. Construct confidence intervals for the population mean with the following confidence levels and sample sizes:
+
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$\\
+\hline
+90\% & & \\
+95\% & & \\
+99\% & & \\
+\hline
+\end{tabular}
+\end{center}
+
+
+
+> b. Does the CI become larger or smaller as the confidence level increases?
+
+> c. Does the Cl become larger or smaller as the sample size increases?
+
+> d. With fixed confidence level and sample size, would the CI become larger/smaller/not change if the sample mean were smaller than 360?
+
+\newpage
+
+
+2. A sample of 121 cans of coffee showed an average weight of 16 ounces and a standard deviation of $1$ ounces. Find an 80\%  and a 98\% confidence interval for the population mean.
+
+
+
+\newpage
+
+3. Among 81 individuals sampled from the population, 24 smokers were observed. 
+
+> a. Develop the $90 \% \mathrm{Cl}$ for the population proportion.
+
+> b. If now you have a new sample of 150 individuals, determine an interval for the number of smokers based on your answer from question 3.
+
+
