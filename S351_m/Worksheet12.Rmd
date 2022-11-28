@@ -1,0 +1,48 @@
+---
+title: "Worksheet 12"
+author: "Fred Azizi"
+date: "2022-11-28"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
+output: pdf_document
+---
+
+1. A battery manufacturer claims their product has a life expectancy of 90 hours. An improvement production process is believed to make an increase in the life expectancy of batteries. A sample of 36 batteries showed an average life of $93$ hours. Assume from past information, the standard deviation of the life expectancy is 9 hours.
+
+> a. Formulate the hypotheses for this problem.
+
+> b. Calculate the test statistic.
+
+> c. Make a decision at $0.1$ significance level. State your conclusion in terms of the problem.
+
+> d. Make a decision at $0.01$ significance level. What is your conclusion. 
+
+\newpage
+
+2. The average gasoline price of one of the major oil companies is $\$ 1.75$ per gallon. Because of cost reduction measures, it is believed that there has been a significant reduction in the average price. In order to test this belief, a sample of 36 of the company's gas stations were randomly selected and yielded an average price $\$ 1.65$ per gallon. Assume the standard deviation of the population is $\$ 0.12$.
+
+> a. State the null and the alternative hypothesis for this problem.
+
+> b. Calculate the test statistic. 
+
+> c. At $5 \%$ level of significance, test the company's claim.
+
+\newpage
+
+3. To determine the average price of hotel rooms in Atlanta, a sample of 49 hotels was selected and yielded an average price of hotel rooms being $\$ 120$. The population standard deviation was found to be $\$ 16$.
+
+> a. Formulate the hypotheses to determine whether the average price of hotel rooms is significantly different from $\$ 124.5$.
+
+> b. Calculate the test statistic.
+
+> c. At $10 \%$ level of significance, use critical value approach to test the hypotheses. What is the conclusion? 
+
+> d. At $90 \%$ confidence, using the confidence interval approach to test the hypotheses. What is the conclusion?

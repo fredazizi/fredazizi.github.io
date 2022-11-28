@@ -1,0 +1,67 @@
+---
+title: "Week 11"
+author: "Fred Azizi"
+date: "2022-11-28"
+fontsize: 9pt
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+  - \setbeamertemplate{navigation symbols}{}
+  - \setbeamertemplate{footline}[page number]
+  - \usepackage{xcolor}
+  - \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Where do I get slides/worksheets/solution?
+
+![](qrcode_fredazizi.github.io.png){width="164"}
+
+Or go to fredazizi.github.io/Teaching
+
+## Quick review (1)
+
+- In **hypothesis testing** we want to consider the plausibility of a specific claim (claims are called hypotheses)
+
+>> $\mathrm{H}_0$ : "H-naught," "H-null," or "null hypothesis."
+
+>> $\mathrm{H}_1$ (sometimes written as $H_a$ ): "alternative hypothesis."
+
+- The null hypothesis $(H_0)$
+   + Gets the benefit of the doubt
+   + The default belief or “status quo”
+   + Associated with no change in course
+
+- The alternative hypothesis $(H_1)$
+   + Carries the burden of proof
+   + Change our belief
+   + Requires us to take some action or change our action
+
+- Three setup for tests: 
+   + Alternative: $\mu\neq \mu_0$ (two tailed test) 
+   + Alternative:  $\mu> \mu_0$ or $\mu< \mu_0$(right/left tail  test)
+
+## Quick review (2)
+
+Procedure of testing When $\sigma$ is known, $\quad Z_{\bar{X}}=\frac{\bar{X}-\mu}{\sigma / \sqrt{n}} \sim N(0,1)$
+
+(1) Identify the hypotheses with a hypothesized value for $\mu, \mu_{H_0}$.
+
+(2) Determine the significance level, $\alpha$
+
+(3) Calculate the $z$-test statistic $z_{\bar{x}}=\frac{\bar{x}-\mu_{H_0}}{\sigma / \sqrt{n}}$
+
+(4) Critical value method (or rejection region method)
+   + critical $z$-score identifies the rejection region
+   + determined by $\alpha: z_{\alpha}$ (upper-tail), $-z_{\alpha}$ (lower-tail) or $\pm z_{\alpha / 2}$ (2-tail)
+   +  compare the test statistic with the critical value(s): Reject $H_0$ if test statistic falls in the rejection region
+   
+(5)  p-value method:
+   +  The p-value (sometimes referred to as the observed level of significance) is the probability of observing a sample mean (or test statistic) at least as extreme as the one selected for the hypothesis test, assuming the null hypothesis is true.
+   + Compare p-value with $\alpha$. Reject $H_o$ if p-value is less than $\alpha$.
+
