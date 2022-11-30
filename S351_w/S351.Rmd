@@ -33,3 +33,5 @@ Class (11/09): [Slides](Week10slides.pdf), [Worksheet](Worksheet10.pdf), [Worksh
 Class (11/16): [Slides](Week11slides.pdf), [Worksheet](Worksheet11.pdf), [Worksheet 11 solution](worksheet11_solution.pdf) \
 
 Class (11/23): [Slides](Week12slides.pdf), [Worksheet](Worksheet12.pdf), [Worksheet 12 solution](worksheet12_solution.pdf) \
+
+Class (11/30): [Slides](Week13slides.pdf), [Worksheet](Worksheet13.pdf), [Worksheet 13 solution](worksheet13_solution.pdf) 

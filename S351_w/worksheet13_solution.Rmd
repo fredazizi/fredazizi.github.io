@@ -1,0 +1,163 @@
+---
+title: "Worksheet 13 Solution"
+author: "Fred Azizi"
+date: "2022-11-30"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
+output: pdf_document
+---
+
+1. A battery manufacturer claims their product has a life expectancy of 90 hours. An improvement production process is believed to make an increase in the life expectancy of batteries. A sample of 36 batteries showed an average life of $93$ hours. Assume from past information, the standard deviation of the life expectancy is 9 hours.
+
+> a. Formulate the hypotheses for this problem.
+
+>> **\underline{Answer:}**
+
+$$
+H_{0}: \mu \leq 90 
+$$
+
+$$
+H_{1}: \mu>90
+$$
+
+> b. Calculate the test statistic.
+
+>> **\underline{Answer:}**
+
+
+$$
+\begin{aligned}
+&\bar{x}=93 \\
+&\sigma=9 \\
+&n=36
+\end{aligned} \quad z_{\text {calc }}=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{93-90}{9 / \sqrt{36}}=2
+$$
+
+> c. Make a decision at $0.1$ significance level. State your conclusion in terms of the problem.
+
+>> **\underline{Answer:}**
+
+$$
+c=\left|z_{\alpha}\right|=\left|z_{0.1}\right|=1.28 \quad\left|z_{c a l c}\right|>c \Rightarrow \text { Reject } H_{0}.
+$$
+
+>> At $10\%$ level of significance, there is statistical evidence to suggest that the population mean is greater than 90.
+
+
+> d. Make a decision at $0.01$ significance level. What is your conclusion. 
+
+
+>> **\underline{Answer:}**
+
+$$
+c=\left|z_{\alpha}\right|=\left|z_{0.10}\right|=2.33 \quad\left|z_{c a l c}\right|<c \Rightarrow \text {Fail to reject } H_{0}.
+$$
+
+>> At $1\%$ level of significance, there isn't enough statistical evidence to suggest that the population mean is greater than 90.
+
+
+
+
+2. The average gasoline price of one of the major oil companies is $\$ 1.75$ per gallon. Because of cost reduction measures, it is believed that there has been a significant reduction in the average price. In order to test this belief, a sample of 36 of the company's gas stations were randomly selected and yielded an average price $\$ 1.65$ per gallon. Assume the standard deviation of the population is $\$ 0.12$.
+
+> a. State the null and the alternative hypothesis for this problem.
+
+>> **\underline{Answer:}**
+
+$$
+H_{0}: \mu \geqslant 1.75 
+$$
+
+$$
+ H_{1}: \mu<1.75
+$$
+
+
+> b. Calculate the test statistic. 
+
+>> **\underline{Answer:}**
+
+>> $\bar{x}=1.65 \quad \sigma=0.12 \quad n=36$.
+
+$$
+z_{\text {calc }}=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{1.65-1.75}{0.12 / \sqrt{36}}=-5
+$$
+
+> c. At $5 \%$ level of significance, test the company's claim.
+
+
+>> **\underline{Answer:}**
+
+
+$$
+c=\left|z_{\alpha}\right|=\left|z_{0.05}\right|=1.645 \text {. }
+$$
+
+>> $\mid z_{calc}$ $\mid>c \Rightarrow$ Reject $H_o$.
+
+>> At $5 \%$ level of significant, there is statistical evidence lo suggest that that population mean is less than $\$ 1.75$. 
+
+
+3. To determine the average price of hotel rooms in Atlanta, a sample of 49 hotels was selected and yielded an average price of hotel rooms being $\$ 120$. The population standard deviation was found to be $\$ 16$.
+
+> a. Formulate the hypotheses to determine whether the average price of hotel rooms is significantly different from $\$ 124.5$.
+
+>> **\underline{Answer:}**
+
+$$
+H_{0}: \mu=124.5 
+$$
+
+$$
+H_{a}: \mu \neq 124.5
+$$
+
+> b. Calculate the test statistic.
+
+>> **\underline{Answer:}**
+
+
+$$
+\begin{aligned}
+&\bar{x}=120 \quad n=49 \quad \sigma=16 \\
+&z=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{120-124.5}{16 / \sqrt{49}}=-1.97
+\end{aligned}
+$$
+
+
+> c. At $10 \%$ level of significance, use critical value approach to test the hypotheses. What is the conclusion? 
+
+>> **\underline{Answer:}**
+
+>> $c=\left|Z_{\alpha / 2}\right|=\left|Z_{0.05}\right|=1.645$
+
+>> $|Z|>C \Rightarrow$ Reject $H_o$. At $10 \%$ level of significant, there is statistical evidence to suggest that the population mean in different from $124.5$.
+
+
+> d. At $90 \%$ confidence, using the confidence interval approach to test the hypotheses. What is the conclusion?
+
+>> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+&1-\alpha=0.9 \Rightarrow \alpha/2=0.05 \Rightarrow z_{\alpha / 2}=1.645 \\
+&E=z_{\alpha / 2} \cdot \frac{\sigma}{\sqrt{n}}=3.76 .
+\end{aligned}
+$$
+
+>> Hence, $90 \%$ CI for population mean $=\bar{x} \pm E$
+
+$$
+=120 \pm 3.76=(116.24,123.76)
+$$
+
+>> since the $90 \%$ CI for true population mean does not include the $H_o$ value of 124.5, there is statistical evidence to suggest that mean of the population  is different from $124.5$.

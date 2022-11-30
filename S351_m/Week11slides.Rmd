@@ -1,6 +1,7 @@
 ---
 title: "Week 10"
 author: "Fred Azizi"
+institues:
 date: "2022-11-21"
 output: 
    beamer_presentation:
