@@ -21,4 +21,4 @@ Class (11/07): [Slides](Week9slides.pdf), [Worksheet 9](Worksheet9.pdf), [Worksh
 Class (11/14): [Slides](Week10slides.pdf), [Worksheet 10](Worksheet10.pdf), [Worksheet 10 solution](worksheet10_solution.pdf)\
 Class (11/21): [Slides](Week11slides.pdf), [Worksheet 11](Worksheet11.pdf), [Worksheet 11 solution](worksheet11_solution.pdf)\
 Class (11/28): [Slides](Week12slides.pdf), [Worksheet 12](Worksheet12.pdf), [Worksheet 12 solution](worksheet12_solution.pdf)\
-Class (12/05): [Slides](Week12slides.pdf), [Worksheet 13](Worksheet13.pdf), [Worksheet 13 solution](worksheet13_solution.pdf)\
+Class (12/05): [Testing Cheatsheet](cheatsheet.pdf), [Worksheet 13](Worksheet13.pdf), [Worksheet 13 solution](worksheet13_solution.pdf)\
