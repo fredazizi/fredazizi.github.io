@@ -1,0 +1,122 @@
+---
+title: "Worksheet 13 Solution"
+author: "Fred Azizi"
+date: "2022-12-05"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
+output: pdf_document
+---
+
+1. A psychologist claims that the mean age at which children start walking is $12.5$ months. The following data give the age at which 18 randomly selected children started walking,
+
+$$
+\begin{aligned}
+& 15,11,13,14,15,12,15,10,16 \\
+& 17,14,16,13,15,15,14,11,13
+\end{aligned}
+$$
+
+> which yields a mean $13.83$ months and standard deviation 1.917. Test at the $5 \%$ level of significance if the mean age at which children start walking is over $12.5$ months.
+
+
+> a. Formulate the hypotheses for this problem.
+
+>> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+& H_{0}: \mu \leqslant 12.5 \\
+& H_{1}: \mu>12.5
+\end{aligned}
+$$
+
+> b. Calculate the test statistic.
+
+>> **\underline{Answer:}**
+
+
+>> $\bar{X}=13.83 \quad s=1.917 \quad n=18 \quad \alpha=0.05$
+
+$$
+t_{\text { }}=\frac{\bar{x}-\mu}{s / \sqrt{n}}=\frac{13.83-12.5}{1.917 / \sqrt{18}}=2.9435
+$$
+
+> c. What is the degrees of freedom? Find the critical value.
+
+>> **\underline{Answer:}**
+
+
+$$
+d f=n-1=17 \Rightarrow t_{0.05,17}=1.74
+$$
+
+>> since this is a right tailed test, We reject the null hypothesis if test statistics is greater than  $t_{0.05,17}$. In this case, 2.9435? 1.74, we reject the null.
+
+
+> d. What is the $95 \%$ confidence interval for the population mean age at which children start walking?
+
+>> **\underline{Answer:}**
+
+
+>> $95 \%$ CI $=\bar{x} \pm E$ where $E=t_{n-1, \alpha / 2} \cdot \frac{s}{\sqrt{n}}$.
+
+$$t_{17,0.025}=2.11 \quad \Rightarrow E=2.11 \times \frac{1.917}{\sqrt{18}}=0.9534$$
+
+>> Therefore the  $95\%$ CI= $13.83 \pm 0.9534 =(12.8766,14.7834)$.
+
+\vspace{2cm}
+
+2. A nationwide study found that $35 \%$ of teenagers are smokers. A sample of 81 teenagers was drawn from Maryland, and 24 smokers were observed. Test at $10 \%$ level of significance if the proportion of smokers in Maryland is different from the national proportion.
+
+> a. What is the sample proportion?
+
+>> **\underline{Answer:}**
+
+$$
+\hat{p}=\frac{24}{81}=0.2963
+$$
+
+> b. Formulate the hypothesis for this problem.
+
+>> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+& H_{0}: p=0.35 \\
+&  H_{1}: p \neq 0.35
+\end{aligned}
+$$
+
+> c. Calculate the test statistic.
+
+>> **\underline{Answer:}**
+
+$$
+Z_{\text {calc }}= \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}}=\frac{0.2963-0.35}{\sqrt \frac{0.35 \times 0.65}{81}}=-1.0133
+$$
+
+> d. What is your decision based on the critical value and the test statistic?
+
+>> **\underline{Answer:}**
+
+$$
+ Z_{\alpha / 2}=Z_{0.05}=1.645
+$$
+
+>> Since $|Z_{calc}|<Z_{\alpha / 2}$, we fail to reject $H_o$.
+
+
+> e. Write your conclusion in words.
+
+>> **\underline{Answer:}**
+
+>> At $10 \%$ level of significance, there is not enough evidence to conclude that the  proportion of smokers in Maryland is different from the  national proportion.
+

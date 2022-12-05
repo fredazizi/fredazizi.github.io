@@ -1,0 +1,59 @@
+---
+title: "Worksheet 13"
+author: "Fred Azizi"
+date: "2022-12-04"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
+output: pdf_document
+---
+
+1. A psychologist claims that the mean age at which children start walking is $12.5$ months. The following data give the age at which 18 randomly selected children started walking,
+
+$$
+\begin{aligned}
+& 15,11,13,14,15,12,15,10,16 \\
+& 17,14,16,13,15,15,14,11,13
+\end{aligned}
+$$
+
+> which yields a mean $13.83$ months and standard deviation 1.917. Test at the $5 \%$ level of significance if the mean age at which children start walking is over $12.5$ months.
+
+
+> a. Formulate the hypotheses for this problem.
+
+ 
+
+> b. Calculate the test statistic.
+
+ 
+> c. What is the degrees of freedom? Find the critical value.
+
+ 
+> d. What is the $95 \%$ confidence interval for the population mean age at which children start walking?
+
+ 
+\newpage
+
+2. A nationwide study found that $35 \%$ of teenagers are smokers. A sample of 81 teenagers was drawn from Maryland, and 24 smokers were observed. Test at $10 \%$ level of significance if the proportion of smokers in Maryland is different from the national proportion.
+
+> a. What is the sample proportion?
+
+ 
+> b. Formulate the hypothesis for this problem.
+
+ 
+> c. Calculate the test statistic.
+
+ 
+> d. What is your decision based on the critical value and the test statistic?
+ 
+> e. Write your conclusion in words.
+ 
