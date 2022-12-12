@@ -1,0 +1,388 @@
+---
+title: "Review Questions from test bank"
+author: "Fred Azizi"
+date: '2022-12-13'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Chapter 6
+
+Some concepts (NOT ALL): 
+
+- Mutually exclusive $\rightarrow$   No two outcomes can occur at the same time $P(A\cap B)=0$
+
+- exhaustive events
+
+- Complement Rule: $P\left(A^C\right)=1-P(A)$.
+
+- Multiplication Rule: $P(A \text { and } B)=P(B) P(A \mid B)$.
+
+- Addition Rule: $P(A$ or $B)=P(A)+P(B)-P(A$ and $B)$
+
+- Bayes Rule: $P\left(A_i \mid B\right)=\frac{P\left(A_i\right) P\left(B \mid A_i\right)}{P\left(A_1\right) P\left(B \mid A_1\right)+P\left(A_2\right) P\left(B \mid A_2\right)+\cdots+P\left(A_k\right) P\left(B \mid A_k\right)}$.
+
+- Probability Trees
+
+- Joint distribution table
+
+- Marginal probabilites 
+
+- independence 
+
+## Questions
+
+1. If A and B are mutually exclusive events with $P(A) = 0.75$, then $P(B)$:
+
+> a. can be any value between 0 and 1. 
+
+> b. can be any value between 0 and 0.75.
+
+> c. cannot be larger than 0.25.
+
+> d. equals 0.25.
+
+2. If two events are mutually exclusive, what is the probability that both occur at the same time?
+
+> a. 0.00
+
+> b. 0.50
+
+> c. 1.00
+
+> d. Cannot be determined from the information given.
+
+3. If $A$ and $B$ are independent events with $P(A) = .40$ and $P(B) = .50$, then $P(A$ or $B) =$
+
+
+> a. 0.7
+
+> b. 0.35
+
+> c. 0.5
+
+> d. Can not be determined with information given.
+
+4. A college professor classifies his students according to their grade point average (GPA) and their class
+rank. GPA is on a 0.0-4.0 scale, and class rank is defined as the under class (freshmen and
+sophomores) and the upper class (juniors and seniors). One student is selected at random.
+
+\begin{center}
+\begin{tabular}{|c|ccc|c|}
+\hline
+class & under 2.0 & 2.0-3.0 & Over 3.0 & Total \\
+\hline
+Under &  .05 & .25 & .1 & .4 \\
+Upper & .1 & .3 & .2 & .6 \\
+\hline
+Total &  .15 & .55 & .3 & 1\\
+\hline
+\end{tabular}
+\end{center}
+
+> What is the probability that the student is in the under class and has GPA over 3.0?
+
+> What is the probability that the student is in the under class given that the student has GPA over 3.0?
+
+# Chapter 7
+
+Some concepts (NOT ALL): 
+
+- Discrete (Continuous) random variables
+
+- Expected value, variance, and standard deviation
+
+- Binomial distribution
+
+- Poisson distribution
+
+## Questions
+
+1. A lab at the DeBakey Institute orders 150 rats a week for each of the 52 weeks in the year for
+experiments that the lab conducts. Suppose the mean cost of rats used in lab experiments turned out to be $20.00 per week. Interpret this value.
+
+> a. Most of the weeks resulted in rat costs of $20.00
+
+> b. The median cost for the distribution of rat costs is $20.00
+
+> c. The expected or average costs for all weekly rat purchases is $20.00
+
+> d. The rat cost that occurs more often than any other is $20.00
+
+2. In the notation below, $X$ is the random variable, $E$ and $V$ refer to the expected value and variance, respectively. Which of the following is false?
+
+> a. $E(3X+1) = 3E(X)+1$ 
+
+> b. $V(2) =0$   
+
+> c. $V(2X)=4V(X)$
+
+> d. $V(X+3)=V(X)+3$
+
+> e. All of the above are true.
+
+3. The probability distribution of a discrete random variable X is shown below, where X represents the number of motorcycles owned by a family. What is variance of X?
+
+\begin{center}
+\begin{tabular}{|c|cccc|}
+\hline
+x& 0& 1& 2& 3\\
+\hline
+P(x)& 0.2& 0.4& 0.2& 0.2\\
+\hline
+\end{tabular}
+\end{center}
+
+> a. 0.44
+
+> b. 1.3
+
+> c. 3
+
+> d. 0.3
+
+4. Which of the following is not a characteristic of a binomial experiment?
+
+> a. Each trial results in two or more outcomes.
+
+> b. There is a sequence of identical trials.
+
+> c. The trials are independent of each other.
+
+> d. The probability of success p is the same from one trial to another.
+
+5. A recent survey in Montana revealed that 60% of the vehicles traveling on highways, where speed
+limits are posted at 70 miles per hour, were exceeding the limit. Suppose you randomly record the
+speeds of ten vehicles traveling on US 131 where the speed limit is 70 miles per hour. Let $X$ denote the number of vehicles that were exceeding the limit.
+
+> Find $P(X\leq 2)$, $P(X>2)$, $P(X=2)$, $P(X<2)$, $P(X \geq 2)$, $P(2 \leq X\leq 5)$, $P(2 < X\leq 5)$, $P(2 \leq X< 5)$, $P(2 < X < 5)$.
+
+> Find $E(X)$, $Var(X)$, $sd(X)$.
+
+6. Which of the following is not true?
+
+> a. The number of customers arriving at a gas station in Christmas day is an example of Poisson experiment. 
+
+> b. If parameter of Poisson distribution is 6.3 it can be interpreted as the expected number of occurance in Poisson experiment. 
+
+> c. The length of a movie is an example of Poisson distribution.
+
+> d. If  $X\sim$ Poisson(4), then $sd(X)=2$.
+
+7.  Let $X$ be a Poisson random variable with $\mu$= 6. Use the table of Poisson probabilities to calculate:
+
+> a. $P(X \leq 8)$
+
+> b. $P(X=8)$
+
+> c. $P(X \geq 5)$
+
+> d. $P(6 \leq X \leq 10)$
+
+# Chapter 8
+
+Some concepts: 
+
+- Continuous random variables/ PDF
+
+- Uniform distribution
+
+- Normal distribution
+
+## Questions
+
+1. Which of the following is always true for all probability density functions of continuous random
+variables?
+
+> a. The probability at any single point is zero.
+
+> b. They contain an uncountable number of possible values.
+
+> c. The total area under the density function $f(x)$ equals 1.
+
+> d. All of these choices are true.
+
+2. Suppose $f(x) = 0. 25$. What range of possible values can $X$ take on and still have the density function be legitimate?
+
+> a. [0, 4]
+
+> b. [4, 8] 
+
+> c. [-2, +2]
+
+> d. All of these choices are true.
+
+3. If the random variable X has a uniform distribution between 40 and 50, then $P(35 \leq X < 45)$ is:
+
+> a. 1.0 
+
+> b. 0.5 
+
+> c. 0.1
+
+> d. undefined.
+
+4. $X\sim$ Unif(0,20). Find $P(\mu-5<X<\mu+5)$.
+
+> a. 0.75
+
+> b. 0.5
+
+> c. 0.2
+
+> d. 0.33
+
+5. Lamont took a psychology exam whose mean was 70 with standard deviation 5. He also took a
+calculus exam whose mean was 80 with standard deviation 10. He scored 85 on both exams. On which
+exam did he do better compared to the other students who took the exam?
+
+> a. He did better on the psychology exam, comparatively speaking.
+
+> b. He did better on the calculus exam, comparatively speaking.
+
+> c. He did the same on both exams, relatively speaking.
+
+> d. Cannot tell without more information.
+
+6. Suppose Lamont's exam score was at the 80th percentile on an exam whose mean was 90. What was
+Lamont's exam score?
+
+> a. 76.81
+
+> b. 72.00
+
+> c. 80.00
+
+> d. Cannot tell without more information.
+
+# Chapter 9
+
+- Sampling distribution of the mean
+
+- Sampling distribution of the proportion
+
+## Question
+
+1. Which of the following statements about the sampling distribution of $\bar{X}$ is NOT true?
+
+> a. It is generated by taking all possible samples of size n and computing their sample means.
+
+> b. Its mean is equal to the population mean $\mu$.
+
+> c. Its standard deviation is equal to the population standard deviation $\sigma$.
+
+> d. All of these choices are true.
+
+2. The standard error of the mean for a sample of 100 is 25. In order to cut the standard error of the mean in half (to 12.5) we must:
+
+> a. increase the sample size to 200.
+
+> b. decrease the sample size to 50.
+
+> c. keep the sample size at 100 and change something else.
+
+> d. None of these choices.
+
+# Other chapters
+
+- Point estimation
+
+- Interval estimation of Population mean/Proportion
+
+- Hypothesis testing
+
+## Questions
+
+1. Which one is true?
+
+> a. The larger the confidence level used in constructing a confidence interval estimate of the population mean, the narrower the confidence interval.
+
+> b. One can reduce the width of a confidence interval by taking a smaller sample size.
+
+> c. If a  95% confidence interval estimate for a population mean $\mu$ is determined to be 75 to 85, then  if the confidence level is reduced to 80%, the confidence interval for $\mu$ becomes wider. 
+
+> d. We cannot interpret the confidence interval estimate of $\mu$ as a probability statement about $\mu$ because the population mean is a fixed quantity.
+
+2. Suppose an interval estimate for the population mean was 62.84 to 69.46. The population standard
+deviation was assumed to be 6.50, and a sample of 100 observations was used. The mean of the sample
+was:
+
+> a. 6.62
+
+> b. 56.34
+
+> c. 62.96
+
+> d. 66.15
+
+3. A survey of 100 businesses revealed that the mean after-tax profit was $80,000. Assume the
+population standard deviation is $15,000:
+
+> a. Determine the 95% confidence interval estimate of the mean after-tax profit for all businesses. ($z_{0.05}$=1.65, $z_{.025}=1.96$)
+
+
+> b. Explain why you can use the confidence interval formula here, even though the population is not necessarily normal.
+
+4. The sample size needed to estimate a population mean to within 50 units was found to be 96. If the population standard deviation was 250, then the confidence level used was
+
+> a. 90%
+
+> b. 95%
+
+> c. 97%
+
+> d. 99%
+
+5. Identify null and alternative hypothesis:
+
+> a. A professor of linguistics refutes the claim that the average student spends 3 hours studying for the midterm exam. She thinks they spend more time than that. Which hypotheses are used to test the claim?
+
+> b. A spouse suspects that the average amount of money spent on Christmas gifts for immediate family members is above $1,200. The correct set of hypotheses is?
+
+> c. Ten years ago the average American drank 2.5 cups of coffee per day. You suspect that
+amount has changed since then. The correct set of hypotheses is?
+
+6. Which of the following conclusions is not an appropriate conclusion from a hypothesis test?
+
+> a. Reject $H_0$. Sufficient evidence to support $H_1$.
+
+> b. Fail to reject $H_0$. Insufficient evidence to support $H_1$.
+
+> c. Accept $H_0$. Sufficient evidence to support $H_0$.
+
+> d. All of these choices are true.
+
+7. In a criminal trial, a Type I error is made when:
+
+> a. a guilty defendant is acquitted.
+
+> b. a guilty defendant is convicted.
+
+> c. an innocent person is convicted.
+
+> d. an innocent person is acquitted.
+
+
+8. In a criminal trial, a Type II error is made when:
+
+> a. a guilty defendant is acquitted.
+
+> b. a guilty defendant is convicted.
+
+> c. an innocent person is convicted.
+
+> d. an innocent person is acquitted.
+
+9. The owner of a local nightclub has recently surveyed a random sample of n = 300 customers of the
+club. She would now like to determine whether or not the mean age of her customers is over 35. If so, she plans to alter the entertainment to appeal to an older crowd. If not, no entertainment changes will be made. Suppose she found that the sample mean was 35.5 years and the population standard deviation was 5 years. What is the p-value associated with the test statistic?
+
+> a. 0.9582
+
+> b. 1.7300
+
+> c. 0.0418
+
+> d. 0.0836
