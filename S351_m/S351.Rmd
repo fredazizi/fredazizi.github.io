@@ -1,25 +1,91 @@
 ---
-title: ""
+title: "SP23 STAT351: Schedule with links to Slides and Worksheets for discussion section"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(knitr)
+library(kableExtra)
 ```
 
-### S351 Slides and worksheet
 
-Class (9/12): [Slides](Week1slides.pdf), [Worksheet 1](Worksheet1.pdf), [Worksheet 1 solution](worksheet1_solution.pdf)\
-Class (9/19): [Slides](Week2Slides.pdf), [Worksheet 2](Worksheet2.pdf), [Worksheet 2 solution](worksheet2_solution.pdf)\
-Class (9/26): [Slides](Week3slides.pdf), [Worksheet 3](Worksheet3.pdf), [Worksheet 3 solution](worksheet3_solution.pdf)\
-Class (10/3): [Slides](Week4slides.pdf), [Worksheet 4](Worksheet4.pdf), [Worksheet 4 solution](worksheet4_solution.pdf)\
-Class (10/10): [Slides](Week5slides.pdf), [Worksheet 5](Worksheet5.pdf), [Worksheet 5 solution](worksheet5_solution.pdf)\
-Class (10/17): [Slides](Week6slides.pdf), [Worksheet 6](Worksheet6.pdf), [Worksheet 6 solution](worksheet6_solution.pdf)\
-Class (10/24): [Slides](Week7slides.pdf), [Worksheet 7](Worksheet7.pdf), [Worksheet 7 solution](worksheet7_solution.pdf)\
-Class (10/31): [Slides](Week8slides.pdf), [Worksheet 8](Worksheet8.pdf), [Worksheet 8 solution](worksheet8_solution.pdf)\
-Class (11/07): [Slides](Week9slides.pdf), [Worksheet 9](Worksheet9.pdf), [Worksheet 9 solution](worksheet9_solution.pdf)\
-Class (11/14): [Slides](Week10slides.pdf), [Worksheet 10](Worksheet10.pdf), [Worksheet 10 solution](worksheet10_solution.pdf)\
-Class (11/21): [Slides](Week11slides.pdf), [Worksheet 11](Worksheet11.pdf), [Worksheet 11 solution](worksheet11_solution.pdf)\
-Class (11/28): [Slides](Week12slides.pdf), [Worksheet 12](Worksheet12.pdf), [Worksheet 12 solution](worksheet12_solution.pdf)\
-Class (12/05): [Testing Cheatsheet](cheatsheet.pdf), [Worksheet 13](Worksheet13.pdf), [Worksheet 13 solution](worksheet13_solution.pdf)\
-Class (12/12): [Final Review](finalreview.pdf)
+```{r, echo=F}
+
+sched_table<-tibble(Date=c("Jan 31", "Feb 7", "Feb 14", "Feb 21", "Feb 28", "Mar 7", "Mar 14", "Mar 21", "Mar 28", "Apr 4", "Apr 11", "Apr 18", "Apr 25", "May 2", "May 9", "May 16"),
+          slides= c( cell_spec("Slides", "html", link = "Week1Slides.pdf"),
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "Spring break!",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides",
+            "slides"),
+
+
+Worksheet = c( "______",
+            "Worksheet 1",
+            "Worksheet 2",
+            "Worksheet 3",
+            "Worksheet 4",
+            "Worksheet 5",
+            "Worksheet 6",
+            "Spring break!",
+            "Worksheet 7",
+            "Worksheet 8",
+            "Worksheet 9",
+            "Worksheet 10",
+            "Worksheet 11",
+            "Worksheet 12",
+            "Worksheet 13",
+            "Worksheet 14"),
+
+`Worksheet solution` = c( "______",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Spring break!",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution",
+            "Solution"),
+              
+          Note = c("______",
+                   "Chp 2 HW due on Feb 12",
+                   "______",
+                    "Chp 3 HW due on Feb 26",
+                    "Chp 4 HW due on Mar 5 and Exam 1 on Mar 4-5"     ,
+                   "______",
+                   "______",
+                    "Chp 6 HW due on Mar 26",
+                   "______",
+                   "Chp 7 HW due on Apr 9 and Exam 2 on Apr 8-9",
+                   "______",
+                   "Chp 8 HW due on Apr 23",
+                   "Chp 9 HW due on Apr 30",
+                   "Chp 10 HW due on May 7 and Exam 3 on May 6-7",
+                   "______",
+                   "______"))
+
+sched_table %>% 
+  kable("html", escape = FALSE) %>%
+    column_spec (1:5,border_left = T, border_right = T) %>%
+    kable_styling()
+
+```
