@@ -14,7 +14,7 @@ library(kableExtra)
 ```{r, echo=F}
 
 sched_table<-tibble(Date=c("Jan 31", "Feb 7", "Feb 14", "Feb 21", "Feb 28", "Mar 7", "Mar 14", "Mar 21", "Mar 28", "Apr 4", "Apr 11", "Apr 18", "Apr 25", "May 2", "May 9", "May 16"),
-          slides= c( cell_spec("Slides", "html", link = "Week1Slides.pdf"),
+          slides= c( cell_spec("Slides", "html", link = "Week1slides.pdf"),
             "slides",
             "slides",
             "slides",
