@@ -24,7 +24,7 @@ Types of Data (or scales of measurement):
 
 -   **Ordinal Data:** are also qualitative. similar to Nominal type with a difference that categories have an order, a ranking in it's nature.
 
--   **Interval Data:** also called quantitative, always numeric, between values is fixed number, you can perform meaningful arithmetic operations, don't contain a meaningful zero, can be negative.
+-   **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
 
 -   **Ratio Data:** also called quantitative, similar to interval data but with the difference that scale must contain a meaningful zero, can't be negative.
 

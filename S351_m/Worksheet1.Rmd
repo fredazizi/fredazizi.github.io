@@ -54,8 +54,10 @@ percent frequencies and cumulative relative frequencies.
 
 \newpage
 
-7. A paper by Appleton, French, and Vanderpump (1996, American Statistician) surveyed 1314 English woman
-in 1972-74 and after 20 years. The first table they got was complete but during the publication process, a part of table got lost. Fill the table with the given information.
+7. A paper by Appleton, French, and Vanderpump (1996, American Statistician) goes over a  survey of 1314 English woman
+in 1972-74 were their smoking habits along with other information were recorded and then there was a follow up 20 years later to see how many survived. They summarized the result in a cross-classification table.  
+
+> a. During the publication process, a part of table got lost. Fill the table with the given information.
 
 \begin{center}
 \begin{tabular}{|l|l|l|l|}
@@ -71,9 +73,9 @@ Total & 369 &  & \\
 \end{tabular}
 \end{center}
 
-> a. What percentage of smokers survived? What is your conclusion? 
+> b. What percentage of smokers survived? What is your conclusion? 
 
-> b. Now look at the following table which shows the results of the study broken down by age group, does your conclusion change?
+> c. Now look at the following table which shows the results of the study broken down by age group, does your conclusion change?
 
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|} 
