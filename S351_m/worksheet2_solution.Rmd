@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 2 Solution"
 author: "Fred Azizi"
-date: "2022-09-19"
+date: "2023-02-14"
 output: pdf_document
 ---
 
@@ -9,33 +9,82 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-1.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
+
+1. The ages (in years) of a sample of 25 teachers are as follows:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline 47 & 21 & 37 & 53 & 28 \\
+\hline 40 & 30 & 32 & 34 & 26 \\
+\hline 34 & 24 & 24 & 35 & 45 \\
+\hline 38 & 35 & 28 & 43 & 45 \\
+\hline 30 & 45 & 31 & 41 & 56 \\
+\hline
+\end{tabular}
+\end{center}
+
+> a. How many classes does Sturges' formula suggest?
+
+>> **Answer:** Sturges' formula is : $\text{Number of classes}= 1+3.3 \log{(n)}$. $n=25$ in this case. Therefore:
+
+$$
+\text{Number of classes}= 1+3.3 \log_{10}{(25)}=5.613202 \approx 6.
+$$
+
+> b.  Develop a grouped frequency distribution, showing the frequencies, relative frequencies, percent frequencies and cumulative frequencies.
+
+> c.  Draw a histogram and an ogive based on the frequency distribution.
+
+>> **Answer (both b and c):**
+
+>> We know number of classes should be 6 based on a. To find the width of each class, we want to use the following formula:
+
+$$
+\frac{\text { Largest Observation }-\text { Smallest Observation }}{\text { Number of Classes }}
+$$
+
+>> Based on the above formula, the width of each class should be $\frac{56-21}{6}=5.83333\approx 6$. Now we can construct the grouped frequency distribution as well as histogram and an ogive.
+
+![](Q3_1work1sol.png)
+
+![](Q3_2work1sol.png)
+
+![](Q3_3work1sol.png)
+
+
+\newpage
+
+
+2.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
 
     ![](worksheet2q1.PNG){width="334"}
 
 <!-- -->
 
-a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above?
+> a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
 
-> **\underline{Answer:}**
+>> **\underline{Answer:}**
 
-> Total number of apartment in this sample is 2+5+3+8+2= 20.
+>> Total number of apartment in this sample is 2+5+3+8+2= 20.
 
-> We need to look at the last two rectangles in the histogram. They represent a rent of 750 or greater. The total frequency for these two classes would be 8+2=10. In this case, percent frequency would be $\frac{10}{20}\times 100=50\%$
+>> We need to look at the last two rectangles in the histogram. They represent a rent of 750 or greater. The total frequency for these two classes would be 8+2=10. In this case, percent frequency would be $\frac{10}{20}\times 100=50\%$.
 
-b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
+>> The 8th observation will be between 700 and 749 as the cumulative total frequency up to class of 700 to 749 is 7.
 
-    ![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
+> b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
 
-> **\underline{Answer:}**
 
-> Plot on the left (histogram for years of experience) has a long tail on the right side. Hence, positively skewed.
+![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
 
-> Plot on the right (histogram for Daily returns for NASDAQs) has a long tail on the left side. Hence, negativity skewed.
+>> **\underline{Answer:}**
+
+>> Plot on the left (histogram for years of experience) has a long tail on the right side. Hence, positively skewed.
+
+>> Plot on the right (histogram for Daily returns for NASDAQs) has a long tail on the left side. Hence, negativity skewed.
 
  
 
-2.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
+3.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
 
 ```{=tex}
 \begin{center}
@@ -56,27 +105,30 @@ b.  Identify the shape of below histograms \footnote{Graphs are from \url{http:/
 \end{tabular}
 \end{center}
 ```
-a.  Is this an example of time series data or cross sectional data?
 
-> **\underline{Answer:}**
+> a.  Is this an example of time series data or cross sectional data?
 
-> This is an example of time series data.
+>> **\underline{Answer:}**
 
-b.  Make an appropriate plot for this data.
+>> This is an example of time series data.
 
-> **\underline{Answer:}**
+> b.  Make an appropriate plot for this data.
+
+>> **\underline{Answer:}**
+
 >
+
 > ![](ws2q2.PNG)
 
-c.  What can you conclude from this data?
+> c.  What can you conclude from this data?
 
-> **\underline{Answer:}**
+>> **\underline{Answer:}**
 
-> We can see a slight increase in debt over the first half of the decade and after that it stayed almost the same over the second half. Note that **we can't use the graph of a time series over a period of time for making conclusions about future**. This decade shows no strong trend, but in the following years the U.S. debt increased dramatically due to wars.
+>> We can see a slight increase in debt over the first half of the decade and after that it stayed almost the same over the second half. Note that **we can't use the graph of a time series over a period of time for making conclusions about future**. This decade shows no strong trend, but in the following years the U.S. debt increased dramatically due to wars.
 
  
 
-3.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
+4.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
 
 ```{=tex}
 \begin{center}
@@ -96,39 +148,20 @@ c.  What can you conclude from this data?
 \end{tabular}
 \end{center}
 ```
-a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
 
-> **\underline{Answer:}**
->
-> ![](ws2q3.PNG)
+> a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
 
-b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+>> **\underline{Answer:}**
+>>
 
-> **\underline{Answer:}**
+>> ![](ws2q3.PNG)
 
-> Points in the scatterplot are oriented toward the top right of the plot. Therefore, income and housing have a positive relationship. 
+
+> b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+
+>> **\underline{Answer:}**
+
+>> Points in the scatterplot are oriented toward the top right of the plot. Therefore, income and housing have a positive relationship. 
 
 \  
 
-4.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
-
-$$
-1,2.5,1.5,2,0,5,3,3.5,1,0.5
-$$
-
-a.  Compute the mean, median and mode for this.
-
-> **\underline{Answer:}**
-
-> Mean $=\bar{x}=\frac{\sum x}{n}=\frac{20}{10}=2$.
-
-> Median: Order the data points from low to high: 0, 0.5, 1, 1, 1.5, 2, 2.5, 3, 3.5, 5. $\Rightarrow \text{Position of median} =(n+1) \frac{50}{100}=11 \times 0.5=5.5$ th position $\Rightarrow$ Median $=(1.5+2) / 2=1.75$
-
-> Mode $=1$ (occurs twice).
-
-
-b.  Compute the range.
-
-> **\underline{Answer:}**
-
-> Range $=\max-\min=5-0=5$

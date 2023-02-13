@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 2"
 author: "Fred Azizi"
-date: "2022-09-19"
+date: "2023-02-14"
 output: pdf_document
 ---
 
@@ -9,21 +9,44 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-1.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
+1. The ages (in years) of a sample of 25 teachers are as follows:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline 47 & 21 & 37 & 53 & 28 \\
+\hline 40 & 30 & 32 & 34 & 26 \\
+\hline 34 & 24 & 24 & 35 & 45 \\
+\hline 38 & 35 & 28 & 43 & 45 \\
+\hline 30 & 45 & 31 & 41 & 56 \\
+\hline
+\end{tabular}
+\end{center}
+
+> a. How many classes does Sturges' formula suggest?
+
+> b. Develop a grouped frequency distribution, showing the frequencies, relative frequencies, percent frequencies and cumulative frequencies.
+
+> c. Draw a histogram and an ogive based on the frequency distribution.
+
+
+\newpage
+
+2.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
 
     ![](worksheet2q1.PNG){width="334"}
 
 <!-- -->
 
-a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above?
+> a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
 
-b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
+> b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
 
-    ![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
+
+![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
 
 \newpage
 
-2.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
+3.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
 
 ```{=tex}
 \begin{center}
@@ -44,15 +67,16 @@ b.  Identify the shape of below histograms \footnote{Graphs are from \url{http:/
 \end{tabular}
 \end{center}
 ```
-a.  Is this an example of time series data or cross sectional data?
 
-b.  Make an appropriate plot for this data.
+> a.  Is this an example of time series data or cross sectional data?
 
-c.  What can you conclude from this data?
+> b.  Make an appropriate plot for this data.
+
+> c.  What can you conclude from this data?
 
 \newpage
 
-3.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
+4.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
 
 ```{=tex}
 \begin{center}
@@ -72,18 +96,10 @@ c.  What can you conclude from this data?
 \end{tabular}
 \end{center}
 ```
-a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
 
-b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+> a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
+
+> b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
 
 \newpage
 
-4.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
-
-$$
-1,2.5,1.5,2,0,5,3,3.5,1,0.5
-$$
-
-a.  Compute the mean, median and mode for this.
-
-b.  Compute the range.

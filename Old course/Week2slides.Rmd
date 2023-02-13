@@ -1,7 +1,7 @@
 ---
-title: "Week 2"
+title: "Chapter 3 review"
 author: "Fred Azizi"
-date: "2022-09-14"
+date: "2023-02-14"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,14 +15,10 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Where do I get slides/worksheets/solution
-
-![](qrcode_fredazizi.github.io.png){width="167"}
-
-Or go to fredazizi.github.io/Teaching
-
 
 ## Quick review 
+
+- We want to describe interval/ratio data, what is the appropriate way to visualize? 
 
 - We use \textcolor{red}{Grouped Frequency Distribution} when size of data ($n$) is very large and/or the range of the values is large
 
@@ -50,9 +46,10 @@ Graphical representations:
 
 * Histogram
    + Show the frequency distribution for quantitative data over a set of class intervals (Similar to bar chart but works over class intervals).
+   
    + Constructed by rectangles whose bases are the intervals and whose heights are the frequencies ( or relative frequencies or percent frequencies). 
 
-   + No gaps between bars. 
+   + **No gaps** between bars. 
 
 \vspace{2cm}
 
@@ -66,3 +63,18 @@ Graphical representations for Cumulative Frequency:
   
 \vspace{2cm}
 
+## Quick review (5)
+
+-   Time series data are values that correspond to specific measurements taken over a range of time periods.
+
+-   Cross-section data are values collected from a number of subjects during a single time period
+
+![](time_serie_example.PNG){width="360"}
+
+## Quick review (6)
+
+-   Scatter plot: A graph that displays pairs of values as points on a two-dimensional grid.
+
+-   The independent/explanatory variable is placed on the horizontal axis, or x-axis. The dependent/response variable is placed on the vertical axis, or y-axis.
+
+![](scatterplot.PNG)
