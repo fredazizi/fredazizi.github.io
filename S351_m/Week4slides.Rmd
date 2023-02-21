@@ -1,7 +1,7 @@
 ---
-title: "Week 4"
+title: "Chapter 3 & Chapter 4(section 1)"
 author: "Fred Azizi"
-date: "2022-10-03"
+date: "2023-02-21"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,41 +15,46 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Where do I get slides/worksheets/solution?
+## Quick review 
 
-![](qrcode_fredazizi.github.io.png){width="164"}
+Graphical representations of distribution $\Rightarrow$ Histogram
 
-Or go to fredazizi.github.io/Teaching
+   + Show the frequency distribution for quantitative data over a set of class intervals (Similar to bar chart but works over class intervals).
+   
+   + Constructed by rectangles whose bases are the intervals and whose heights are the frequencies ( or relative frequencies or percent frequencies).  **No gaps** between bars. 
 
-## Quick review (1)
+   + We can potentially identify symmetry, distribution skewness, etc. 
 
-Given a sample space $S=\left\{O_1, O_2, \ldots, O_k\right\}$
+ ![](negskew.PNG){width="84"} \hspace{2cm}
+![](posskew.PNG){width="84"}
 
-- $0 \leq P\left(O_i\right) \leq 1$ for each $i$
-
-- $\sum_{i=1}^k P\left(O_i\right)=1$.
-
+   
 ## Quick review (2)
 
-- Intersection of Events $A$ and $B$: the event that occurs when both $A$ and $B$ occur. 
+-   Time series data are values that correspond to specific measurements taken over a range of time periods.
 
-- Union of Events $A$ and $B$ is the event that occurs when either$A$ or $B$ or **both **occur. It is denoted as
-A or $B$.
+-   Cross-section data are values collected from a number of subjects during a single time period
 
-- Conditional Probability: The probability of event $A$ given event $B$ is
-$$
-P(A \mid B)=\frac{P(A \text { and } B)}{P(B)}
-$$
-- Independent Events: $A$ and $B$ are said to be independent if $P(A \mid B)=P(A)$ or $P(B \mid A)=P(B)$.
-
-- Mutually exclusive: no two outcomes can occur at the same time.
+![](time_serie_example.PNG){width="360"}
 
 ## Quick review (3)
 
-- Complement Rule: $P\left(A^C\right)=1-P(A)$.
+-   Scatter plot: A graph that displays pairs of values as points on a two-dimensional grid.
 
-- Multiplication Rule: $P(A \text { and } B)=P(B) P(A \mid B)$.
+-   The independent/explanatory variable is placed on the horizontal axis, or x-axis. The dependent/response variable is placed on the vertical axis, or y-axis.
 
-- Addition Rule: $P(A$ or $B)=P(A)+P(B)-P(A$ and $B)$
+![](scatterplot.PNG)
 
-- Bayes Rule: $P\left(A_i \mid B\right)=\frac{P\left(A_i\right) P\left(B \mid A_i\right)}{P\left(A_1\right) P\left(B \mid A_1\right)+P\left(A_2\right) P\left(B \mid A_2\right)+\cdots+P\left(A_k\right) P\left(B \mid A_k\right)}$
+## Quick review (4)
+
+ measure of central tendency: 
+ 
+* Compute the (Arithmetic) Mean to 
+   + Describe the central location of a single set of interval and ratio data
+
+* Compute the Median to
+   + Describe the central location of a single set of interval and ratio or ordinal data
+
+* Compute the Mode to 
+   + Describe a single set of nominal, ordinal, interval or ratio data
+
