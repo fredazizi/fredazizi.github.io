@@ -19,8 +19,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 > a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
 
+> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
 
-> b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
+> c.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
 
 
 ![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}

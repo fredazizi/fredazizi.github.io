@@ -29,7 +29,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 >> The 8th observation will be between 700 and 749 as the cumulative total frequency up to class of 700 to 749 is 7.
 
-> b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
+> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
+
+>> **\underline{Answer:}**
+
+
+> c.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
 
 
 ![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
@@ -114,8 +119,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 >> ![](ws2q3.PNG)
 
+> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
 
-> b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+>> **\underline{Answer:}**
+
+>> This could be anywhere from 2 to 6. $680 is inside the second class, so it will be bigger than the 2 observations in the first class. But we don't know its relative position inside the second class. If it is the smallest number, then only the 2 observation in the first class will be lower than 680, but if it is the biggest number in the second class, 4+2 observartions could be smaller than 680.  
+
+> c.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
 
 >> **\underline{Answer:}**
 
