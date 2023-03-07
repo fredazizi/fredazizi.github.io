@@ -1,40 +1,52 @@
 ---
 title: "Worksheet 5"
 author: "Fred Azizi"
-date: "2022-10-10"
+date: "2023-03-07"
 output: pdf_document
 ---
 
-1.  $60 \%$ of the student body at UTC is from the state of Tennessee (T), 30\% are from other states $(\mathrm{O})$, and the remainder constitutes international students (I). Twenty percent of students from Tennessee lives in the dormitories, whereas, $50 \%$ of students from other states live in the dormitories. Finally, $80 \%$ of the international students live in the dormitories.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-> (a) What percentage of UTC students lives in the dormitories?
+1. 4 candidates are running for mayor; Adams, Brown, Collins and Dalton  (We assume one of the candidates is going to win, there is no run off). The following probabilities are assigned:
 
-> (b) Given that a student lives in the dormitory, what is the probability that they are an international student?
+$$P[ \text{Adams wins} ]=0.42 \quad P[ \text{Brown wins} ]=0.09$$
 
-> (c) Given that a student does not live in the dormitory, what is the probability that they are an international student?
+$$P[\text{Collins wins}]=0.27 \quad P[\text{Dalton wins}]=0.22$$
+
+>Determine the probabilities for the following events (use 2 decimal places):
+
+> a. Adams loses.
+
+> b. Either Brown or Dalton wins.
+
+> c. Adams, Brown, or Collins wins.
 
 \newpage
 
-2. A survey asked 100 residents in a town whether they are smokers. Given the following information on the residents' response:
+2. $P[A]=0.30$ and $P[B]=0.40$. If $A$ and $B$ are mutually exclusive events, what is $P[A \cup B]$ ?
 
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline &  Daily Workout & No daily workout & Total \\
-\hline Non-smoker & 40 & 30 & 70 \\
-\hline Smoker & 20 & 10 & 30 \\
-\hline Total & 60 & 40 & 100 \\
-\hline
-\end{tabular}
-\end{center}
 
-> (a) Find the joint probability table.
+3. $P[A]=0.60$ and $P[B]=0.70$. If $A$ and $B$ are independent events, what is $P[A \cup B]$ ?
 
-> (b) What is the probability that a randomly selected resident worksout daily?
+\newpage
 
-> (c) What is the probability that a randomly selected resident doesn't workout daily?
+4. Assume you have applied for two scholarships, a Merit scholarship (M) and an Athletic scholarship (A). The probability that you receive an Athletic scholarship is $0.18$. The probability of receiving both scholarships is $0.11$. The probability of getting at least one of the scholarships is $0.3$.
 
-> (d) What is the probability that a randomly selected resident worksout daily and is a smoker?
+> a. What is the probability that you will receive a Merit scholarship?
 
-> (e) What is the probability that a randomly selected resident worksout daily or is a smoker?
 
-> (f) A randomly selected resident doesn't workout daily. What is the probability that the resident is a smoker?
+> b. Are events A and M mutually exclusive? Why or why not? Explain.
+
+
+> c. Are the two events A, and M, independent? Explain, using probabilities.
+
+
+> d. What is the probability of receiving the Athletic scholarship given that you have been
+awarded the Merit scholarship?
+
+> e. What is the probability of receiving the Merit scholarship given that you have been awarded
+the Athletic scholarship?
+
+\newpage
