@@ -1,0 +1,251 @@
+---
+title: "Exam review"
+author: "Fred Azizi"
+date: "2023-03-09"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Chapter 2
+
+
+1. The classification of student major (accounting, economics, management, marketing, other) is an example of a(n)
+
+> a. nominal random variable.  
+
+> b. interval random variable. 
+
+> c. continuous random variable.
+
+> d. parameter.
+
+
+2. The classification of student class designation (freshman, sophomore, junior, senior) is an example of a(n)
+
+> a. nominal random variable. 
+
+> b. interval random variable.
+
+> c. ordinal random variable.
+
+> d. a parameter.
+
+
+3. A researcher wishes to estimate the textbook costs of first-year students at Barry University. To do so,
+he recorded the textbook cost of 300 first-year students and found that their average textbook cost was
+$195 per semester. The variable of interest to the researcher is
+
+> a. textbook cost. 
+
+> b. class rank. 
+
+> c. number of students.
+
+> d. name of university.
+
+
+4. For what type of data are frequencies the only calculations that can be done?
+
+> a. Interval data 
+
+> b. Nominal data 
+
+> c. Ordinal data
+
+> d. None of these choices.
+
+5. In purchasing a used computer, there are a number of variables to consider. The age of the computer is an example of a(n) ____________________ variable.
+
+> a. Interval data 
+
+> b. Nominal data 
+
+> c. Ordinal data
+
+> d. Ratio data
+
+
+6. For each of the following, indicate whether the variable of interest is nominal or ordinal or interval or ratio.
+
+> a. Your marital status.
+
+> b. Whether you are a U.S. citizen.
+
+> c. Sally's travel time from her dorm to the student union on campus.
+
+> d. The temperature early in the morning today. 
+
+> e. The number of cars parked in a certain parking lot at any given time.
+
+> f. Kate’s favorite brand of sneakers.
+
+
+7. Which of the following statements about pie charts is false?  
+
+> a. A pie chart is a graphical representation of a relative frequency distribution.
+
+> b. You can always determine frequencies for each category by looking at a pie chart.
+
+> c. The total percentage of all the slices of a pie chart is 100%.
+
+> d. The area of a slice of a pie chart is the proportion of all the individuals that fall into that particular category.
+
+
+8. Which of the following represents time-series data?
+
+> a. The length of time each of the top 100 stocks have been available on the NYSE.
+
+> b. The most popular time of year that people purchase the top 100 stocks on the NYSE.
+
+> c. The value of the #1 stock on the NYSE each month over a one-year period.
+
+> d. All of these choices are true.
+
+# Chapter 3
+
+1. Which of the following statements about histograms is true?
+
+> a. A histogram is a summary of interval data.
+
+> b. A histogram is made of a series of intervals, called classes.
+
+> c. The classes in a histogram cover the complete range of observations.
+
+> d. All of these choices are true.
+
+2. Which of the following statements about histograms is false?
+
+> a. The intervals of a histogram do not overlap.
+
+> b. Every observation is assigned to one and only one class in a histogram.
+
+> c. The intervals of a histogram are equally wide.
+
+> d. None of these choices.
+
+3. The sum of the relative frequencies for all classes in a histogram always equals
+
+> a. the number of classes. 
+
+> b. the class width. 
+
+> c. the total of all the frequencies.
+
+> d. one.
+
+
+4. Which of the following statements about shapes of histograms is true?
+
+> a. A histogram is said to be symmetric if, when we draw a vertical line down the center of the histogram, the two sides are identical in shape and size.
+
+> b. A negatively skewed histogram is one with a long tail extending to the left.
+
+> c. A positively skewed histogram is one with a long tail extending to the right.
+
+> d. All of these choices are true.
+
+
+5. We have a dataset with 1000 observations of a continuous variable and I want to construct a histogram, how many classes do I need?
+
+> a. 20
+
+> b. 11
+
+> c. 5
+
+> d. 45
+
+
+
+# Chapter 4
+
+1. For symmetric distributions, mode is always equal to mean
+
+> a. True
+
+> b. False
+
+2. For symmetric distributions, mode is always equal to median.
+
+> a. True
+
+> b. False
+
+
+3. Which one is true:
+
+> a. Mode is always unique. 
+
+> b. Mode is always in the center of a symmetric distribution,
+
+> c. We can find a mode for qualitative data.
+
+> d. all of the above are true.
+
+
+4. Which one is false?
+
+> a. Mean is always between $Q_1$ and $Q_3$?
+
+> b. If the distribution is symmetric, then mean=median.
+
+> c. Median is not necessarily a part of your dataset.
+
+> d. The mean is affected by extreme values but the median is not.
+
+
+5. Which measure(s) of central location is/are meaningful when the data are ordinal?
+
+> a. The mean and median
+
+> b. The mean and mode
+
+> c. The median and mode
+
+> d. Only mean
+
+6. Which of the following statements about the mean is not always correct?
+
+> a. The sum of the deviations from the mean is zero.
+
+> b. Half of the observations are on either side of the mean.
+
+> c. The mean is a measure of the central location.
+
+> d. The value of the mean times the number of observations equals the sum of all
+observations.
+
+7. In a positively skewed distribution:
+
+> a. the median equals the mean.
+
+> b. the median is less than the mean.
+
+> c. the median is larger than the mean.
+
+> d. the mean can be larger or smaller than the median
+
+
+8. The average score for a class of 30 students was 75. The 15 male students in the class averaged 70. The 15 female students in the class averaged:
+
+> a. 85
+
+> b. 80
+
+> c. 75
+
+> d. 70
+
+9. Which one is true.
+
+> a. Range is not affected by an extreme observation.
+
+> b. IQR is not affected by an extreme observation.
+
+> c. Variance is not affected by an extreme observation.
+
+> d. All are false.
+
