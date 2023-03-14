@@ -1,7 +1,7 @@
 ---
-title: "Week 7"
+title: "Chapter 6 (part 2)"
 author: "Fred Azizi"
-date: "2022-10-24"
+date: "2023-03-14"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -11,49 +11,13 @@ header-includes:
 - \usepackage{adjustbox}
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## Where do I get slides/worksheets/solution?
-
-![](qrcode_fredazizi.github.io.png){width="164"}
-
-Or go to fredazizi.github.io/Teaching
-
-
-  
 ## Quick review (1)
 
-Binomial random variable:
+-   Bayes Rule: $P\left(A_i \mid B\right)=\frac{P\left(A_i\right) P\left(B \mid A_i\right)}{P\left(A_1\right) P\left(B \mid A_1\right)+P\left(A_2\right) P\left(B \mid A_2\right)+\cdots+P\left(A_k\right) P\left(B \mid A_k\right)}$.
 
-* $P(x)= nCx \; \;p^x (1-p)^{n-x}$ for $x=0,1,\dots, n$.
+-   Probability Trees: Helps with showing the events in an experiment by lines using conditionality.
 
-* $E(x)=np$, $Var(x)=np(1-p)$.
+-   Joint Probabilities table: Shows the joint probabilities across different levels of categories.
 
-Poisson  random  variable:
+-   Marginal probabilities: From Joint distribution table, computed by adding across rows or down columns.
 
-* $P(x)=\frac{e^{-\mu}\mu^x}{x!}$ for $x=0,1,2,\dots$. Where $\mu$ is the mean number of successes in the interval or region.
-
-* $E(x)=\mu$, $Var(x)=\mu$.
-
-Note that we may use the tables at the end of the book to calculate Binomial/Poisson probabilities. 
-
-
-## Quick review (2)
-
-Continuous random variable:
-
-* Probability Density Function (PDF)
-   + Usually is shown by $f(x)$
-   + Whole area under PDF is 1
-   + $f(x)\geq 0$.
-   + Probability of interval $(a, b)$ with PDF $f(x)$ is the area under PDF from $a$ to $b$.
-* Special case (Uniform RV)
-   + Uniform random variable defined on min=$a$ and max=$b$
-   + $f(x)=\frac{1}{b-a}$ when $a\leq x\leq b$
-* Special case (Normal RV)
-   + Always defined with a mean $(\mu)$ and variance $(\sigma^2)$.
-   + For finding probabilities of interval $(a,b)$, we need tables/computer programs
-   
-   
