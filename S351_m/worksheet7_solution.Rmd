@@ -1,11 +1,132 @@
 ---
 title: "Worksheet 7 Solution"
 author: "Fred Azizi"
-date: "2022-10-24"
+date: "2023-03-28"
 output: pdf_document
 ---
 
-1. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
+1. The number of pizzas delivered to university students each month is a random variable with the following probability distribution.
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline $\mathrm{X}$ & 0 & 1 & 2 & 3 \\
+\hline $\mathrm{P}(\mathrm{x})$ & $0.1$ & $0.3$ & $0.4$ & $0.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> (a) Find $\mathrm{P}(\mathrm{X} \leq 2)$.
+
+> (b) $\mathrm{P}(1 \leq \mathrm{X} \leq 2)$.
+
+> (c) Determine the mean and variance of $X$.
+
+> (d) Suppose $Y=3 X+4$ for each value of $X$,  Calculate the mean and sd of $Y$.
+
+
+> **\underline{Answer:}**
+
+> (a) $P(X \leq 2)=P(x=0)+P(x=1)+P(x=2)=0.1+0.3+0.4=0.8$
+
+> (b) $P(1 \leq x \leq 2)=P(x=1)+P(x=2)=0.7$
+
+> (c) 
+
+$$
+\begin{aligned}
+\mu=E(x)=\sum x \cdot P(x)=& 0 \times 0.1+1 \times 0.3+2 \times 0.4+3 \times 0.2=1.7 \\
+V(x)=\sum(x-\mu)^{2} \cdot P(x)=&(0-1.7)^{2} \times 0.1+(1-1.7)^{2} \times 0.3+(2-1.7)^{2} \times 0.4 \\
+&+3 \times(3-1.7)^{2} \times 0.2=0.81
+\end{aligned}
+$$
+
+
+> (d)
+
+$$
+\begin{aligned}
+&E(y)=E(3 x+4)=3 E(x)+4=3 \times 1 \cdot 7+4=9.1 \\
+&V(y)=V(3 x+4)=9 V(x)+0=7.29 \\
+&sd(y)=\sqrt{V(y)}=\sqrt{7.29}= 2.7
+\end{aligned}
+$$
+\newpage
+
+2. The number of persons living per household in a city was collected and were summarized. The frequency table is given below:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline Number of persons & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline Number of households (millions) & $3.1$ & $4.5$ & $3.8$ & $2.5$ & $2.4$ & $2.5$ & $1.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> Define $X$ as the number of people per household.
+
+
+> (a) Write down the probability distribution of $X$.
+
+> (b) Find $P[X \geq 4]$
+
+> (c) Find $\mathrm{P}[2 \leq \mathrm{X}<4]$
+
+> **\underline{Answer:}**
+
+> (a) 
+
+$$\begin{array}{c|ccccccc}X & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline
+P(x) & 0.155 & 0.225 & 0.19 & 0.125 & 0.12 & 0.125 & 0.06 \end{array}$$
+
+> (b) $P[X \geq 4]=P(x=4)+P(x=5)+P(x=6)+P(x=7)=0.125+0.12+0.125+0.06=0.43$
+
+> (c) $\mathrm{P}[2 \leq X<4] =P(x=2)+P(x=3)=0.225+0.19=0.415$
+
+\newpage
+
+3. Indicate whether each random variable is Binomial, Poisson or neither:
+
+> a. A random variable $X$ counts the number of visits to a webpage in a one-hour period. **Poisson**
+
+> b. A random variable $X$ counts the number of defectives in a sample of 100 stamps. **Binomial**
+
+> c. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn one at a time without replacement. **Neither**
+
+> d. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn with replacement. **Binomial**
+
+\newpage
+ 
+4. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
+
+> a. Identify the distribution of $X$ and its parameters.
+
+
+
+> b. What is the probability that none of the students score over 25 ?
+
+
+
+> c. What is the probability that at least one of them score over 25 ?
+
+
+> d. What is the probability that all of them score over 25 ?
+
+> **\underline{Answer:}**
+
+> (a) $X \sim \operatorname{Bin}(n=5, p=0.6)$.
+
+> (b) Using table in the textbook: $P[X=0]=P[X \leqslant 0]=0.0102$.
+
+>> Or you can calculate directly. $P[X=0]= 5C0 \;p^0 (1-p)^{5-0}=0.1024$.
+
+> (c) $P(X \geqslant 1)=1-P(X<1)=1-P(X \leqslant 0)=1-0.0102=0.9898$.
+
+> (d) $P(X=5)=P(X \leqslant 5)-P(X \leqslant 4)=1-0.9222=0.0788$. 
+
+>> Or (again) you can calculte directly: $P[X=5]= 5C5 \;p^5 (1-p)^{5-5}=0.07776$
+
+5. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
 
 > a. What is the probability of the event happening? That is, the probability of getting an even number. 
 
@@ -21,179 +142,12 @@ output: pdf_document
 
 > (b) $X \sim \operatorname{Bin}(n=6, p=0.5)$
 
-> (c) Method 1 (using table):
-
-$$P[x=2]=P[x \leqslant 2]-P[x \leqslant 1]=0.3438-0.1094=0.2344$$
-
->> Method 2 (Direct calculation):
-
-$$P[x=2]= \binom{6}{2} 0.5^2 (1-0.5)^{6-2}=0.234375$$
+> (c) $P[x=2]=P[x \leqslant 2]-P[x \leqslant 1]=0.3438-0.1094=0.2344$
 
 > (d)
                                                                                                                            
 $$                                                                                                                  \begin{aligned}
-P[0 \leqslant x<3] &=P[x<3]=P[x \leqslant 2] \\
-&=0.3438\\
-\end{aligned}                                                                                                       $$
-
-\newpage
-
-2. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
-
-> a. What is the probability that they get 3 calls or less on a given day?
-
-> b. What is the probability that they get no calls on given day?
-
-> c. What is the probability that they get exactly 3 calls?
-
-> d. What is the expected number of calls in a week? 
-
-> e. What is the standard deviation for calls in a day?
-
-
-> **\underline{Answer:}**
-
-> (a) Using table: $P[x \leqslant 3]=0.4335$.
-
-> (b) Using table:
-
-$$ 
-P[x=0]=P[x \leqslant 0]=0.0183 
-$$ 
-
->> Direct calculation:
-
-$$ 
-P[x=0]=\frac{e^{-4} 4^0}{0!}=0.01831564
-$$ 
-
-> (c) Using table: $P[x=3]=P[x \leqslant 3]-P[x \leqslant 2]=0.4335-0.2381=0.1954$. 
-
->> Direct calculation: $P[x=3]=\frac{e^{-4}4^3}{3!}=0.1953668$ 
-
-
-> (d) Let $Y=\#$ calls per week on average. Then, $Y=7X$. $E(Y)=E(7X)=7E(X)=7\times4=28$.
-
-> (e) $V(X)=\mu=4 \rightarrow SD(x)=\sqrt{4}=2$. 
-
-
-\newpage
-
-3. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $X=$ average number of  flaws in $50 \mathrm{~m}$.
-
-> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
-
-> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
-
-> **\underline{Answer:}**
-
-> (a) Let $Y=$ average number of  flaws in $100 \mathrm{~m}$. $Y=2X$. $E(Y)=2E(X)=3$. Using table:
-
-$$
-P(Y=2)=P(Y \leqslant 2)-P(Y \leqslant 1)=0.4232-0.1991=0.2241
-$$
-
->> Or, using direct calculation:
-
-$$
-P(Y=2)=\frac{e^{-3}3^2}{2!}=0.2240418
-$$
-
-> (b) Let $Z=$ average number of  flaws in $150 \mathrm{~m}$. $Z=3X$. $E(Z)=3E(X)=4.5$. Using table:
-
-$$
-P(Y \leqslant 3)=0.3423
-$$
-
-\newpage
-
-4. $X$ is a Uniformly distributed random variable that has maximum and minimum values of 10 and 50.
-
-> a. What is the density function and its graph?
-
-> b. Calculate the mean of $X$.
-
-> c. Calculate $P[10<X<20]$ and mark the corresponding area on the graph from (a).
-
-> d. Calculate $P[25<X<45]$ and mark the corresponding area on the graph from (a).
-
-> e. Find $P[X=22.5]$.
-
-> **\underline{Answer:}**
-
-> (a) $f(x)=\frac{1}{b-a}=\frac{1}{50-10}=\frac{1}{40}$.
-
-```{r,echo=F}
-library(ggplot2)
-
-a=10
-b=50
-
-d<-data.frame(x=c(a,b),y=c(1/40,1/40))
-
-ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
-      labs(x = "\n x", y = "f(x) \n") +
-    theme(plot.title = element_text(hjust = 0.5),
-          axis.title.x = element_text(face="bold", colour="blue", size = 12),
-          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
-    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
-    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
-    theme_bw()
-```
-
-> (b) $\mu=\frac{a+b}{2}=\frac{10+50}{2}=30$.
-
-> (c) Blue area= $(20-10)\times \frac{1}{40}=\frac{1}{4}=0.25$.
-
-```{r, echo=F}
-a=10
-b=50
-
-d<-data.frame(x=c(a,b),y=c(1/40,1/40))
-
-ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
-      labs(x = "\n x", y = "f(x) \n") +
-    theme(plot.title = element_text(hjust = 0.5),
-          axis.title.x = element_text(face="bold", colour="blue", size = 12),
-          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
-    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
-    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
-    theme_bw()+
-    annotate("rect", 
-           xmin = 10, 
-           xmax = 20,
-           ymin = 0,
-           ymax = 1/40,
-           fill = "red", alpha=0.5) 
-
-```
-
-
-> (d) Red area= $(45-25)\times \frac{1}{40}=\frac{1}{2}=0.5$.
-
-```{r, echo=F}
-a=10
-b=50
-
-d<-data.frame(x=c(a,b),y=c(1/40,1/40))
-
-ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
-      labs(x = "\n x", y = "f(x) \n") +
-    theme(plot.title = element_text(hjust = 0.5),
-          axis.title.x = element_text(face="bold", colour="blue", size = 12),
-          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
-    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
-    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
-    theme_bw()+
-    annotate("rect", 
-           xmin = 25, 
-           xmax = 45,
-           ymin = 0,
-           ymax = 1/40,
-           fill = "blue", alpha=0.5) 
-
-```
-
-> (e) This is a continuous RV. Hence, P[X=22.5]=0$.
-
+P[0 \leqslant x<3] &=P[x \leqslant 2]-P[x \leqslant 0]=P[x<3] \\
+&=-0.3438-0.0156=P[x \leqslant 2] \\
+\end{aligned}                                                                                                       $$  
 
