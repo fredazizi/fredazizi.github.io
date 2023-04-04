@@ -50,7 +50,7 @@ output: pdf_document
 \newpage
 
 
-4. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
+4. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$  number of  flaws in $50 \mathrm{~m}$.
 
 > a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
 
