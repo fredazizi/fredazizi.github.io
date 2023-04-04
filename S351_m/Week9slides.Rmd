@@ -1,7 +1,7 @@
 ---
-title: "Week 9"
+title: "Chapter 7 (Part 2)"
 author: "Fred Azizi"
-date: "2022-11-07"
+date: "2023-04-04"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,42 +15,34 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Where do I get slides/worksheets/solution?
+## Quick review 
 
-![](qrcode_fredazizi.github.io.png){width="164"}
+Binomial random variable
 
-Or go to fredazizi.github.io/Teaching
+* The binomial experiment consists of a **fixed number of trials** ($n$).
 
+* Each trial has **two possible outcomes**: S/F.
 
+* The probability of success is $p$ (**fixed**). The probability of failure is 1-$p$ (fixed). 
 
-## Quick review (1)
+* The trials are **independent**.
 
-A lot of confusing/similar terms...What they mean??
+* $P(x)= nCx \; \;p^x (1-p)^{n-x}$.
 
-* Population
+* $E(x)=np$, $Var(x)=np(1-p)$.
 
-* Sample
+## Quick review 
 
-* Sample means
+The Poisson  random  variable 
 
-* distribution of sample vs distribution of sample means vs distribution of population
+* Defined as  **number  of  successes**  that  occur  in  a  period of time or an interval of space.
 
-## Quick review (2)
+* The number of successes that occur in any interval is **independent** of the number of successes that occur in any other interval.
 
+* The probability of a success in an interval is the same for all equal-size intervals.
 
-**Central Limit Theorem**
+* The probability of a success in an interval is **proportional to the size of the interval**.
 
- **The sampling distribution of the mean of a random sample drawn from any population is approximately normal for a sufficiently large sample size.**
- 
- * \textcolor{red}{Mean} of distribution of the sampling mean is the same as mean of the population, $\mu_{\bar{X}}=\mu$.
- * Standard deviation of the sampling distribution (\textcolor{red}{standard error} of the mean is $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt n}$.
- * $\bar{X} \sim N(\mu,\frac{\sigma}{\sqrt n})$.
- * Finite population correction for standard error: 
- $$\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}}$$
-    + Rule of thumb: Use for population that is at least 20 times larger than the sample size
-    
-## Quick review (3)
+* $P(x)=\frac{e^{-\mu}\mu^x}{x!}$ where $\mu$ is the mean number of successes in the interval or region.
 
-Play with this applet for better understanding of CLT:
-
-https://onlinestatbook.com/stat_sim/sampling_dist/index.html
+* $E(x)=\mu$, $Var(x)=\mu$.

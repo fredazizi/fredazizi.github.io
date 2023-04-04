@@ -1,212 +1,131 @@
 ---
 title: "Worksheet 8 Solution"
 author: "Fred Azizi"
-date: "2022-10-31"
+date: "2023-04-04"
 output: pdf_document
 ---
 
-1. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
+1. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
+
+> a. Identify the distribution of $X$ and its parameters.
 
 
-> a. $P[Z < 0]$.
 
->> A: Using table, $P[Z < 0]=0.5$.
-
-> b. $P[Z < -1.5]$.
-
->> A: Using table, $P[Z < -1.5]=0.0668$.
-
-> c. $P[Z > 1]$.
-
->> A:  $P[Z > 1]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 1]= 1- 0.8413=0.1587$.
+> b. What is the probability that none of the students score over 25 ?
 
 
-> d. $P[Z > -1.44]$.
 
->> A:  $P[Z > -1.44]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq -1.44]= 1- 0.0749=0.9251$.
-
-> e. $P[Z > 3.09]$.
-
->> A:  $P[Z > 3.09]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 3.09]= 1- 0.9990=0.001$.
-
-> f. $P[-0.71 < Z < 0.92]$.
-
->> A: $P[-0.71 < Z < 0.92]=P[Z<0.92]-P[Z<-0.71]=0.8212-0.2389=0.5823$. Why? See below:
-
->> This is what we want:
-
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-library(ggplot2)
-ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+
-   stat_function(fun = dnorm,
-                geom = "area",
-                fill = "steelblue",
-                xlim = c(-0.71, 0.92), alpha=0.5) +
-    theme_bw()+
-  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
-                     labels = c(-3, -0.71,0, 0.92, 3),
-                     limits = c(-3, 3)) 
-
-```
->> We note that P[Z<0.92] would be the red area on this plot: 
-
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+
-   stat_function(fun = dnorm,
-                geom = "area",
-                fill = "red",
-                xlim = c(-3, 0.92), alpha=0.5) +
-    theme_bw()+
-  scale_x_continuous(breaks = c(-3, 0, 0.92, 3),
-                     labels = c(-3, 0, 0.92, 3),
-                     limits = c(-3, 3)) 
-
-```
-
->> We also note that P[Z<-0.71] would be the green area on this plot: 
-
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+
-   stat_function(fun = dnorm,
-                geom = "area",
-                fill = "green",
-                xlim = c(-3,-0.71), alpha=0.5) +
-    theme_bw()+
-  scale_x_continuous(breaks = c(-3,-0.71, 0, 3),
-                     labels = c(-3, -0.71,0,  3),
-                     limits = c(-3, 3)) 
-
-```
-
->> If I get rid of the green area in the red area, what I am left with would be the blue area. 
-
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+
-   stat_function(fun = dnorm,
-                geom = "area",
-                fill = "green",
-                xlim = c(-3,-0.71), alpha=0.5) +
-  stat_function(fun = dnorm,
-                geom = "area",
-                fill = "steelblue",
-                xlim = c(-0.71,0.92), alpha=0.5) +
-    theme_bw()+
-  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
-                     labels = c(-3, -0.71,0, 0.92, 3),
-                     limits = c(-3, 3)) 
-
-```
-
-> g. $P[-1.5 < Z < -1.44]$.
-
->> A: $P[-1.5 < Z < -1.44]=P[Z<-1.44]-P[Z<-1.5]=0.0749-0.0668=0.0081$.
-
-> h. $P[Z < -0.71$ or $Z > 0.92]$.
-
->> A: $P[Z < -0.71 \cup Z > 0.92] = P[Z < -0.71] + P[Z > 0.92] -P[Z < -0.71 \cap Z > 0.92]$. There is no common Z in the intersection, i.e $P[Z < -0.71 \cap Z > 0.92]=0$. Hence:
-
-\begin{align}
-P[Z < -0.71 \cup Z > 0.92] &= P[Z < -0.71] + P[Z > 0.92] \notag\\
-&= P[Z < -0.71]+1- P[Z \leq 0.92] \notag\\
-&=0.2389+1-0.8212\notag\\
-&= 0.4177 \notag
-\end{align}
-
-\newpage
-
-2. Find values of $z$ such that:
-
-> a. The area to the left is 0.0202.
-
->> A: We are looking for the $z$ such that $P(Z<z)=0.0202$. We go to the table and find probability 0.0202 and then find the $z$ value. $z=-2.05$.
-
-> b. The area to the left is 0.7517.
-
->> A: We are looking for the $z$ such that $P(Z<z)=0.7517$. We go to the table and find probability 0.7517 and then find the $z$ value. $z=0.68$.
+> c. What is the probability that at least one of them score over 25 ?
 
 
-> c. The area to the right is 0.025.
-
->> A: We are looking for the $z$ such that $P(Z>z)=0.025$. Table only have $P(Z\leq z)$ probabilities. So we need to convert it to something in that form. We note that $P(Z>z)=1-P(Z\leq z)$. Therefore, $1-P(Z\leq z)=0.025 \rightarrow P(Z\leq z)=1-0.025=0.975$. We go to the table and find probability 0.975 and then find the $z$ value. $z=1.96$.
-
-> d. The area to the right is 0.3015.
-
->> A: We are looking for the $z$ such that $P(Z>z)=0.3015$. $1-P(Z\leq z)=0.3015 \rightarrow P(Z\leq z)=1-0.3015=0.6985$. We go to the table and find probability 0.6985 and then find the $z$ value. $z=0.52$.
-
-\newpage
-
-3. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
-
-> a. What is the probability that a call lasts less than 4 minutes? 
-
-> b. What is the probability that a call lasts between 5 to 10 minutes. 
-
-> c. What percentage of calls lasts more than 7 minutes?
+> d. What is the probability that all of them score over 25 ?
 
 > **\underline{Answer:}**
 
-> We note that $T\sim$N$(\mu=6.5, \sigma=2)$. 
+> (a) $X \sim \operatorname{Bin}(n=5, p=0.6)$.
 
-> (a) $P(T<4)= P\left(\frac{T-\mu}{\sigma}<\frac{4-6.5}{2}\right)=P(Z<-1.25)=0.1056$.
+> (b) Using table in the textbook: $P[X=0]=P[X \leqslant 0]=0.0102$.
 
-> (b) $P(5<T<10)= P(T<10)-P(T\leq 5)= P\left(\frac{T-\mu}{\sigma}<\frac{10-6.5}{2}\right)-P\left(\frac{T-\mu}{\sigma}<\frac{5-6.5}{2}\right)=P(Z<1.75)-P(Z<-0.75)=0.9599 - 0.2266=0.7333$.
+>> Or you can calculate directly. $P[X=0]= 5C0 \;p^0 (1-p)^{5-0}=0.1024$.
 
-> (c) $P(T>7)= 1-P \left(Z \leq \frac{7-6.5}{2}\right)=P(Z<0.25)=0.5987$.
+> (c) $P(X \geqslant 1)=1-P(X<1)=1-P(X \leqslant 0)=1-0.0102=0.9898$.
 
-\newpage
+> (d) $P(X=5)=P(X \leqslant 5)-P(X \leqslant 4)=1-0.9222=0.0788$. 
 
-4. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher...You find the average for fun!
+>> Or (again) you can calculte directly: $P[X=5]= 5C5 \;p^5 (1-p)^{5-5}=0.07776$
 
-> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
+2. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
 
-> **\underline{Answer:}**
+> a. What is the probability of the event happening? That is, the probability of getting an even number. 
 
-> Let $X$ be grades of that course. We know that $X\sim$ N($\mu$, $\sigma$=3). We also know that $P(X\geq 90)=0.4$. Therefore, $P\left(\frac{X-\mu}{\sigma}\geq \frac{90-\mu}{\sigma=3}\right)=P\left(Z>\frac{90-\mu}{3}\right)=0.4$. We can also conclude that $P\left(Z \leq \frac{90-\mu}{3}\right)=1-0.4=0.6$. Using table, we figure out that:
+> b. What distribution will $X$ follow? Identify the parameters.
 
-$$\frac{90-\mu}{3}=0.255 \rightarrow \mu=90-0.255\times 3= 89.235$$
+> c. Calculate $P[X=2]$.
 
-
-\newpage
-
-5. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
-pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
-
-> a. What is the probability that a transaction is completed in less than 5 minutes?
-
-> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
-
-> c. What is the standard deviation of time until a transaction is completed?
+> d. Calculate $P[0 \leq X<3]$
 
 > **\underline{Answer:}**
 
-> $\mu=7.5$. We know $\frac{1}{\lambda}=\mu$. Hence, $\lambda=\frac{1}{7.5}=0.13$. Therefore, $T\sim \text{exp}(\lambda=0.13)$.
+> (a) That is, the probability of getting an even number. $P(x)=\frac{1}{2}$ (for a single roll of the die).
 
-> (a) Using formula in the textbook or slides: $P(T<5)=1-e^{-0.13 \times 5}=0.4779542$.
+> (b) $X \sim \operatorname{Bin}(n=6, p=0.5)$
 
-> (b)  Using formula in the textbook or slides: $P(5<T<10)=e^{-0.13 \times 5}-e^{-0.13 \times 10}=0.249514$.
+> (c) $P[x=2]=P[x \leqslant 2]-P[x \leqslant 1]=0.3438-0.1094=0.2344$
 
-> (c) For Exponential distribution, $\sigma=\mu=7.5$.
+> (d)
+                                                                                                                           
+$$                                                                                                                  
+\begin{aligned}
+P[0 \leqslant x<3] &=P[x \leqslant 2]-P[x \leqslant 0]=P[x<3] \\
+&=-0.3438-0.0156=P[x \leqslant 2] \\
+\end{aligned}
+$$  
 
-\newpage
+3. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
 
-6. Find the mean and standard deviations:
+> a. What is the probability that they get 3 calls or less on a given day?
 
-> a. $t_5$.
+> b. What is the probability that they get no calls on given day?
 
->> A: $E(t)=0$ regardless of degrees of freedom. $V(t)=\frac{5}{5-2}=\frac{5}{3}$. $Sd(t)=\sqrt{\frac{5}{3}}=1.291$.
+> c. What is the probability that they get exactly 3 calls?
 
-> b. $\chi^2_9$.
+> d. What is the expected number of calls in a week? 
 
->> A: $E\left(\chi^2_{9}\right)=9$. $V\left(\chi^2_9\right)=2\times 9=18$. $Sd\left(\chi^2_9\right)=\sqrt{18}=4.243$.
+> e. What is the standard deviation for calls in a day?
 
-> c. $F_{5,15}$. 
+> **\underline{Answer:}**
 
->> A: $E(F_{5,15})=\frac{15}{15-2}=\frac{15}{13}$. $V(F_{5,15})=\frac{2 \times 15^2\left(5+15-2\right)}{5\left(15-2\right)^2\left(15-4\right)} \approx 0.8714363$. $Sd(F_{5,15})=\sqrt{V(F_{5,15})}=0.935$.
+> (a) Using table: $P[x \leqslant 3]=0.4335$.
+
+> (b) Using table:
+
+$$ 
+P[x=0]=P[x \leqslant 0]=0.0183 
+$$ 
+
+>> Direct calculation:
+
+$$ 
+P[x=0]=\frac{e^{-4} 4^0}{0!}=0.01831564
+$$ 
+
+> (c) Using table: $P[x=3]=P[x \leqslant 3]-P[x \leqslant 2]=0.4335-0.2381=0.1954$. 
+
+>> Direct calculation: $P[x=3]=\frac{e^{-4}4^3}{3!}=0.1953668$ 
+
+
+> (d) Let $Y=\#$ calls per week on average. Then, $Y=7X$. $E(Y)=E(7X)=7E(X)=7\times4=28$.
+
+> (e) $V(X)=\mu=4 \rightarrow SD(x)=\sqrt{4}=2$. 
+
+
+
+
+4. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
+
+> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
+
+> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
+
+
+> **\underline{Answer:}**
+
+> (a) Let $Y=$ average number of  flaws in $100 \mathrm{~m}$. $Y=2X$. $E(Y)=2E(X)=3$. Using table:
+
+$$
+P(Y=2)=P(Y \leqslant 2)-P(Y \leqslant 1)=0.4232-0.1991=0.2241
+$$
+
+>> Or, using direct calculation:
+
+$$
+P(Y=2)=\frac{e^{-3}3^2}{2!}=0.2240418
+$$
+
+> (b) Let $Z=$ average number of  flaws in $150 \mathrm{~m}$. $Z=3X$. $E(Z)=3E(X)=4.5$. Using table:
+
+$$
+P(Y \leqslant 3)=0.3423
+$$
+
+

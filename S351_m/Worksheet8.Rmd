@@ -1,91 +1,60 @@
 ---
 title: "Worksheet 8"
 author: "Fred Azizi"
-date: "2022-10-31"
+date: "2023-04-04"
 output: pdf_document
 ---
 
-1. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
+1. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
 
-> a. $P[Z < 0]$.
-
-> b. $P[Z < -1.5]$.
-
-> c. $P[Z > 1]$.
-
-> d. $P[Z > -1.44]$.
-
-> e. $P[Z > 3.09]$.
-
-> f. $P[-0.71 < Z < 0.92]$.
-
-> g. $P[-1.5 < Z < -1.44]$.
-
-> h. $P[Z < -0.71$ or $Z > 0.92]$.
+> a. Identify the distribution of $X$ and its parameters.
 
 
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-library(ggplot2)
-ggplot(data = data.frame(x = c(-3.5, 3.5)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+theme_bw()+
-  scale_x_continuous(breaks = round(seq(-3.5, 3.5, by = 0.5),1)) 
-```
+
+> b. What is the probability that none of the students score over 25 ?
+
+
+
+> c. What is the probability that at least one of them score over 25 ?
+
+
+> d. What is the probability that all of them score over 25 ?
 
 \newpage
 
-2. Find values of $z$ such that:
 
-> a. The area to the left is 0.0202.
+2. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
 
-> b. The area to the left is 0.7517.
+> a. What is the probability of the event happening? That is, the probability of getting an even number. 
 
-> c. The area to the right is 0.025.
+> b. What distribution will $X$ follow? Identify the parameters.
 
-> d. The area to the right is 0.3015.
+> c. Calculate $P[X=2]$.
 
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-library(ggplot2)
-ggplot(data = data.frame(x = c(-3.5, 3.5)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+theme_bw()+
-  scale_x_continuous(breaks = round(seq(-3.5, 3.5, by = 0.5),1)) 
-```
+> d. Calculate $P[0 \leq X<3]$
 
 \newpage
 
-3. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
+3. Acme Corporation's helpdesk gets 4 calls per day on average. They think the number of calls follows a Poisson distribution. 
 
-> a. What is the probability that a call lasts less than 4 minutes? 
+> a. What is the probability that they get 3 calls or less on a given day?
 
-> b. What is the probability that a call lasts between 5 to 10 minutes. 
+> b. What is the probability that they get no calls on given day?
 
-> c. What percentage of calls lasts more than 7 minutes?
+> c. What is the probability that they get exactly 3 calls?
 
-\newpage
+> d. What is the expected number of calls in a week? 
 
-4. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher You find the average for fun!
-
-> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
+> e. What is the standard deviation for calls in a day?
 
 \newpage
 
-5. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
-pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
 
-> a. What is the probability that a transaction is completed in less than 5 minutes?
+4. The number of flaws in an optic fiber cable follows a Poisson Distribution. The average number of flaws in $50 \mathrm{~m}$ is $1.5$. Let $x=$ average number of  flaws in $50 \mathrm{~m}$.
 
-> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
+> a. What is the probability of exactly 2 flaws in $100 \mathrm{~m}$ ?
 
-> c. What is the standard deviation of time until a transaction is completed?
+> b. What is the probability of 3 flaws or less in $150 \mathrm{~m}$ ?
 
-\newpage
-
-6. Find the mean and standard deviations:
-
-> a. $t_5$.
-
-> b. $\chi^2_9$.
-
-> c. $F_{5,15}$. 
+ 
 

@@ -57,32 +57,3 @@ output: pdf_document
 
 > d. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn with replacement. 
 
-\newpage
- 
-4. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
-
-> a. Identify the distribution of $X$ and its parameters.
-
-
-
-> b. What is the probability that none of the students score over 25 ?
-
-
-
-> c. What is the probability that at least one of them score over 25 ?
-
-
-> d. What is the probability that all of them score over 25 ?
-
-\newpage
-
-5. A six-sided die is rolled 6 times. Let $X$ denote the number of times an even number showed up.
-
-> a. What is the probability of the event happening? That is, the probability of getting an even number. 
-
-> b. What distribution will $X$ follow? Identify the parameters.
-
-> c. Calculate $P[X=2]$.
-
-> d. Calculate $P[0 \leq X<3]$
-
