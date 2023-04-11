@@ -1,125 +1,236 @@
 ---
 title: "Worksheet 9 Solution"
 author: "Fred Azizi"
-date: "2022-11-07"
+date: "2023-04-11"
 output: pdf_document
 ---
 
-1. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
+1. $X$ is a Uniformly distributed random variable that has maximum and minimum values of 10 and 50.
 
-> a. What is the distribution of the sample mean? 
+> a. What is the density function and its graph?
 
->> **\underline{Answer:}**
+> b. Calculate the mean of $X$.
 
->> $\bar{X} \rightarrow$ mean age of retirees based on a sample of $n=40\rightarrow$ $\bar{X} \sim N(72 , \frac{9}{\sqrt{40}})=N(72,1.423)$
+> c. Calculate $P[10<X<20]$ and mark the corresponding area on the graph from (a).
 
-> b. What is the probability that the mean age of the sample exceeds 73 years old?
+> d. Calculate $P[25<X<45]$ and mark the corresponding area on the graph from (a).
 
->> **\underline{Answer:}**
+> e. Find $P[X=22.5]$.
+
+> **\underline{Answer:}**
+
+> (a) $f(x)=\frac{1}{b-a}=\frac{1}{50-10}=\frac{1}{40}$.
+
+```{r,echo=F}
+library(ggplot2)
+
+a=10
+b=50
+
+d<-data.frame(x=c(a,b),y=c(1/40,1/40))
+
+ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
+      labs(x = "\n x", y = "f(x) \n") +
+    theme(plot.title = element_text(hjust = 0.5),
+          axis.title.x = element_text(face="bold", colour="blue", size = 12),
+          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
+    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
+    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
+    theme_bw()
+```
+
+> (b) $\mu=\frac{a+b}{2}=\frac{10+50}{2}=30$.
+
+> (c) Red area= $(20-10)\times \frac{1}{40}=\frac{1}{4}=0.25$.
+
+```{r, echo=F}
+a=10
+b=50
+
+d<-data.frame(x=c(a,b),y=c(1/40,1/40))
+
+ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
+      labs(x = "\n x", y = "f(x) \n") +
+    theme(plot.title = element_text(hjust = 0.5),
+          axis.title.x = element_text(face="bold", colour="blue", size = 12),
+          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
+    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
+    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
+    theme_bw()+
+    annotate("rect", 
+           xmin = 10, 
+           xmax = 20,
+           ymin = 0,
+           ymax = 1/40,
+           fill = "red", alpha=0.5) 
+
+```
 
 
-\begin{align}
-P(\bar{X}> 73)&= 1- P(\bar{X}\leq 73) \notag\\
-&= 1- P(\frac{\bar{X}-72}{1.423}\leq \frac{73-72}{1.423}) \tag{Standardize to use table}\\
-&=1-P(Z \leq 0.70) \tag{From table, $P(Z<0.70)=0.758$}\\
-&=1-0.7580=0.242 \notag
-\end{align}
+> (d) blue area= $(45-25)\times \frac{1}{40}=\frac{1}{2}=0.5$.
 
+```{r, echo=F}
+a=10
+b=50
 
-> c. What is the probability that the mean age of the sample is at most 73 years old?
+d<-data.frame(x=c(a,b),y=c(1/40,1/40))
 
->> **\underline{Answer:}**
+ggplot(d, aes(x=x,y=y))+geom_point()+geom_line() + xlim(c(a, b)) + ylim(0, 1/(b - a)) +
+      labs(x = "\n x", y = "f(x) \n") +
+    theme(plot.title = element_text(hjust = 0.5),
+          axis.title.x = element_text(face="bold", colour="blue", size = 12),
+          axis.title.y = element_text(face="bold", colour="blue", size = 12)) +
+    geom_segment(x=a, y=0, xend=a, yend=1/(b - a),linetype = "dashed") +
+    geom_segment(x=b, y=0, xend=b, yend=1/(b - a),linetype = "dashed") +
+    theme_bw()+
+    annotate("rect", 
+           xmin = 25, 
+           xmax = 45,
+           ymin = 0,
+           ymax = 1/40,
+           fill = "blue", alpha=0.5) 
 
->>Using part b:
+```
 
-$$P(\bar{X}\leq73)=1-P(\bar{X}>73)=0.7580$$ 
+> (e) This is a continuous RV. Hence, $P[X=22.5]=0$.
 
-> d. What is the probability that the mean age of the sample is between 72 and 75 years old?
-
->> **\underline{Answer:}**
-
-\begin{align}
-P(72<\bar{X}<75) &=P(\bar{X}<75)-P(\bar{X}\leq 72)\notag\\
-&=P(\frac{\bar{X}-72}{1.423}<\frac{75-72}{1.423})-P(\frac{\bar{X}-72}{1.423}\leq \frac{72-72}{1.423})\notag\\
-&=P(Z<2.11)-P(Z<\leq 0) \notag \\
-&=0.9826-0.5=0.4826 \notag
-\end{align}
-
-
-> e. What is the probability that a randomly selected retiree is over 73 years old?
-
->> **\underline{Answer:}**
- 
->> This question is asking for $P(X>73)$. We can't answer this question since we don't know the distribution of the population. We only know the distribution of $\bar X$, not $X$ itself (later, we will learn how we may be able to estimiate this from data).  
 
 \newpage
 
-2. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.
+2. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
 
-> a. Find the probability that a randomly selected American adult plays Poker for more than 5 hours per week. 
 
->> **\underline{Answer:}**
+> a. $P[Z < 0]$.
 
->> If we define $X$ as the amount of time spent by American adults playing Poker, then $X \sim N\left(\mu=4, \sigma=1.25\right)$.
+>> A: Using table, $P[Z < 0]=0.5$.
 
-$$
-P(X>5)=1-P(X\leq 5)=1-P(Z\leq 0.8)=1-0.7881=0.2119
-$$
+> b. $P[Z < -1.5]$.
 
-> b. If four American adults are randomly selected, find the probability that: 
+>> A: Using table, $P[Z < -1.5]=0.0668$.
 
->> i. their average number of hours spent playing Poker is more than  5  hours per week. 
+> c. $P[Z > 1]$.
 
->>> **\underline{Answer:}**
+>> A:  $P[Z > 1]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 1]= 1- 0.8413=0.1587$.
 
->>> We know that $\bar{X} \sim N\left(4, \frac{1 \cdot 25}{\sqrt{4}}\right)$. Hence:
+
+> d. $P[Z > -1.44]$.
+
+>> A:  $P[Z > -1.44]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq -1.44]= 1- 0.0749=0.9251$.
+
+> e. $P[Z > 3.09]$.
+
+>> A:  $P[Z > 3.09]\stackrel{\text{Compliment R}}{=} 1- P[Z \leq 3.09]= 1- 0.9990=0.001$.
+
+> f. $P[-0.71 < Z < 0.92]$.
+
+>> A: $P[-0.71 < Z < 0.92]=P[Z<0.92]-P[Z<-0.71]=0.8212-0.2389=0.5823$. Why? See below:
+
+>> This is what we want:
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+library(ggplot2)
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(-0.71, 0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
+                     labels = c(-3, -0.71,0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+>> We note that P[Z<0.92] would be the red area on this plot: 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "red",
+                xlim = c(-3, 0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3, 0, 0.92, 3),
+                     labels = c(-3, 0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+
+>> We also note that P[Z<-0.71] would be the green area on this plot: 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "green",
+                xlim = c(-3,-0.71), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 3),
+                     labels = c(-3, -0.71,0,  3),
+                     limits = c(-3, 3)) 
+
+```
+
+>> If I get rid of the green area in the red area, what I am left with would be the blue area. 
+
+```{r, echo=F,out.width="70%",fig.align = 'center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "green",
+                xlim = c(-3,-0.71), alpha=0.5) +
+  stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(-0.71,0.92), alpha=0.5) +
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3,-0.71, 0, 0.92, 3),
+                     labels = c(-3, -0.71,0, 0.92, 3),
+                     limits = c(-3, 3)) 
+
+```
+
+> g. $P[-1.5 < Z < -1.44]$.
+
+>> A: $P[-1.5 < Z < -1.44]=P[Z<-1.44]-P[Z<-1.5]=0.0749-0.0668=0.0081$.
+
+> h. $P[Z < -0.71$ or $Z > 0.92]$.
+
+>> A: $P[Z < -0.71 \cup Z > 0.92] = P[Z < -0.71] + P[Z > 0.92] -P[Z < -0.71 \cap Z > 0.92]$. There is no common Z in the intersection, i.e $P[Z < -0.71 \cap Z > 0.92]=0$. Hence:
 
 \begin{align}
-P(\bar{X}>5)&=1-P[\bar{X}\leq 5]\notag\\
-&=1-P\left(\frac{\bar{X}-4}{0.625} \leq \frac{5-4}{0.625}\right) \notag\\
-&=1-P[Z<1.6]=1-0.9452=0.0548 \notag
+P[Z < -0.71 \cup Z > 0.92] &= P[Z < -0.71] + P[Z > 0.92] \notag\\
+&= P[Z < -0.71]+1- P[Z \leq 0.92] \notag\\
+&=0.2389+1-0.8212\notag\\
+&= 0.4177 \notag
 \end{align}
 
->> ii. their average number of hours spent playing Poker is between 3 and 6 hours per week.
-
->>> **\underline{Answer:}**
-
-\begin{align}
-P(3<\bar{X}<6)&=P(\bar{X}<6)-P(\bar{X}\leq 3)\notag\\
-&=P(Z<3.2)-P(Z<-1.6)\notag\\
-&= 0.9993 - 0.0548=0.9445 \notag
-\end{align}
-
->> iii. all four play Poker for more than 5 hours per week.
-
->>> **\underline{Answer:}**
-
-$$
-P(x>5) \cdot P(x>5) \cdot P(x>5) \cdot P(x>5)=\{P(x>5)\}^{4}=(0.2119)^{4}=0.002 
-$$
 \newpage
 
-3. To estimate the mean salary for a population of 500 employees, the president of a certain company selected at random a sample of 40 employees.
+3. Find values of $z$ such that:
 
-> a. Would you use the finite population correction factor in calculating the standard error of the sample mean in this case? Explain.
+> a. The area to the left is 0.0202.
 
->> **\underline{Answer:}**
+>> A: We are looking for the $z$ such that $P(Z<z)=0.0202$. We go to the table and find probability 0.0202 and then find the $z$ value. $z=-2.05$.
 
->> $\frac{n}{N}=\frac{40}{500}=0.08>0.05 \Rightarrow$ FPC is needed.
+> b. The area to the left is 0.7517.
 
-> b. If the population standard deviation is $\$ 800$, compute the standard error both with and without using the finite population correction factor.
-
->> **\underline{Answer:}**
-
->> With FPC:
-
-$$
-\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}} =\sqrt{\frac{500-40}{500-1}} \cdot \frac{800}{\sqrt{40}} =121.4475
-$$
+>> A: We are looking for the $z$ such that $P(Z<z)=0.7517$. We go to the table and find probability 0.7517 and then find the $z$ value. $z=0.68$.
 
 
->> Without FPC:
+> c. The area to the right is 0.025.
 
-$$
-\sigma_{\bar{X}}=\frac{\sigma}{\sqrt{n}}=\frac{800}{\sqrt{40}}=126.4911
-$$
+>> A: We are looking for the $z$ such that $P(Z>z)=0.025$. Table only have $P(Z\leq z)$ probabilities. So we need to convert it to something in that form. We note that $P(Z>z)=1-P(Z\leq z)$. Therefore, $1-P(Z\leq z)=0.025 \rightarrow P(Z\leq z)=1-0.025=0.975$. We go to the table and find probability 0.975 and then find the $z$ value. $z=1.96$.
+
+> d. The area to the right is 0.3015.
+
+>> A: We are looking for the $z$ such that $P(Z>z)=0.3015$. $1-P(Z\leq z)=0.3015 \rightarrow P(Z\leq z)=1-0.3015=0.6985$. We go to the table and find probability 0.6985 and then find the $z$ value. $z=0.52$.
+
+\newpage

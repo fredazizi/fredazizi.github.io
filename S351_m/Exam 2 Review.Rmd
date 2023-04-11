@@ -1,0 +1,14 @@
+---
+title: "Exam 2 Review Questions"
+author: "Fred Azizi"
+date: "2023-04-13"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Chapter 6
+
+1. P(A) + P(B) = 1 for any events A and B that are mutually exclusive.

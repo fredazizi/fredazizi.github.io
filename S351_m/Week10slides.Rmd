@@ -1,7 +1,7 @@
 ---
-title: "Week 9"
+title: "Chapter 8 (part 1)"
 author: "Fred Azizi"
-date: "2022-11-07"
+date: "2022-04-11"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,40 +15,29 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Where do I get slides/worksheets/solution?
+## Exam 2 
 
-![](qrcode_fredazizi.github.io.png){width="164"}
+* Exam 2 will be available this weekend 
 
-Or go to fredazizi.github.io/Teaching
+* Review session on Thursday, April 13, 12:00 - 1:00 pm
+
+* Review session will be recorded.
 
 
+## Quick review  
 
-## Quick review (1)
+Continuous random variable:
 
-**Goal: Estimating population proportion (or number of) of successes**
-
-Examples: Proportion of people voting for a certain candidate, Number of defectives in a production system, etc. 
-
-* Our estimate: $\hat{p}= \frac{x}{n}$ where $x$ is the number of successes in sample and $n$ is sample size.
-
-* Distribution of $\hat{p}$:
-   + Under the conditions that $np\geq 5$ and $n(1-p) \geq 5$, by CLT, $\hat{p}\sim N(\mu=p, \sigma=\sqrt{\frac{p(1-p)}{n}}$.
-   + For calculation of $\sigma$ above, if $p$ is not known, replace it with $\hat{p}$. 
-   + What if conditions are not satisfied? 
-
-## Quick review (2)
-
-**Approximation of Binomial Probability using Normal distribution**
-
-* If $X\sim \text{Bin}(n,p)$, then We can use $Y\sim N(np, \sqrt{np(1-p)})$ to approximate probabilities
-
-* $P(X=x)\approx P(x-0.5\leq Y \leq x+0.5)$ (0.5 is **continuity correction factor**)
-
-* $P(X\leq x) \approx P(Y< x+0.5)$
-
-## Quick review (3)
-
-Distribution of difference between two sample means. Now we are interested in $\mu_1-\mu_2$.
-
-* Using CLT and the fact that difference of Normally distributed RVs is Normal, $\bar{X}_1-\bar{X}_2\sim N\left(\mu=\mu_1-\mu_2, \sigma_{\bar{X}_1-\bar{X}_2}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}\right)$.
-* To use CLT, $n_1\geq30$ and $n_2\geq30$. If this is not satisfied, we need Normal populations for both samples.  
+* Probability Density Function (PDF)
+   + Usually is shown by $f(x)$
+   + Whole area under PDF is 1
+   + $f(x)\geq 0$.
+   + Probability of interval $(a, b)$ with PDF $f(x)$ is the area under PDF from $a$ to $b$.
+* Special case (Uniform RV)
+   + Uniform random variable defined on min=$a$ and max=$b$
+   + $f(x)=\frac{1}{b-a}$ when $a\leq x\leq b$
+* Special case (Normal RV)
+   + Always defined with a mean $(\mu)$ and variance $(\sigma^2)$.
+   + For finding probabilities of interval $(a,b)$, we need tables/computer programs
+   
+   
