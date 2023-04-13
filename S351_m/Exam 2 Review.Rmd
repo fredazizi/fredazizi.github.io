@@ -11,4 +11,173 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Chapter 6
 
-1. P(A) + P(B) = 1 for any events A and B that are mutually exclusive.
+1. In a game of rock paper scissor between two individuals, how many possible outcomes are possible?
+
+
+2. P(A) + P(B) = 1 for any events A and B that are mutually exclusive.
+
+> a. True
+
+> b. False
+
+
+3. If A and B are mutually exclusive events with P(A) = 0.75, then P(B):
+
+> a. can be any value between 0 and 1. 
+
+> b. cannot be larger than 0.25.
+
+> c. can be any value between 0 and 0.75. 
+
+> d. equals 0.25.
+
+4. An approach of assigning probabilities which assumes that all outcomes of the experiment are equally
+likely is referred to as the:
+
+> a. subjective approach 
+
+> b. objective approach 
+
+> c. classical approach
+
+> d. relative frequency approach
+
+5. Which one is correct? 
+
+> a. If two events are mutually exclusive and collectively exhaustive, we can calculate the probability that both
+occur from the information given. 
+
+> b. If events A and B are mutually exclusive and collectively exhaustive, we can calculate the probability that event A occurs 
+
+> c. If two events are collectively exhaustive, we can calculate the probability that both occur at the same time from the information given. 
+
+> d. If two events are mutually exclusive, we can calculate the probability that  one or the other occurs  from the information given. 
+
+\newpage
+
+6. A standard certification test was given at three locations. 1,000 candidates took the test at location A,
+600 candidates at location B, and 400 candidates at location C. The percentages of candidates from
+locations A, B, and C who passed the test were 70%, 68%, and 77%, respectively. One candidate is
+selected at random from among those who took the test.
+
+> a. What is the probability that the selected candidate passed the test?
+
+> b. If the selected candidate passed the test, what is the probability that the candidate took the test at location B?
+
+> c. What is the probability that the selected candidate took the test at location C and failed?
+
+\newpage
+
+7. A college professor classifies his students according to their grade point average (GPA) and their class rank. GPA is on a 0.0-4.0 scale, and class rank is defined as the under class (freshmen and sophomores) and the upper class (juniors and seniors). One student is selected at random.
+
+\begin{center}
+\begin{tabular}{|l|ccc|}
+\hline Class & Under 2.0 & $2.0-3.0$ & Over 3.0 \\
+\hline Under & 0.05 & 0.25 & 0.10 \\
+Upper & 0.10 & 0.30 & 0.20 \\
+\hline
+\end{tabular}
+\end{center}
+
+> a. If the student selected is in the upper class, what is the probability that her GPA is between 2.0 and 3.0?
+
+> b. If the GPA of the student selected is over 3.0, what is the probability that the student is in the lower class?
+
+> c. What is the probability that the student is in the upper class?
+
+> d. What is the probability that the student has GPA over 3.0?
+
+> e.  What is the probability that the student is in the lower class?
+
+> f. What is the probability that the student is in the lower class and has GPA over 3.0?
+
+> g. What is the probability that the student is in the upper class and has GPA under 2.0?
+
+> h. Are being in the upper class and having a GPA over 3.0 dependent?
+
+\newpage
+
+(Extra space for question 5)
+
+\newpage
+
+
+# Chapter 7
+
+1. Sales records of a hobby shop showed the following number of radio controlled trucks sold weekly for each of the last 50 weeks.
+
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline Number of Trucks Sold & Number of Weeks \\
+\hline 0 & 20 \\
+1 & 15 \\
+2 & 10 \\
+3 & 4 \\
+4 & 1 \\
+\hline
+\end{tabular}
+\end{center}
+
+> a. Find the expected value for this distribution.
+
+> b. Find the variance and sd for this distribution. 
+
+> c. Find $sd(5X-25)$ and $E(\frac{X}{5})$. 
+
+> d. Find $P(X\leq 4)$. 
+
+\newpage
+
+
+
+2. Choose all that are false?
+
+> a. $V(X+6)=V(X+1000)$. 
+
+> b. $E(X + 2) - 5 = E(X) - 3$
+
+> c. If $V(cX) = 4V(X)$,then $c=4$. 
+
+> d. If $E(cX) = 4E(X)$,then $c=4$. 
+
+> e. $Var(2)=2$.
+
+> f. $E(2)=2$. 
+
+
+3. Identify which one is a poisson experiment, Binomial experiment or neither.
+
+> a. X = the number of traffic accidents in Albuquerque on a given day.
+
+> b. X = the amount of weight lost in a month by a randomly selected dieter.
+
+> c. X = the number of accidents that occur annually on a busy stretch of highway.
+
+> d. X = the number of households out of 10 surveyed that own a convection oven.
+
+> e. X = the time in minutes required to obtain service in a restaurant.
+
+\newpage
+
+4.   An official from the securities commission estimates that 75% of all online bankers have profited from the use of insider information. Assume that 15 online bankers are selected at random from the commission's registry.
+
+> a. Find the probability that at most 10 have profited from insider information.
+
+> b. Find the probability that at least 6 have profited from insider information.  
+
+> c. Find the probability that all 15 have profited from insider information.
+
+> d. What is the expected number of Online bankers who have profited from the use of insider information?
+
+> e. Find the variance and standard deviation of the number of Online bankers who have profited from the use of insider information.
+
+\newpage
+
+5. A classified department receives an average of 10 telephone calls each afternoon between 2 and 4 P.M.
+The calls occur randomly and independently of one another.
+
+> a. Find the probability that the department will receive 13 calls between 2 and 4 P.M. on a particular afternoon.
+
+> b.  Find the probability that the department will receive at least five calls between 2 and 4 P.M. on a particular afternoon.
+
+>  c. What's the expected value, variance and standard deviation of number of calls each afternoon between 2 and 4 P.M.
