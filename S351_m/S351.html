@@ -521,23 +521,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -797,10 +791,10 @@ Apr 11
 Apr 18
 </td>
 <td style="text-align:left;border-left:1px solid;border-right:1px solid;">
-slides
+<a href="Week11slides.pdf" style="     ">Slides</a>
 </td>
 <td style="text-align:left;border-left:1px solid;border-right:1px solid;">
-Worksheet 10
+<a href="Worksheet10.pdf" style="     ">Worksheet 10</a>
 </td>
 <td style="text-align:left;border-left:1px solid;border-right:1px solid;">
 Solution

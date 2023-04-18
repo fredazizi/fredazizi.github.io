@@ -1,8 +1,8 @@
 ---
-title: "Week 10"
+title: "Chapter 8 (part 2) and Chapter (9) (part 1)"
 author: "Fred Azizi"
 institues:
-date: "2022-11-21"
+date: "2023-04-18"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -18,38 +18,111 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Where do I get slides/worksheets/solution?
-
-![](qrcode_fredazizi.github.io.png){width="164"}
-
-Or go to fredazizi.github.io/Teaching
-
 ## Quick review (1)
 
+Continuous random variable:
 
-\begin{block}{interval estimate}An \textbf{interval estimator} draws inferences about a population by estimating the value of an unknown parameter using an interval.
-\end{block}
+* Normal Random variable
+   + Always defined with a mean $(\mu)$ and variance $(\sigma^2)$. Standard Normal is Normal with $\mu=0$, $\sigma^2=1$.
+   + For finding probabilities of interval $(a,b)$, we need tables/computer programs.
+   + Can convert any Normal RV (X) to standard Normal by $\frac{X-\mu}{\sigma}$.
+   + Percentiles in Normal distribution, $Z_A$ is defined as $P(Z>Z_A)=A$. 
 
-* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$?
-   + $\bar{X}\pm Z_{\alpha/2}\frac{\sigma}{\sqrt n}$.
-   + Note the relationship between Confidence level and $Z_{\alpha/2}$. 
-   + For example, for a 95% confidence level, we need to use $Z_{0.05/2}$.
+```{r, echo=F, out.width="40%", fig.align='center'}
+library(latex2exp)
+library(ggplot2)
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+  geom_segment(x=1.5, y=0, xend=1.5, yend=dnorm(1.5),linetype = "dashed") +
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(1.5, 3), alpha=0.5) +
+   annotate("text", x = 2, y = 0.025, label = "A")+
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3, 0, 1.5, 3),
+                     labels = c(-3, 0, TeX("$Z_{A}$"), 3),
+                     limits = c(-3, 3)) 
 
-* How to interpret the confidence interval?
 
-* Relationship between sample size and width of confidence interval.
+```
 
-* Relationship between confidence level and width of confidence interval.
+## Quick review (2)
 
 
-## Quick review (1)
+* Exponential Random Variable:
+   + Defined by parameter $\lambda$.
+   + $\mu=\sigma=\frac{1}{\lambda}$.
+   + $P(X<x)=1-e^{-\lambda x}$ 
+   + $P\left(x_1<X<x_2\right)=P\left(X<x_2\right)-P\left(X<x_1\right)=e^{-\lambda x_1}-e^{-\lambda x_2}$
+   + relationship between Poisson RV and Exp RV, read [this](https://medium.com/swlh/the-link-between-poisson-and-exponential-distribution-817e92344d1b).
+   
+```{r, echo=F, fig.align='center', out.width="50%"}
+x_lower <- 0
+x_upper <- 5
+ 
+max_height2 <- max(dexp(x_lower:x_upper, rate = 1, log = FALSE), 
+                    dexp(x_lower:x_upper, rate = 2, log = FALSE),
+                    dexp(x_lower:x_upper, rate = 3, log = FALSE),
+                    dexp(x_lower:x_upper, rate = 0.5, log = FALSE))
+ 
 
-* How to find a confidence interval for a population proportion ($p$) with  **confidence level** of $1-\alpha$?
-   + $\hat{p}\pm Z_{\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}$.
+ggplot(data.frame(x = c(x_lower, x_upper)), aes(x = x)) + xlim(x_lower, x_upper) + 
+     ylim(0, max_height2) +
+     stat_function(fun = dexp, args = list(rate = 0.5), aes(colour = "0.5")) + 
+     stat_function(fun = dexp, args = list(rate = 1), aes(colour = "1")) + 
+     stat_function(fun = dexp, args = list(rate = 2), aes(colour = "2")) + 
+     stat_function(fun = dexp, args = list(rate = 3), aes(colour = "3")) + 
+     scale_color_manual("Rate", values = c("blue", "green", "red", "purple")) +
+     labs(x = "\n x", y = "f(x) \n", 
+        title = "Exponential Distribution Density Plots \n") + 
+     theme(plot.title = element_text(hjust = 0.5), 
+         axis.title.x = element_text(face="bold", colour="blue", size = 12),
+         axis.title.y = element_text(face="bold", colour="blue", size = 12),
+         legend.title = element_text(face="bold", size = 10),
+         legend.position = "right")+theme_bw()
+```
 
-* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$ when we don't know $\sigma$?
-   + Use $t$-distribution and sample standard deviation ($s$). 
-   + $\bar{X}\pm t_{df,\alpha/2}\frac{s}{\sqrt n}$
-   + Remember that $t$-distribution has a parameter named **degrees of freedom**. 
-   + For the puropose of building CI, we set $df=n-1$ where $n$ is the sample size.  
 
+## Quick review (3)
+
+Other distributions:
+
+* Student's $t$ distribution with parameter $\nu$ (called **"degrees of freedom"**).
+   + $E(t)=0$ 
+   + $V(t)=\frac{\nu}{\nu-2} \text { for } \nu>2$
+* $\chi^2$ (pronounced Chi-squared) distribution  with parameter $\nu$.
+   + $E\left(\chi^2_{\nu}\right)=\nu$.
+   + $V\left(\chi^2_\nu\right)=2 \nu$.
+   
+* $F$ distribution with two parameters $\nu_1$ and $\nu_2$.
+   + $E(F_{\nu_1,\nu_2})=\frac{\nu_2}{\nu_2-2} \quad \nu_2>2$ .
+   + $V(F_{\nu_1,\nu_2})=\frac{2 \nu_2^2\left(\nu_1+\nu_2-2\right)}{\nu_1\left(\nu_2-2\right)^2\left(\nu_2-4\right)} \quad \nu_2>4$ 
+   
+   
+## Quick review (4)
+
+A lot of confusing/similar terms...What they mean??
+
+* Population
+
+* Sample
+
+* Sample means
+
+* distribution of sample vs distribution of sample means vs distribution of population
+
+## Quick review (5)
+
+
+**Central Limit Theorem**
+
+ **The sampling distribution of the mean of a random sample drawn from any population is approximately normal for a sufficiently large sample size.**
+ 
+ * \textcolor{red}{Mean} of distribution of the sampling mean is the same as mean of the population, $\mu_{\bar{X}}=\mu$.
+ * Standard deviation of the sampling distribution (\textcolor{red}{standard error} of the mean is $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt n}$.
+ * $\bar{X} \sim N(\mu,\frac{\sigma}{\sqrt n})$.
+ * Finite population correction for standard error: 
+ $$\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}}$$
+    + Rule of thumb: Use for population that is at least 20 times larger than the sample size
