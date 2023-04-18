@@ -15,7 +15,7 @@ output: pdf_document
 
 \newpage
 
-2. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher You find the average for fun!
+2. You want to see if you want to take a course with a Statistics prof. in the upcoming Fall semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and  40% of students received 90 or higher You find the average for fun!
 
 > Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
 
