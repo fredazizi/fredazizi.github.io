@@ -75,7 +75,7 @@ pay are quite variable. In fact, the times are exponentially distributed with a 
 
 \newpage 
 
-1. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
+5. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
 
 > a. What is the distribution of the sample mean? 
 
@@ -111,7 +111,7 @@ $$P(\bar{X}\leq73)=1-P(\bar{X}>73)=0.7580$$
 \begin{align}
 P(72<\bar{X}<75) &=P(\bar{X}<75)-P(\bar{X}\leq 72)\notag\\
 &=P(\frac{\bar{X}-72}{1.423}<\frac{75-72}{1.423})-P(\frac{\bar{X}-72}{1.423}\leq \frac{72-72}{1.423})\notag\\
-&=P(Z<2.11)-P(Z<\leq 0) \notag \\
+&=P(Z<2.11)-P(Z< 0) \notag \\
 &=0.9826-0.5=0.4826 \notag
 \end{align}
 

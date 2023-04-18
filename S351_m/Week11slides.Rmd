@@ -1,5 +1,5 @@
 ---
-title: "Chapter 8 (part 2) and Chapter (9) (part 1)"
+title: "Chapter 8 (part 2) and Chapter 9 (part 1)"
 author: "Fred Azizi"
 institues:
 date: "2023-04-18"
@@ -123,6 +123,4 @@ A lot of confusing/similar terms...What they mean??
  * \textcolor{red}{Mean} of distribution of the sampling mean is the same as mean of the population, $\mu_{\bar{X}}=\mu$.
  * Standard deviation of the sampling distribution (\textcolor{red}{standard error} of the mean is $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt n}$.
  * $\bar{X} \sim N(\mu,\frac{\sigma}{\sqrt n})$.
- * Finite population correction for standard error: 
- $$\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}}$$
-    + Rule of thumb: Use for population that is at least 20 times larger than the sample size
+ 
