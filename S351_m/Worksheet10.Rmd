@@ -60,18 +60,3 @@ pay are quite variable. In fact, the times are exponentially distributed with a 
 > e. What is the probability that a randomly selected retiree is over 73 years old?
 
 
-\newpage
-
-6. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.
-
-> a. Find the probability that a randomly selected American adult plays Poker for more than 5 hours per week. 
-
-> b. If four American adults are randomly selected, find the probability that: 
-
->> i. their average number of hours spent playing Poker is more than  5  hours per week. 
-
->> ii. their average number of hours spent playing Poker is between 3 and 6 hours per week.
-
->> iii. all four play Poker for more than 5 hours per week.
-
-\newpage
