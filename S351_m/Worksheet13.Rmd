@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 13"
 author: "Fred Azizi"
-date: "2022-12-04"
+date: "2022-05-09"
 header-include:
   - \usepackage[utf8]{inputenc}
   - \usepackage[T1]{fontenc}
@@ -15,45 +15,34 @@ header-include:
 output: pdf_document
 ---
 
-1. A psychologist claims that the mean age at which children start walking is $12.5$ months. The following data give the age at which 18 randomly selected children started walking,
-
-$$
-\begin{aligned}
-& 15,11,13,14,15,12,15,10,16 \\
-& 17,14,16,13,15,15,14,11,13
-\end{aligned}
-$$
-
-> which yields a mean $13.83$ months and standard deviation 1.917. Test at the $5 \%$ level of significance if the mean age at which children start walking is over $12.5$ months.
-
+1. A battery manufacturer claims their product has a life expectancy of 90 hours. An improvement production process is believed to make an increase in the life expectancy of batteries. A sample of 36 batteries showed an average life of $93$ hours. Assume from past information, the standard deviation of the life expectancy is 9 hours.
 
 > a. Formulate the hypotheses for this problem.
 
- 
+> b. Calculate the test statistic.
+
+> c. Make a decision at $0.1$ significance level. State your conclusion in terms of the problem.
+
+> d. Make a decision at $0.01$ significance level. What is your conclusion. 
+
+\newpage
+
+2. The average gasoline price of one of the major oil companies is $\$ 1.75$ per gallon. Because of cost reduction measures, it is believed that there has been a significant reduction in the average price. In order to test this belief, a sample of 36 of the company's gas stations were randomly selected and yielded an average price $\$ 1.65$ per gallon. Assume the standard deviation of the population is $\$ 0.12$.
+
+> a. State the null and the alternative hypothesis for this problem.
+
+> b. Calculate the test statistic. 
+
+> c. At $5 \%$ level of significance, test the company's claim.
+
+\newpage
+
+3. To determine the average price of hotel rooms in Atlanta, a sample of 49 hotels was selected and yielded an average price of hotel rooms being $\$ 120$. The population standard deviation was found to be $\$ 16$.
+
+> a. Formulate the hypotheses to determine whether the average price of hotel rooms is significantly different from $\$ 124.5$.
 
 > b. Calculate the test statistic.
 
- 
-> c. What is the degrees of freedom? Find the critical value.
+> c. At $10 \%$ level of significance, use critical value approach to test the hypotheses. What is the conclusion? 
 
- 
-> d. What is the $95 \%$ confidence interval for the population mean age at which children start walking?
-
- 
-\newpage
-
-2. A nationwide study found that $35 \%$ of teenagers are smokers. A sample of 81 teenagers was drawn from Maryland, and 24 smokers were observed. Test at $10 \%$ level of significance if the proportion of smokers in Maryland is different from the national proportion.
-
-> a. What is the sample proportion?
-
- 
-> b. Formulate the hypothesis for this problem.
-
- 
-> c. Calculate the test statistic.
-
- 
-> d. What is your decision based on the critical value and the test statistic?
- 
-> e. Write your conclusion in words.
- 
+> d. At $90 \%$ confidence, using the confidence interval approach to test the hypotheses. What is the conclusion?

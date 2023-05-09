@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 13 Solution"
 author: "Fred Azizi"
-date: "2022-12-05"
+date: "2023-05-09"
 header-include:
   - \usepackage[utf8]{inputenc}
   - \usepackage[T1]{fontenc}
@@ -15,27 +15,18 @@ header-include:
 output: pdf_document
 ---
 
-1. A psychologist claims that the mean age at which children start walking is $12.5$ months. The following data give the age at which 18 randomly selected children started walking,
-
-$$
-\begin{aligned}
-& 15,11,13,14,15,12,15,10,16 \\
-& 17,14,16,13,15,15,14,11,13
-\end{aligned}
-$$
-
-> which yields a mean $13.83$ months and standard deviation 1.917. Test at the $5 \%$ level of significance if the mean age at which children start walking is over $12.5$ months.
-
+1. A battery manufacturer claims their product has a life expectancy of 90 hours. An improvement production process is believed to make an increase in the life expectancy of batteries. A sample of 36 batteries showed an average life of $93$ hours. Assume from past information, the standard deviation of the life expectancy is 9 hours.
 
 > a. Formulate the hypotheses for this problem.
 
 >> **\underline{Answer:}**
 
 $$
-\begin{aligned}
-& H_{0}: \mu \leqslant 12.5 \\
-& H_{1}: \mu>12.5
-\end{aligned}
+H_{0}: \mu \leq 90 
+$$
+
+$$
+H_{1}: \mu>90
 $$
 
 > b. Calculate the test statistic.
@@ -43,80 +34,130 @@ $$
 >> **\underline{Answer:}**
 
 
->> $\bar{X}=13.83 \quad s=1.917 \quad n=18 \quad \alpha=0.05$
+$$
+\begin{aligned}
+&\bar{x}=93 \\
+&\sigma=9 \\
+&n=36
+\end{aligned} \quad z_{\text {calc }}=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{93-90}{9 / \sqrt{36}}=2
+$$
+
+> c. Make a decision at $0.1$ significance level. State your conclusion in terms of the problem.
+
+>> **\underline{Answer:}**
 
 $$
-t_{\text { }}=\frac{\bar{x}-\mu}{s / \sqrt{n}}=\frac{13.83-12.5}{1.917 / \sqrt{18}}=2.9435
+c=\left|z_{\alpha}\right|=\left|z_{0.1}\right|=1.28 \quad\left|z_{c a l c}\right|>c \Rightarrow \text { Reject } H_{0}.
 $$
 
-> c. What is the degrees of freedom? Find the critical value.
+>> At $10\%$ level of significance, there is statistical evidence to suggest that the population mean is greater than 90.
+
+
+> d. Make a decision at $0.01$ significance level. What is your conclusion. 
+
+
+>> **\underline{Answer:}**
+
+$$
+c=\left|z_{\alpha}\right|=\left|z_{0.10}\right|=2.33 \quad\left|z_{c a l c}\right|<c \Rightarrow \text {Fail to reject } H_{0}.
+$$
+
+>> At $1\%$ level of significance, there isn't enough statistical evidence to suggest that the population mean is greater than 90.
+
+
+
+
+2. The average gasoline price of one of the major oil companies is $\$ 1.75$ per gallon. Because of cost reduction measures, it is believed that there has been a significant reduction in the average price. In order to test this belief, a sample of 36 of the company's gas stations were randomly selected and yielded an average price $\$ 1.65$ per gallon. Assume the standard deviation of the population is $\$ 0.12$.
+
+> a. State the null and the alternative hypothesis for this problem.
+
+>> **\underline{Answer:}**
+
+$$
+H_{0}: \mu \geqslant 1.75 
+$$
+
+$$
+ H_{1}: \mu<1.75
+$$
+
+
+> b. Calculate the test statistic. 
+
+>> **\underline{Answer:}**
+
+>> $\bar{x}=1.65 \quad \sigma=0.12 \quad n=36$.
+
+$$
+z_{\text {calc }}=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{1.65-1.75}{0.12 / \sqrt{36}}=-5
+$$
+
+> c. At $5 \%$ level of significance, test the company's claim.
+
 
 >> **\underline{Answer:}**
 
 
 $$
-d f=n-1=17 \Rightarrow t_{0.05,17}=1.74
+c=\left|z_{\alpha}\right|=\left|z_{0.05}\right|=1.645 \text {. }
 $$
 
->> since this is a right tailed test, We reject the null hypothesis if test statistics is greater than  $t_{0.05,17}$. In this case, 2.9435? 1.74, we reject the null.
+>> $\mid z_{calc}$ $\mid>c \Rightarrow$ Reject $H_o$.
+
+>> At $5 \%$ level of significant, there is statistical evidence lo suggest that that population mean is less than $\$ 1.75$. 
 
 
-> d. What is the $95 \%$ confidence interval for the population mean age at which children start walking?
+3. To determine the average price of hotel rooms in Atlanta, a sample of 49 hotels was selected and yielded an average price of hotel rooms being $\$ 120$. The population standard deviation was found to be $\$ 16$.
 
->> **\underline{Answer:}**
-
-
->> $95 \%$ CI $=\bar{x} \pm E$ where $E=t_{n-1, \alpha / 2} \cdot \frac{s}{\sqrt{n}}$.
-
-$$t_{17,0.025}=2.11 \quad \Rightarrow E=2.11 \times \frac{1.917}{\sqrt{18}}=0.9534$$
-
->> Therefore the  $95\%$ CI= $13.83 \pm 0.9534 =(12.8766,14.7834)$.
-
-\vspace{2cm}
-
-2. A nationwide study found that $35 \%$ of teenagers are smokers. A sample of 81 teenagers was drawn from Maryland, and 24 smokers were observed. Test at $10 \%$ level of significance if the proportion of smokers in Maryland is different from the national proportion.
-
-> a. What is the sample proportion?
+> a. Formulate the hypotheses to determine whether the average price of hotel rooms is significantly different from $\$ 124.5$.
 
 >> **\underline{Answer:}**
 
 $$
-\hat{p}=\frac{24}{81}=0.2963
+H_{0}: \mu=124.5 
 $$
 
-> b. Formulate the hypothesis for this problem.
+$$
+H_{a}: \mu \neq 124.5
+$$
+
+> b. Calculate the test statistic.
+
+>> **\underline{Answer:}**
+
+
+$$
+\begin{aligned}
+&\bar{x}=120 \quad n=49 \quad \sigma=16 \\
+&z=\frac{\bar{x}-\mu}{\sigma / \sqrt{n}}=\frac{120-124.5}{16 / \sqrt{49}}=-1.97
+\end{aligned}
+$$
+
+
+> c. At $10 \%$ level of significance, use critical value approach to test the hypotheses. What is the conclusion? 
+
+>> **\underline{Answer:}**
+
+>> $c=\left|Z_{\alpha / 2}\right|=\left|Z_{0.05}\right|=1.645$
+
+>> $|Z|>C \Rightarrow$ Reject $H_o$. At $10 \%$ level of significant, there is statistical evidence to suggest that the population mean in different from $124.5$.
+
+
+> d. At $90 \%$ confidence, using the confidence interval approach to test the hypotheses. What is the conclusion?
 
 >> **\underline{Answer:}**
 
 $$
 \begin{aligned}
-& H_{0}: p=0.35 \\
-&  H_{1}: p \neq 0.35
+&1-\alpha=0.9 \Rightarrow \alpha/2=0.05 \Rightarrow z_{\alpha / 2}=1.645 \\
+&E=z_{\alpha / 2} \cdot \frac{\sigma}{\sqrt{n}}=3.76 .
 \end{aligned}
 $$
 
-> c. Calculate the test statistic.
-
->> **\underline{Answer:}**
+>> Hence, $90 \%$ CI for population mean $=\bar{x} \pm E$
 
 $$
-Z_{\text {calc }}= \frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}}=\frac{0.2963-0.35}{\sqrt \frac{0.35 \times 0.65}{81}}=-1.0133
+=120 \pm 3.76=(116.24,123.76)
 $$
 
-> d. What is your decision based on the critical value and the test statistic?
-
->> **\underline{Answer:}**
-
-$$
- Z_{\alpha / 2}=Z_{0.05}=1.645
-$$
-
->> Since $|Z_{calc}|<Z_{\alpha / 2}$, we fail to reject $H_o$.
-
-
-> e. Write your conclusion in words.
-
->> **\underline{Answer:}**
-
->> At $10 \%$ level of significance, there is not enough evidence to conclude that the  proportion of smokers in Maryland is different from the  national proportion.
-
+>> since the $90 \%$ CI for true population mean does not include the $H_o$ value of 124.5, there is statistical evidence to suggest that mean of the population  is different from $124.5$.

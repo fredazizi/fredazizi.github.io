@@ -1,0 +1,48 @@
+---
+title: "Chapter 10"
+author: "Fred Azizi"
+date: "2023-05-02"
+output: 
+   beamer_presentation:
+     theme: "Frankfurt"
+     colortheme: "crane"
+header-includes:
+  - \setbeamertemplate{navigation symbols}{}
+  - \setbeamertemplate{footline}[page number]
+  - \usepackage{xcolor}
+  - \usepackage{adjustbox}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Quick review (1)
+
+
+\begin{block}{interval estimate}An \textbf{interval estimator} draws inferences about a population by estimating the value of an unknown parameter using an interval.
+\end{block}
+
+* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$?
+   + $\bar{X}\pm Z_{\alpha/2}\frac{\sigma}{\sqrt n}$.
+   + Note the relationship between Confidence level and $Z_{\alpha/2}$. 
+   + For example, for a 95% confidence level, we need to use $Z_{0.05/2}$.
+
+* How to interpret the confidence interval?
+
+* Relationship between sample size and width of confidence interval.
+
+* Relationship between confidence level and width of confidence interval.
+
+
+## Quick review (1)
+
+* How to find a confidence interval for a population proportion ($p$) with  **confidence level** of $1-\alpha$?
+   + $\hat{p}\pm Z_{\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}$.
+
+* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$ when we don't know $\sigma$?
+   + Use $t$-distribution and sample standard deviation ($s$). 
+   + $\bar{X}\pm t_{df,\alpha/2}\frac{s}{\sqrt n}$
+   + Remember that $t$-distribution has a parameter named **degrees of freedom**. 
+   + For the puropose of building CI, we set $df=n-1$ where $n$ is the sample size.  
+
