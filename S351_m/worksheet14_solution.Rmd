@@ -58,7 +58,7 @@ $$
 d f=n-1=17 \Rightarrow t_{0.05,17}=1.74
 $$
 
->> since this is a right tailed test, We reject the null hypothesis if test statistics is greater than  $t_{0.05,17}$. In this case, 2.9435? 1.74, we reject the null.
+>> since this is a right tailed test, We reject the null hypothesis if test statistics is greater than  $t_{0.05,17}$. In this case, $2.9435> 1.74$, we reject the null.
 
 
 > d. What is the $95 \%$ confidence interval for the population mean age at which children start walking?
