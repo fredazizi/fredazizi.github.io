@@ -29,7 +29,7 @@ sched_table<-tibble(Date=c("Jan 31", "Feb 7", "Feb 14", "Feb 21", "Feb 28", "Mar
             cell_spec("Slides", "html", link = "Week12slides.pdf"),
             cell_spec("Slides", "html", link = "Week13slides.pdf"),
             cell_spec("Slides", "html", link = "Week14slides.pdf"),
-            "slides"),
+            cell_spec("Testing cheat sheet", "html", link = "cheatsheet.pdf")),
 
 
 Worksheet = c( "______",
@@ -47,7 +47,7 @@ Worksheet = c( "______",
             cell_spec("Worksheet 11", "html", link = "Worksheet11.pdf"),
             cell_spec("Worksheet 12", "html", link = "Worksheet12.pdf"),
             cell_spec("Worksheet 13", "html", link = "Worksheet13.pdf"),
-            "Worksheet 14"),
+            cell_spec("Worksheet 14", "html", link = "Worksheet14.pdf")),
 
 `Worksheet solution` = c( "______",
             cell_spec("Worksheet 1", "html", link = "worksheet1_solution.pdf"),
@@ -64,7 +64,8 @@ Worksheet = c( "______",
             cell_spec("Worksheet 11", "html", link = "worksheet11_solution.pdf"),   
             cell_spec("Worksheet 12", "html", link = "worksheet12_solution.pdf"),   
             cell_spec("Worksheet 13", "html", link = "worksheet13_solution.pdf"),   
-            "Solution"),
+            cell_spec("Worksheet 14", "html", link = "worksheet14_solution.pdf")
+            ),
               
           Note = c("______",
                    "Chp 2 HW due on Feb 12",
@@ -81,7 +82,7 @@ Worksheet = c( "______",
                    "Chp 9 HW due on Apr 30",
                    "Chp 10 HW due on May 7",
                    "Exam 3 on May 13-14",
-                   "______"))
+                   "Final Exam due on Weekend"))
 
 sched_table %>% 
   kable("html", escape = FALSE) %>%
