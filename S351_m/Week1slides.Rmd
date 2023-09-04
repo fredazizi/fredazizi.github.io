@@ -1,7 +1,7 @@
 ---
 title: "Week 1"
 author: "Fred Azizi"
-date: "2023-01-31"
+date: "2023-09-05"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -23,7 +23,7 @@ My pronouns: He/him/his
 
 I am a PhD student in the Department of Statistics.
 
-Office hours: Th 12-1 pm (Through BB Collaborate)
+Office hours: By appointment (Online)
 
 ## What are we going to do here?
 
@@ -37,7 +37,7 @@ Structure of the class
 
     -   \~ 30 to 40 min: Work on the new worksheet.
 
-- Might have special sessions for exams
+- Review sessions for exams 
 
 ## Questions
 
@@ -57,3 +57,62 @@ Use the link in the Blackboard
 
 Or go to fredazizi.github.io/Teaching
 
+
+## Quick Review
+
+
+Types of Data (or scales of measurement):
+
+-   **Nominal Data:** also called qualitative. labels- names (non-numeric label or numeric code)- categories- No meaningful order to them.
+
+-   **Ordinal Data:** are also qualitative. similar to Nominal type with a difference that categories have an order, a ranking in it's nature.
+
+-    **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
+
+-   **Ratio Data:** also called quantitative, similar to interval data but with the difference that scale must contain a meaningful zero, can't be negative.
+
+**Note:** Your textbook doesn't cover Ratio data. It names all type of quantitative data as interval data!!!
+
+
+## Quick review (2)
+
+A \textcolor{red}{frequency distribution} is a tabular way of summarizing data. Table shows the number of data observations that fall into specific class of intervals/categories.
+
+-   Class: a category in a frequency distribution.
+-   Frequency: number of observation in each class.
+-   Relative frequency: proportion of observation in each class. It is equal to $\frac{\text{Class frequency}}{\text{total frequency}}$.
+-   Percent frequency: is the relative frequency multiplied by 100.
+-   Cumulative relative frequency: proportion of observations that are less than or equal to the class, or accumulated proportion.
+
+```{=tex}
+\begin{table}[]
+  \begin{adjustbox}{width=\textwidth}
+
+   \begin{tabular}{|l|l|l|l|l|}
+\hline Class & Frequency & Relative Frequency & Percent frequency & Cumulative Relative Frequency \\
+\hline & & & &\\
+\hline & & & &\\
+\hline & & (adds up to 1) & (adds up to 100\%) & (last number equal to 1)\\
+\hline
+\end{tabular}
+  \end{adjustbox}
+
+\end{table}
+```
+
+
+## Quick review (3)
+
+How to describe the relationship between **Nominal** variables? $\Rightarrow$ cross-classification table (also called a cross-tabulation table)
+
+Example (2 by 2):
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline & Cat A1 & Cat A2 & Total\\
+\hline Cat B1 & & & \\ 
+\hline Cat  B2 & & & \\
+\hline Total & &  & \\
+\hline
+\end{tabular}
+\end{center}

@@ -7,11 +7,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-**Spring 2023**
+**Fall 2023**
 
 [STAT 351](S351_m/S351.html)
 
+
+**Spring 2023**
+
+STAT 351
 
 **Fall 2022**
 
