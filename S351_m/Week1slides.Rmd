@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Chapter 2 Review"
 author: "Fred Azizi"
 date: "2023-09-05"
 output: 
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Who am I?
 
-My name: Farideddin Azizi (You can call me Fred)
+My name: Fred Azizi 
 
 My pronouns: He/him/his
 
@@ -50,6 +50,8 @@ Structure of the class
 3- How do I get the slides/worksheets?
 
 4- Will you provide the solutions?
+
+5- Any tips for success in this class?
 
 ## Where do I get slides/worksheets/solution
 
