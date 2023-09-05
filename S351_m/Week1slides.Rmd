@@ -1,5 +1,5 @@
 ---
-title: "Chapter 2 Review"
+title: "Introduction and Chapter 2 Review"
 author: "Fred Azizi"
 date: "2023-09-05"
 output: 
@@ -15,9 +15,19 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## QR code
+
+Please scan this QR code if you want this slides and worksheet on your phone:
+
+You can also use the link in the Blackboard
+
+Or go to fredazizi.github.io/Teaching
+
+![](qrcode_fredazizi.github.io.png){width="173"}
+
 ## Who am I?
 
-My name: Fred Azizi 
+My name: Fred Azizi
 
 My pronouns: He/him/his
 
@@ -37,7 +47,7 @@ Structure of the class
 
     -   \~ 30 to 40 min: Work on the new worksheet.
 
-- Review sessions for exams 
+-   Review sessions for exams
 
 ## Questions
 
@@ -55,13 +65,11 @@ Structure of the class
 
 ## Where do I get slides/worksheets/solution
 
-Use the link in the Blackboard 
+Use the link in the Blackboard
 
 Or go to fredazizi.github.io/Teaching
 
-
 ## Quick Review
-
 
 Types of Data (or scales of measurement):
 
@@ -69,12 +77,11 @@ Types of Data (or scales of measurement):
 
 -   **Ordinal Data:** are also qualitative. similar to Nominal type with a difference that categories have an order, a ranking in it's nature.
 
--    **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
+-   **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
 
 -   **Ratio Data:** also called quantitative, similar to interval data but with the difference that scale must contain a meaningful zero, can't be negative.
 
 **Note:** Your textbook doesn't cover Ratio data. It names all type of quantitative data as interval data!!!
-
 
 ## Quick review (2)
 
@@ -101,14 +108,13 @@ A \textcolor{red}{frequency distribution} is a tabular way of summarizing data. 
 
 \end{table}
 ```
-
-
 ## Quick review (3)
 
 How to describe the relationship between **Nominal** variables? $\Rightarrow$ cross-classification table (also called a cross-tabulation table)
 
 Example (2 by 2):
 
+```{=tex}
 \begin{center}
 \begin{tabular}{|l|l|l|l|}
 \hline & Cat A1 & Cat A2 & Total\\
@@ -118,3 +124,4 @@ Example (2 by 2):
 \hline
 \end{tabular}
 \end{center}
+```
