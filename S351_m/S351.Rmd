@@ -48,7 +48,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
             "Worksheet 13"
             ),
 
-`Worksheet solution` = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
+`Worksheet solution` = c( cell_spec("Worksheet 1", "html", link = "worksheet1_solution.pdf"),
            "Worksheet 2",
            "Worksheet 3",
            "Worksheet 4",

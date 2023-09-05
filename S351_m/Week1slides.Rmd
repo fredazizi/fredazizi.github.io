@@ -75,7 +75,6 @@ Types of Data (or scales of measurement):
 -   **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
 
 -   **Ratio Data:** also called quantitative, similar to interval data but with the difference that scale must contain a meaningful zero, can't be negative.
-
 **Note:** Your textbook doesn't cover Ratio data. It names all type of quantitative data as interval data!!!
 
 ## Chapter 2, Quick review (2)
