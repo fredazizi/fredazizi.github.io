@@ -63,13 +63,8 @@ Structure of the class
 
 5- Any tips for success in this class?
 
-## Where do I get slides/worksheets/solution
 
-Use the link in the Blackboard
-
-Or go to fredazizi.github.io/Teaching
-
-## Quick Review
+## Chapter 2, Quick Review
 
 Types of Data (or scales of measurement):
 
@@ -83,7 +78,7 @@ Types of Data (or scales of measurement):
 
 **Note:** Your textbook doesn't cover Ratio data. It names all type of quantitative data as interval data!!!
 
-## Quick review (2)
+## Chapter 2, Quick review (2)
 
 A \textcolor{red}{frequency distribution} is a tabular way of summarizing data. Table shows the number of data observations that fall into specific class of intervals/categories.
 
@@ -108,7 +103,8 @@ A \textcolor{red}{frequency distribution} is a tabular way of summarizing data. 
 
 \end{table}
 ```
-## Quick review (3)
+
+## Chapter 2, Quick review (3)
 
 How to describe the relationship between **Nominal** variables? $\Rightarrow$ cross-classification table (also called a cross-tabulation table)
 
