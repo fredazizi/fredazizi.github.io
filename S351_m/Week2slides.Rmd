@@ -1,7 +1,7 @@
 ---
-title: "Week 2: Chapter 2 Review"
+title: "Chapter 3 review"
 author: "Fred Azizi"
-date: "2023-02-07"
+date: "2023-09-12"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,60 +15,79 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Quick Review
+## Reminders
+
+**Reminder**: \fbox{Chp 2 Homework is due this weekend}
+
+Please scan this QR code if you want this slides and worksheet on your phone:
+
+You can also use the link in the Blackboard
+
+Or go to fredazizi.github.io/Teaching
+
+![](qrcode_fredazizi.github.io.png){width="173"}
 
 
-Types of Data (or scales of measurement):
+## Quick review 
 
--   **Nominal Data:** also called qualitative. labels- names (non-numeric label or numeric code)- categories- No meaningful order to them.
+- We want to describe interval/ratio data, what is the appropriate way to visualize? 
 
--   **Ordinal Data:** are also qualitative. similar to Nominal type with a difference that categories have an order, a ranking in it's nature.
+- We use \textcolor{red}{Grouped Frequency Distribution} when size of data ($n$) is very large and/or the range of the values is large
 
--   **Interval Data:** also called quantitative, always numeric, between values is fixed number, addition and subtraction are meaningful, don't contain a meaningful zero, can be negative.
+* The steps necessary to define the classes:
+    + How to choose the number of non-overlapping classes?
+    + How to determine the width of each class?
+    + Where to start the first class?
 
--   **Ratio Data:** also called quantitative, similar to interval data but with the difference that scale must contain a meaningful zero, can't be negative.
-
-**Note:** Your textbook doesn't cover Ratio data. It names all type of quantitative data as interval data!!!
 
 ## Quick review (2)
 
-A \textcolor{red}{frequency distribution} is a tabular way of summarizing data. Table shows the number of data observations that fall into specific class of intervals/categories.
+-   How to choose number of classes? **Sturges's formula**. (Round up to an integer if necessary)
 
--   Class: a category in a frequency distribution.
--   Frequency: number of observation in each class.
--   Relative frequency: proportion of observation in each class. It is equal to $\frac{\text{Class frequency}}{\text{total frequency}}$.
--   Percent frequency: is the relative frequency multiplied by 100.
--   Cumulative relative frequency: proportion of observations that are less than or equal to the class, or accumulated proportion.
+$$
+\text{Number of classes}= 1+3.3 \log_{10}{n}
+$$
 
-```{=tex}
-\begin{table}[]
-  \begin{adjustbox}{width=\textwidth}
+-   Class width $=\frac{\text { Largest Observation }-\text { Smallest Observation }}{\text { Number of Classes }}$.
 
-   \begin{tabular}{|l|l|l|l|l|}
-\hline Class & Frequency & Relative Frequency & Percent frequency & Cumulative Relative Frequency \\
-\hline & & & &\\
-\hline & & & &\\
-\hline & & (adds up to 1) & (adds up to 100\%) & (last number equal to 1)\\
-\hline
-\end{tabular}
-  \end{adjustbox}
-
-\end{table}
-```
-
+-   Select a lower limit for the first class. If the measurements have $k$ places of decimals, you should deduct a number that has $k+1$ decimals, from the **minimum measurement**.
 
 ## Quick review (3)
 
-How to describe the relationship between **Nominal** variables? $\Rightarrow$ cross-classification table (also called a cross-tabulation table)
+Graphical representations of distribution $\Rightarrow$ Histogram
 
-Example (2 by 2):
+   + Show the frequency distribution for quantitative data over a set of class intervals (Similar to bar chart but works over class intervals).
+   
+   + Constructed by rectangles whose bases are the intervals and whose heights are the frequencies ( or relative frequencies or percent frequencies).  **No gaps** between bars. 
 
-\begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline & Cat A1 & Cat A2 & Total\\
-\hline Cat B1 & & & \\ 
-\hline Cat  B2 & & & \\
-\hline Total & &  & \\
-\hline
-\end{tabular}
-\end{center}
+   + We can potentially identify symmetry, distribution skewness, etc. 
+
+ ![](negskew.PNG){width="84"} \hspace{2cm}
+![](posskew.PNG){width="84"}
+
+   
+## Quick check (4)
+
+Graphical representations for Cumulative Frequency:
+
+* Ogive
+  + We plot the class end points on the horizontal axis and the cumulative frequencies on the vertical axis. Start from 0 go up to the amount of cumulative frequency toward the end of class.
+  + End point is always 1, 100 or total frequency depending on cumulative frequency we are using.  
+  
+\vspace{2cm}
+
+## Quick review (5)
+
+-   Time series data are values that correspond to specific measurements taken over a range of time periods.
+
+-   Cross-section data are values collected from a number of subjects during a single time period
+
+![](time_serie_example.PNG){width="360"}
+
+## Quick review (6)
+
+-   Scatter plot: A graph that displays pairs of values as points on a two-dimensional grid.
+
+-   The independent/explanatory variable is placed on the horizontal axis, or x-axis. The dependent/response variable is placed on the vertical axis, or y-axis.
+
+![](scatterplot.PNG)

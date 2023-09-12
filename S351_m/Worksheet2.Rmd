@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 2"
 author: "Fred Azizi"
-date: "2023-02-14"
+date: "2023-09-12"
 output: pdf_document
 ---
 
@@ -31,13 +31,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 \newpage
 
+(extra space for question 1)
+
+\newpage
+
 2.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
+
 
     ![](worksheet2q1.PNG){width="334"}
 
 <!-- -->
 
 > a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
+
+\vspace{6cm}
 
 > b.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
 
@@ -81,7 +88,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{=tex}
 \begin{center}
 \begin{tabular}{|l|l|l|}
-\hline City & Income ( $\boldsymbol{x})$ & Housing (y) \\
+\hline City & Income ($\boldsymbol{x})$ & Housing (y) \\
 \hline A & 26 & 109 \\
 \hline B & 29 & 97 \\
 \hline C & 25 & 115 \\
@@ -97,9 +104,9 @@ knitr::opts_chunk$set(echo = TRUE)
 \end{center}
 ```
 
-> a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
+> a.  What would be an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$?
 
-> b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
+> b.  Without looking at the graph or calculating a statistic, how would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$? Now make the graph and validate what you were expecting from the graph. 
 
 \newpage
 

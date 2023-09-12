@@ -15,7 +15,7 @@ library(kableExtra)
 
 sched_table<-tibble(Date=c("Sep 05", "Sep 12", "Sep 19","Sep 26", "Oct 03", "Oct 10", "Oct 17", "Oct 24", "Oct 31", "Nov 07", "Nov 14", "Nov 21", "Nov 28", "Dec 05", "Dec 12"),
           slides= c( cell_spec("Slides", "html", link = "Week1slides.pdf"),
-             "slides",
+              cell_spec("Slides", "html", link = "Week2slides.pdf"),
              "slides",
              "slides",
              "slides",
@@ -32,7 +32,7 @@ sched_table<-tibble(Date=c("Sep 05", "Sep 12", "Sep 19","Sep 26", "Oct 03", "Oct
 
 
 Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
-            "Worksheet 2",
+             cell_spec("Worksheet 2", "html", link = "Worksheet2.pdf"),
             "Worksheet 3",
             "Worksheet 4",
             "Worksheet 5",
