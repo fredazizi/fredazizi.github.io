@@ -1,0 +1,232 @@
+---
+title: "Quiz 1 Review Questions"
+author: "Fred Azizi"
+date: "2023-09-19"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**MULTIPLE CHOICE. Choose the one alternative that best completes the statement or answers the question**
+
+1. The manager of a car dealership records the colors of automobiles on a used car lot. Identify the type of data collected.
+
+> a. quantitative
+
+> b. qualitative
+
+2. Which data about paintings would not be qualitative?
+
+> a. the artist
+
+> b. the value
+
+> c. the style
+
+> d. the theme
+
+3. The nominal scale of measurement has the properties of the
+
+> a. ordinal scale
+
+> b. only interval scale
+
+> c. ratio scale
+
+> d. None of these alternatives is correct.
+
+
+4. Some hotels ask their guests to rate the hotel's services as excellent, very good, good, and poor. This is an example of the
+
+> a. ordinal scale
+
+> b. ratio scale
+
+> c. nominal scale
+
+> d. interval scale
+
+5. The ratio scale of measurement has the properties of
+
+> a. only the ordinal scale
+
+> b. only the nominal scale
+
+> c. the rank scale
+
+> d. the interval scale
+
+6. Temperature in Fahrenheit is an example of a variable that uses
+
+> a. the ratio scale
+
+> b. the interval scale
+
+> c. the ordinal scale
+
+> d. either the ratio or the ordinal scale
+
+7. The interval scale of measurement has the properties of the
+
+> a. ratio and nominal scales
+
+> b. ratio and ordinal scales
+
+> c. ratio scale
+
+> d. None of these alternatives is correct.
+
+8. Arithmetic operations are inappropriate for
+
+> a. the ratio scale
+
+> b. the interval scale
+
+> c. both the ratio and interval scales
+
+> d. the nominal scale
+
+9. Income is an example of a variable that uses the
+
+> a. ratio scale
+
+> b. interval scale
+
+> c. nominal scale
+
+> d. ordinal scale
+
+10. The scale of measurement that has an inherent zero value defined is the
+
+> a. ratio scale
+
+> b. nominal scale
+
+> c. ordinal scale
+
+> d. interval scale
+
+11. Quantitative data refers to data obtained with a(n)
+
+> a. ordinal scale
+
+> b. nominal scale
+
+> c. either interval or ratio scale
+
+> d. only interval scale
+
+12. The entities on which data are collected are
+
+> a. elements
+
+> b. populations
+
+> c. samples
+
+> d. None of these alternatives is correct.
+
+13. The set of measurements collected for a particular element is (are) called
+
+> a. variables
+
+> b. observations
+
+> c. samples
+
+> d. None of these alternatives is correct.
+
+14. A characteristic of interest for the elements is called a(n)
+
+> a. sample
+
+> b. data set
+
+> c. variable
+
+> d. None of these alternatives is correct.
+
+15. Quantitative data
+
+> a. are always nonnumeric
+
+> b. may be either numeric or nonnumeric
+
+> c. are always numeric
+
+> d. None of these alternatives is correct.
+
+16. Qualitative data
+
+> a. indicate either how much or how many
+
+> b. can not be numeric
+
+> c. are labels used to identify attributes of elements
+
+> d. must be nonnumeric
+
+17. Social security numbers consist of numeric values. Therefore, social security is an example of
+
+> a. a quantitative variable
+
+> b. either a quantitative or a qualitative variable
+
+> c. an exchange variable
+
+> d. a qualitative variable
+
+18. How many scales of measurement exist?
+
+> a. 1
+
+> b. 2
+
+> c. 3
+
+> d. 4
+
+19. A frequency table displays the proportion of observations falling into each class.
+
+> a. True
+
+> b. False
+
+20. All class intervals in a histogram have the same width.
+
+> a. True
+
+> b. False
+
+21. A histogram can be constructed using either class frequencies or class relative frequencies as the heights of the bars.
+
+> a. True
+
+> b. False
+
+22. A frequency distribution is a tabular summary of data showing the
+
+> a. fraction of items in several classes
+
+> b. percentage of items in several classes
+
+> c. relative percentage of items in several classes
+
+> d. number of items in several classes
+
+**PROBLEM**
+
+1. Below you are given the examination scores of 20 students.
+
+$$\begin{array}{lllll}52 & 99 & 92 & 86 & 84 \\ 63 & 72 & 76 & 95 & 88 \\ 92 & 58 & 65 & 79 & 80 \\ 90 & 75 & 74 & 56 & 99\end{array}$$
+
+> a. Construct a frequency distribution, relative frequency distribution, cumulative frequency distribution and cumulative relative frequency distribution for this data. Use the methods you learnt in class. 
+
+> b. Draw the relevant diagrams for frequency distribution and cumulative frequency distribution. 
+
+
+\newpage
+
+(extra space)
