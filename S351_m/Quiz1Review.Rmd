@@ -222,7 +222,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 $$\begin{array}{lllll}52 & 99 & 92 & 86 & 84 \\ 63 & 72 & 76 & 95 & 88 \\ 92 & 58 & 65 & 79 & 80 \\ 90 & 75 & 74 & 56 & 99\end{array}$$
 
-> a. Construct a frequency distribution, relative frequency distribution, cumulative frequency distribution and cumulative relative frequency distribution for this data. Use the methods you learnt in class. 
+> a. Construct a grouped frequency distribution, relative frequency distribution, cumulative frequency distribution and cumulative relative frequency distribution for this data. Use the methods you learnt in class. 
 
 > b. Draw the relevant diagrams for frequency distribution and cumulative frequency distribution. 
 
