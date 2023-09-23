@@ -50,7 +50,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
 
 `Worksheet solution` = c( cell_spec("Worksheet 1", "html", link = "worksheet1_solution.pdf"),
            cell_spec("Worksheet 2", "html", link = "worksheet2_solution.pdf"),
-           "___________",
+           cell_spec("Quiz 1 review (in-class work)", "html", link = "Quiz1Reviewanotated.pdf"),
            "Worksheet 3",
            "Worksheet 4",
            "Worksheet 5",
