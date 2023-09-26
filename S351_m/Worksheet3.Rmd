@@ -9,10 +9,16 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-**Remaining from  Worksheet 2:**
 
+1.  You've applied to be an operations manager for Coca-Cola Consolidated. In the interview, they ask you we have two different systems of filling a can or a bottle. Which process is working better (in the sense of consistency)?
 
-1.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
+> i. System 1: A sample of 50  $12$ oz bottles of Coke which are filled to a number between $11-13$ oz. The average of this sample is 12 and the standard deviation is 0.33.
+
+> ii. System 2: A sample of 120 $8$ oz  cans of Coke filled to a number between  $7.3-8.7$ oz. The average of the sample is 8 and the standard deviation is  0.23.
+
+\newpage
+
+2.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
 
 $$
 1,2.5,1.5,2,0,5,3,3.5,1,0.5
@@ -20,19 +26,17 @@ $$
 
 > a. Compute the mean, median and mode for this.
 
-> b. Compute the sample standard deviation.
+> b. Compute the range and the sample standard deviation.
 
 > c. Compute the coefficient of variation.
 
 \newpage
 
-2.  You've applied to be an operations manager for Coca-Cola Consolidated. In the interview, they ask you we have two different systems of filling a can or a bottle. Which process is working better (in the sense of consistency)?
+(extra space for Question 1)
 
-> i. System 1: A sample of 50  $12$ oz bottles of Coke which are filled to a number between $11-13$ oz. The average of this sample is 12 and the standard deviation is 0.33.
+\newpage 
 
-> ii. System 2: A sample of 120 $8$ oz  cans of Coke filled to a number between  $7.3-8.7$ oz. The average of the sample is 8 and the standard deviation is  0.23.
 
-\vspace{2cm}
 
 3. A small sample of height (in cm) is collected as follow:
 
