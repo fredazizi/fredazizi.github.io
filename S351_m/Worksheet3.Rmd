@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 3"
 author: "Fred Azizi"
-date: "2023-02-21"
+date: "2023-09-26"
 output: pdf_document
 ---
 
@@ -11,52 +11,40 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Remaining from  Worksheet 2:**
 
-2.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
 
-    ![](worksheet2q1.PNG){width="334"}
+1.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
 
-<!-- -->
+$$
+1,2.5,1.5,2,0,5,3,3.5,1,0.5
+$$
 
-> a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
+> a. Compute the mean, median and mode for this.
 
-> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
+> b. Compute the sample standard deviation.
 
-> c.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
-
-
-![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
-
+> c. Compute the coefficient of variation.
 
 \newpage
 
-3.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
+2.  You've applied to be an operations manager for Coca-Cola Consolidated. In the interview, they ask you we have two different systems of filling a can or a bottle. Which process is working better (in the sense of consistency)?
 
-```{=tex}
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline \multicolumn{1}{|l|}{\text { Year }} & \text { Debt (in T) } \\
-\hline 1991 & 7.3 \\
-\hline 1992 & 7.9 \\
-\hline 1993 & 8.3 \\
-\hline 1994 & 8.6 \\
-\hline 1995 & 8.9 \\
-\hline 1996 & 9.1 \\
-\hline 1997 & 9.2 \\
-\hline 1998 & 9.3 \\
-\hline 1999 & 9.2 \\
-\hline 2000 & 9.0 \\
-\hline 2001 & 8.9 \\
-\hline
-\end{tabular}
-\end{center}
-```
+> i. System 1: A sample of 50  $12$ oz bottles of Coke which are filled to a number between $11-13$ oz. The average of this sample is 12 and the standard deviation is 0.33.
 
-> a.  Is this an example of time series data or cross sectional data?
+> ii. System 2: A sample of 120 $8$ oz  cans of Coke filled to a number between  $7.3-8.7$ oz. The average of the sample is 8 and the standard deviation is  0.23.
 
+\vspace{2cm}
 
-> b.  Make an appropriate plot for this data.
+3. A small sample of height (in cm) is collected as follow:
 
-> c.  What can you conclude from this data?
+$$
+164, 148, 137, 157, 173, 156, 177, 172.
+$$
+
+> a. Determine the location and values of the first, second and third quartiles.
+
+> b. Calculate the IQR.
+
+> c. Determine the location and value of the 60th percentile. What does the value signify?
 
 \newpage
 
@@ -65,7 +53,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{=tex}
 \begin{center}
 \begin{tabular}{|l|l|l|}
-\hline City & Income ( $\boldsymbol{x})$ & Housing (y) \\
+\hline City & Income ($\boldsymbol{x})$ & Housing (y) \\
 \hline A & 26 & 109 \\
 \hline B & 29 & 97 \\
 \hline C & 25 & 115 \\
@@ -81,20 +69,11 @@ knitr::opts_chunk$set(echo = TRUE)
 \end{center}
 ```
 
-> a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
+> a. Calculate the correlation coefficient between x and y. What can you conclude about the
+relationship between the 2 variables?
 
+> b. Calculate the least square line. 
 
-
-> b.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
-
+> c. Calculate the coefficient of variation. 
 
 \newpage
-
-5.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
-
-$$
-1,2.5,1.5,2,0,5,3,3.5,1,0.5
-$$
-
-> Compute the mean, median and mode for this.
-

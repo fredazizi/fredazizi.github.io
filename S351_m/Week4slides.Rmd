@@ -1,7 +1,7 @@
 ---
-title: "Chapter 3 & Chapter 4(section 1)"
+title: "Chapter 4"
 author: "Fred Azizi"
-date: "2023-02-21"
+date: "2023-09-26"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,37 +15,8 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Quick review 
 
-Graphical representations of distribution $\Rightarrow$ Histogram
-
-   + Show the frequency distribution for quantitative data over a set of class intervals (Similar to bar chart but works over class intervals).
-   
-   + Constructed by rectangles whose bases are the intervals and whose heights are the frequencies ( or relative frequencies or percent frequencies).  **No gaps** between bars. 
-
-   + We can potentially identify symmetry, distribution skewness, etc. 
-
- ![](negskew.PNG){width="84"} \hspace{2cm}
-![](posskew.PNG){width="84"}
-
-   
-## Quick review (2)
-
--   Time series data are values that correspond to specific measurements taken over a range of time periods.
-
--   Cross-section data are values collected from a number of subjects during a single time period
-
-![](time_serie_example.PNG){width="360"}
-
-## Quick review (3)
-
--   Scatter plot: A graph that displays pairs of values as points on a two-dimensional grid.
-
--   The independent/explanatory variable is placed on the horizontal axis, or x-axis. The dependent/response variable is placed on the vertical axis, or y-axis.
-
-![](scatterplot.PNG)
-
-## Quick review (4)
+## Quick review
 
  measure of central tendency: 
  
@@ -58,3 +29,34 @@ Graphical representations of distribution $\Rightarrow$ Histogram
 * Compute the Mode to 
    + Describe a single set of nominal, ordinal, interval or ratio data
 
+## Quick review (2)
+
+Measures of relative standing: \textcolor{red}{Interval-Ratio-Ordinal data.}
+
+-   Percentile: The value for which $P$ percent are less than that value and $(100 - P)\%$ are greater than that value.
+    -   Location of percentile in ordered data: $L_P=(n+1) \frac{P}{100}$.
+-   Quartiles: Special case of percentiles$\rightarrow$ 25th ($Q_1$), 50th (Median-$Q_2$), and 75th percentiles($Q_3$).
+
+## Quick review (3)
+
+Measure of variability:
+
+- Range: $\max-\min$.
+-   $\text {Interquartile range }=Q_3-Q_1$.
+- Variance: $s^2=\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)^2}{\color{red}{n-1}}$.
+   * What if we have **Population**'s data?
+- Standard deviation: $s=\sqrt{s^2}$.
+   * What if we have **Population**'s data?
+- Coefficient of variation: cv $=\frac{s}{\bar{x}}$.
+
+## Quick review (4)
+
+Measures of Linear Relationship:
+
+- Covariance: $s_{x y}=\frac{\sum_{i=1}^n\left(x_i-\bar{x}\right)\left(y_i-\bar{y}\right)}{n-1}$.
+
+- Correlation: $r=\frac{s_{x y}}{s_{x} s_y}$.
+
+- Least Square line: $\hat{y}=b_0+b_1 x$ where $b_1=\frac{s_{x y}}{s_x^2}$ and $b_0=\bar{y}-b_1 \bar{x}$. 
+
+- Coefficient of determination $r^2$.
