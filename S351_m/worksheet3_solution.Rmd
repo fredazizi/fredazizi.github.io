@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 3 Solution"
 author: "Fred Azizi"
-date: "2023-02-21"
+date: "2023-09-26"
 output: pdf_document
 ---
 
@@ -11,143 +11,104 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-**Remaining from From Worksheet 2:**
+1. You've applied to be an operations manager for Coca-Cola Consolidated. In the interview, they ask you we have two different systems of filling a can or a bottle. Which process is working better (in the sense of consistency)?
 
-2.  The following histogram shows the distribution of the monthly rental for a random sample of one-bedroom apartments in York, Pennsylvania.
+> i. System 1: A sample of 50  $12$ oz bottles of Coke which are filled to a number between $11-13$ oz. The average of this sample is 12 and the standard deviation is 0.33.
 
-    ![](worksheet2q1.PNG){width="334"}
+> ii. System 2: A sample of 120 $8$ oz  cans of Coke filled to a number between  $7.3-8.7$ oz. The average of the sample is 8 and the standard deviation is  0.23.
 
-<!-- -->
+> **\underline{Answer:}**
 
-> a.  What is the total number of apartments in this sample, and what is the percentage of monthly rents that are \$750 and above? If we rank the observations from low to high, what can you say about the range of 8th ranked observation?
+> While system 2 has a lower standard deviation, comparing standard deviations can be misleading since these are two different type of bottles (8 oz and 12 oz) and  standard deviation is affected by the scale of the data. A better option is CV.
 
->> **\underline{Answer:}**
+\begin{align}
+\text{CV}_{\text{system I}}&= \frac{s_I}{\bar{x}_I}=\frac{0.33}{12}=0.0275 \notag\\
+\text{CV}_{\text{system II}}&= \frac{s_{II}}{\bar{x}_{II}}=\frac{0.23}{8}=0.02875 \notag
+\end{align}
 
->> Total number of apartment in this sample is 2+5+3+8+2= 20.
-
->> We need to look at the last two rectangles in the histogram. They represent a rent of 750 or greater. The total frequency for these two classes would be 8+2=10. In this case, percent frequency would be $\frac{10}{20}\times 100=50\%$.
-
->> The 8th observation will be between 700 and 749 as the cumulative total frequency up to class of 700 to 749 is 7.
-
-> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
-
->> **\underline{Answer:}**
-
-
-> c.  Identify the shape of below histograms \footnote{Graphs are from \url{http://citadel.sjfc.edu/faculty/kgreen/MSTI130/MSTI130Text/Text_Fall_2014su28.html}}
-
-
-![](ws2q1_1.png){width="276"} ![](ws2q1_2.png){width="271"}
-
->> **\underline{Answer:}**
-
->> Plot on the left (histogram for years of experience) has a long tail on the right side. Hence, positively skewed.
-
->> Plot on the right (histogram for Daily returns for NASDAQs) has a long tail on the left side. Hence, negativity skewed.
-
- 
-
-3.  The U.S. National Debt over the span of a decade from 1991 to 2001 is given in the following table:
-
-```{=tex}
-\begin{center}
-\begin{tabular}{|r|r|}
-\hline \multicolumn{1}{|l|}{\text { Year }} & \text { Debt (in T) } \\
-\hline 1991 & 7.3 \\
-\hline 1992 & 7.9 \\
-\hline 1993 & 8.3 \\
-\hline 1994 & 8.6 \\
-\hline 1995 & 8.9 \\
-\hline 1996 & 9.1 \\
-\hline 1997 & 9.2 \\
-\hline 1998 & 9.3 \\
-\hline 1999 & 9.2 \\
-\hline 2000 & 9.0 \\
-\hline 2001 & 8.9 \\
-\hline
-\end{tabular}
-\end{center}
-```
-
-> a.  Is this an example of time series data or cross sectional data?
-
->> **\underline{Answer:}**
-
->> This is an example of time series data.
-
-> b.  Make an appropriate plot for this data.
-
->> **\underline{Answer:}**
-
->
-
-> ![](ws2q2.PNG)
-
-> c.  What can you conclude from this data?
-
->> **\underline{Answer:}**
-
->> We can see a slight increase in debt over the first half of the decade and after that it stayed almost the same over the second half. Note that **we can't use the graph of a time series over a period of time for making conclusions about future**. This decade shows no strong trend, but in the following years the U.S. debt increased dramatically due to wars.
-
- 
-
-4.  The following data has mean income and housing for 10 cities in Florida. Values are in dollars (\$) and rounded to the nearest thousand.
-
-```{=tex}
-\begin{center}
-\begin{tabular}{|l|l|l|}
-\hline City & Income ( $\boldsymbol{x})$ & Housing (y) \\
-\hline A & 26 & 109 \\
-\hline B & 29 & 97 \\
-\hline C & 25 & 115 \\
-\hline D & 28 & 99 \\
-\hline E & 38 & 122 \\
-\hline F & 32 & 145 \\
-\hline G & 25 & 100 \\
-\hline H & 22 & 76 \\
-\hline I & 29 & 113 \\
-\hline J & 42 & 144 \\
-\hline
-\end{tabular}
-\end{center}
-```
-
-> a.  Draw an appropriate diagram representing the relationship between Income $(\mathrm{x})$ and Housing $(y)$.
-
->> **\underline{Answer:}**
->>
-
->> ![](ws2q3.PNG)
-
-> b. Suppose the rent for one of the apartments in the sample is $680. How many apartments rent in the sample are going to be  lower than or equal to this rent number?
-
->> **\underline{Answer:}**
-
->> This could be anywhere from 2 to 6. $680 is inside the second class, so it will be bigger than the 2 observations in the first class. But we don't know its relative position inside the second class. If it is the smallest number, then only the 2 observation in the first class will be lower than 680, but if it is the biggest number in the second class, 4+2 observartions could be smaller than 680.  
-
-> c.  How would you describe the relationship between the income $(\mathrm{x})$ and housing $(y)$?
-
->> **\underline{Answer:}**
-
->> Points in the scatterplot are oriented toward the top right of the plot. Therefore, income and housing have a positive relationship. 
+> In this case $\text{CV}_{\text{system I}} <\text{CV}_{\text{system II}}$. Therefore, System I is more consistent.
 
 \  
 
-
-5.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
+2.  A random sample of 10 students were asked how far they live from UMBC. These were their answers, rounded to the nearest half-mile:
 
 $$
 1,2.5,1.5,2,0,5,3,3.5,1,0.5
 $$
 
->  Compute the mean, median and mode for this.
+> We calculated the sample mean (2) in the previous worksheet. 
+
+> a. Compute the sample standard deviation.
+
+> b. Compute the coefficient of variation.
 
 > **\underline{Answer:}**
 
-> Mean $=\bar{x}=\frac{\sum x}{n}=\frac{20}{10}=2$.
+> a) 
 
-> Median: Order the data points from low to high: 0, 0.5, 1, 1, 1.5, 2, 2.5, 3, 3.5, 5. $\Rightarrow \text{Position of median} =(n+1) \frac{50}{100}=11 \times 0.5=5.5$ th position $\Rightarrow$ Median $=(1.5+2) / 2=1.75$
+\begin{align}
+Var =\frac{1}{n-1} \sum_{i=1}^{10}(x_i-\bar{x})^2&=\frac{1}{10-1}[(0-2)^2+(0.5-2)^2+(1-2)^2+(1-2)^2+(1.5-2)^2+ \notag\\
+&\quad+(2-2)^2+(2.5-2)^2+(3-2)^2+(3.5-2)^2+(5-2)^2]\notag\\
+&=\frac{1}{9}(4+2.25+1+1+0.25+0+0.25+1+2.25+9)\notag\\
+&=\frac{21}{9}\notag
+\end{align}
 
-> Mode $=1$ (occurs twice).
+>> Since sd=$\sqrt{\text{var}}\rightarrow$ sd=$\sqrt{\frac{21}{9}}\approx 1.53$.
+
+>b) $CV=\frac{SD}{\bar{x}} \times 100 \%=\frac{1.53}{2} \times 100=76.5 \%$
+
+\  
 
 
+3. A small sample of height (in cm) is collected as follow:
+
+$$
+164, 148, 137, 157, 173, 156, 177, 172.
+$$
+
+> a. Determine the location and values of the first, second and third quartiles.
+
+> b. Calculate the IQR.
+
+> c. Determine the location and value of the 60th percentile. What does the value signify?
+
+> **\underline{Answer:}**
+
+
+
+>a. $n=8$. From slides, we know $L_P=(n+1) \frac{P}{100}$. For $Q_1$:
+
+$$L_{25}=9 \times \frac{25}{100}=2.25$$
+
+>> So the position of $Q_1$ is 2.25. Second (ordered) observation is 148. We need to find 0.25 of distance between the 2nd and 3rd ordered observation.  $(156-148) \times 0.25=2$. Therefore:
+
+$$Q_1=148+2=150$$
+
+>> For $Q_2$:
+
+$$L_{50}=9 \times \frac{50}{100}=4.5$$
+
+>> Fourth ordered observation is 157. We need to find 0.5 of distance between ordered observation 4 and 5. $(164-157) \times 0.5=3.5$. Therefore:
+
+$$Q_2=\text { Median }=157+3.5=160.5$$
+
+>> For $Q_3$:
+
+$$L_{75}=9 \times \frac{75}{100}=6.75$$
+
+>> Sixth ordered observation is 172. We need to find 0.75 of distance between ordered observation 6 and 7. $(173-172) \times 0.75=0.75$. Therefore:
+
+$$ Q_3=172+0.75=172.75$$
+
+
+>b. $IQR=Q_3-Q_1=172.75-150=22.75$
+
+>c.
+
+$$L_{60}=9 \times \frac{60}{100}=5.4$$
+
+>> We need to find the .4 of distance between 5th ordered observation and 6th.  $(172-164)\times 0.4=3.2$. Therefore, $60^{\text{th}}$ percentile is $164+3.2=167.2$.
+
+>> **Interpretation:** 60 \% of all values in our data is less than or egual lo $167.2$.
+
+\  
