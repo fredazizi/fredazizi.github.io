@@ -1,0 +1,259 @@
+---
+title: "Quiz 2 Review Questions"
+author: "Fred Azizi"
+date: "2023-10-10"
+output: pdf_document
+---
+
+1. Which of the following provides a measure of central location for the data?
+
+> a. standard deviation
+
+> b. mean
+
+> c. variance
+
+> d. range
+
+\  
+
+2. When computing the mean of a set of values $x_i$, the value of $\sum x_i$
+
+> a. can never be zero
+
+> b. can never be negative
+
+> c. must always be positive
+
+> d. can be any value
+
+\  
+
+3. In computing the mean of a sample, the value of $\sum x_i$ is divided by
+
+> a. $\mathrm{n}$
+
+> b. $\mathrm{n}-1$
+
+> c. $\mathrm{n}+1$
+
+> d. $n-2$
+
+\  
+
+4. The median of a sample will always equal the
+
+> a. mode
+
+> b. mean
+
+> c. 50th percentile
+
+> d. all of the above answers are correct
+
+\  
+
+5. The median is a measure of
+
+> a. relative dispersion
+
+> b. absolute dispersion
+
+> c. central location
+
+> d. relative location
+
+\  
+
+6. The $p$ th percentile is a value such that at least $p$ percent of the observations are
+
+> a. less than or equal to this value
+
+> b. less than this value
+
+> c. more than or equal to this value
+
+> d. more than this value
+
+\  
+
+7. The difference between the largest and the smallest data values is the
+
+> a. variance
+
+> b. interquartile range
+
+> c. range
+
+> d. coefficient of variation
+
+\  
+
+8. The first quartile
+
+> a. contains at least one third of the data elements
+
+> b. is the same as the 25 th percentile
+
+> c. is the same as the 50th percentile
+
+> d. is the same as the 75 th percentile
+
+\  
+
+9. Which of the following is not a measure of central location?
+
+> a. mean
+
+> b. median
+
+> c. variance
+
+> d. mode
+
+\  
+
+10. Which of the following is a measure of dispersion?
+
+> a. percentiles
+
+> b. quartiles
+
+> c. interquartile range
+
+>  d. all of the above are measures of dispersion
+
+\  
+
+11. The most frequently occurring value of a data set is called the
+
+> a. range
+
+> b. mode
+
+> c. mean
+
+> d. median
+
+\  
+
+12. The interquartile range is used as a measure of variability to overcome what difficulty of the range?
+
+> a. the sum of the range variances is zero
+
+> b. the range is difficult to compute
+
+> c. the range is influenced too much by extreme values
+
+> d. the range is negative
+
+\  
+
+13. The descriptive measure of dispersion that is based on the concept of a deviation about the mean is
+
+> a. the range
+
+> b. the interquartile range
+
+> c. the absolute value of the range
+
+> d. the standard deviation
+
+\  
+
+14. The numerical value of the standard deviation can never be
+
+> a. larger than the variance
+
+> b. zero
+
+> c. negative
+
+> d. smaller than the variance
+
+\  
+
+15. The variance can never be
+
+> a. zero
+
+> b. larger than the standard deviation
+
+> c. negative
+
+> d. smaller than the standard deviation
+
+\  
+
+16. If two groups of numbers have the same mean, then
+
+> a. their standard deviations must also be equal
+
+> b. their medians must also be equal
+
+> c. their modes must also be equal
+
+> d. None of these alternatives is correct
+
+\  
+
+17. The sum of deviations of the individual data elements from their mean is
+
+> a. always greater than zero
+
+> b. always less than zero
+
+> c. sometimes greater than and sometimes less than zero, depending on the data elements
+
+> d. always equal to zero
+
+\  
+
+18. A numerical measure of linear association between two variables is the
+
+> a. variance
+
+> b. coefficient of variation
+
+> c. correlation coefficient
+
+> d. standard deviation
+
+\  
+
+19. The coefficient of correlation ranges between
+
+> a. 0 and 1
+
+> b. -1 and +1
+
+> c. minus infinity and plus infinity
+
+> d. 1 and 100
+
+\  
+
+20. Since the mode is the most frequently occurring data value, it
+
+
+> a. can never be larger than the mean
+
+> b. is always larger than the median
+
+> c. is always larger than the mean
+
+> d. None of these alternatives is correct.
+
+\  
+
+21. Following observations are given for two variables.
+
+$$\begin{array}{cc}\mathbf{y} & \mathbf{x} \\ 5 & 2 \\ 8 & 12 \\ 18 & 3 \\ 20 & 6 \\ 22 & 11 \\ 30 & 19 \\ 10 & 18 \\ 7 & 9\end{array}$$
+
+> a. Compute and interpret $\mathrm{P}_{86}$.
+
+
+> b. Compute and interpret the correlation coefficient.
+
+
+> c. __________ is the relevant diagram for the data above.
