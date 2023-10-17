@@ -60,3 +60,18 @@ $$
 
 -   Marginal probabilities: From Joint distribution table, computed by adding across rows or down columns.
 
+## Quick review (5)
+
+Additional terminologies (for homework only):
+
+For question 14 of homework we define: $\mathrm{C}=$ an individual has the genetic condition, $\mathrm{C}^{\mathrm{c}}=$ an individual does not have the genetic condition, PT $=$ a positive blood test, and NT $=$ a negative blood test.
+
+- $P(P T \mid C)$ is  called the **sensitivity**.
+
+- $P\left(N T \mid C^C\right)$ is called the **specificity**
+
+- $P(C \mid P T)$ is called the **positive predictive value**.
+
+- $P\left(C^C \mid N T\right)$ is called the **negative predictive value**.
+
+$P(C)$ is given at the beginning of the question. Use **Bayes Rule** to find positive predictive value and negative predictive value
