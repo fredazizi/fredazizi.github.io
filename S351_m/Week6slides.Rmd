@@ -1,7 +1,7 @@
 ---
-title: "Chapter 6 Review (first part)"
+title: "Chapter 6 Review"
 author: "Fred Azizi"
-date: "2023-03-07"
+date: "2023-10-17"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -14,14 +14,6 @@ header-includes:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-## Exam review session
-
-When: Thursday (March 09), 12-1 pm
-
-Where: BBCollaborate
-
-What's going to happen: Q/A- Going over some questions from Question banks (as much as time allows). 
 
 
 ## Quick review (1)
@@ -57,3 +49,14 @@ $$
 - Multiplication Rule: $P(A \text { and } B)=P(B) P(A \mid B)$.
 
 - Addition Rule: $P(A$ or $B)=P(A)+P(B)-P(A$ and $B)$
+
+## Quick review (4)
+
+-   Bayes Rule: $P\left(A_i \mid B\right)=\frac{P\left(A_i\right) P\left(B \mid A_i\right)}{P\left(A_1\right) P\left(B \mid A_1\right)+P\left(A_2\right) P\left(B \mid A_2\right)+\cdots+P\left(A_k\right) P\left(B \mid A_k\right)}$.
+
+-   Probability Trees: Helps with showing the events in an experiment by lines using conditionality.
+
+-   Joint Probabilities table: Shows the joint probabilities across different levels of categories.
+
+-   Marginal probabilities: From Joint distribution table, computed by adding across rows or down columns.
+
