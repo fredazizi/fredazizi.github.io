@@ -1,0 +1,165 @@
+---
+title: "Exam 1 review solution"
+author: "Fred Azizi"
+date: "2023-10-23"
+output: pdf_document
+---
+
+# MULTIPLE CHOICE QUESTIONS (0.5x8=4)
+
+1. On a December day, the probability of snow is 0.30. The probability of a cold day is 0.50. The probability of snow and cold weather is 0.15. Are snow and cold weather independent events?
+
+> a. only if given that it snowed
+
+> b. no
+
+> \fbox{c. yes}
+
+> d. only when they are also mutually exclusive
+
+
+2. The symbol $\cap$ shows the
+
+> a. union of events
+
+> b. \fbox{intersection of two events}
+
+> c. sum of the probabilities of events
+
+> d. sample space
+
+3. The symbol $\cup$ shows the
+
+> a. \fbox{union of events}
+
+> b. intersection of two events
+
+> c. sum of the probabilities of events
+
+> d. sample space
+
+
+4. The multiplication law is potentially helpful when we are interested in computing the probability of
+
+> a. mutually exclusive events
+
+> \fbox{b. the intersection of two events}
+
+> c. the union of two events
+
+> d. conditional events
+
+
+5. The union of events $\mathrm{A}$ and $\mathrm{B}$ is the event containing
+
+> a. all the sample points belonging to $\mathrm{B}$ or $\mathrm{A}$
+
+> b. all the sample points belonging to $\mathrm{A}$ or $\mathrm{B}$
+
+> \fbox{c. all the sample points belonging to $\mathrm{A}$ or $\mathrm{B}$ or both}
+
+> d. all the sample points belonging to $\mathrm{A}$ or $\mathrm{B}$, but not both
+
+
+6. The union of two events with nonzero probabilities
+
+> a. can not be less than one
+
+> b. can not be one
+
+> c. could be larger than one
+
+> \fbox{d. None of these alternatives is correct.}
+
+
+7. Events A and B are mutually exclusive. Which of the following statements is also true?
+
+> a. $\mathrm{A}$ and $\mathrm{B}$ are also independent.
+
+> b. $P(A \cup B)=P(A) P(B)$
+
+> c. \fbox{$P(A \cup B)=P(A)+P(B)$}
+
+> d. $P(A \cap B)=P(A)+P(B)$
+
+
+8. In an experiment, events $A$ and $B$ are mutually exclusive. If $P(A)=0.6$, then the probability of B
+
+> \fbox{a. can not be larger than 0.4}
+
+> b. can be any value greater than 0.6
+
+> c. can be any value between 0 to 1
+
+> d. can not be determined with the information given
+
+# PROBLEMS (SHOW WORK IN EVERY PROBLEM)
+
+1. Assume you have applied for two scholarships, a Merit scholarship (M) and an Athletic scholarship (A). The probability that you receive an Athletic scholarship is 0.18 . The probability of receiving both scholarships is 0.11 . The probability of getting at least one of the scholarships is 0.3 .
+
+> a. What is the probability that you will receive a Merit scholarship? A) 0.23
+
+> b. Are events A and M mutually exclusive? Why or why not? Explain. A) N
+
+> c. Are the two events A, and M, independent? Explain, using probabilities. A) N
+
+> d. What is the probability of receiving the Athletic scholarship given that you have been awarded the Merit scholarship? A)11/23
+
+> e. What is the probability of receiving the Merit scholarship given that you have been awarded the Athletic scholarship? A)11/18
+
+
+\newpage
+
+2. A survey of a sample of business students resulted in the following information regarding the genders of the individuals and their selected major.
+
+$$\text{Selected Major}$$
+
+\begin{center}
+\begin{tabular}{|l|ccc|c|}
+\hline Gender & Management & Marketing & Others & Total \\
+\hline Male & 40 & 10 & 30 & 80 \\
+Female & 30 & 20 & 70 & 120 \\
+\hline Total & 70 & 30 & 100 & 200 \\
+\hline
+\end{tabular}
+\end{center}
+
+
+> a. Transform the above table to a probability table. (5 points)
+
+> b. What is the probability of selecting an individual who is majoring in Marketing? (2 points)
+
+> c. What is the probability of selecting an individual who is majoring in Management, given that the person is female? (3 points)
+
+> d. Given that a person is male, what is the probability that he is majoring in Management? (3 points)
+
+> e. What is the probability of selecting a male individual? (2 points)
+
+\newpage
+
+
+3. Sixty percent of the student body at UTC is from the state of Tennessee (T), $30 \%$ percent are from other states $(\mathrm{O})$, and the remainder constitutes international students (I). Twenty percent of students from Tennessee lives in the dormitories, whereas, $50 \%$ of students from other states live in the dormitories. Finally, $80 \%$ of the international students live in the dormitories.
+
+> a. What percentage of UTC students lives in the dormitories? (3 points)
+
+> b. Given that a student lives in the dormitory, what is the probability that she/he is an international student? (3 points)
+
+> c. Given that a student does not live in the dormitory, what is the probability that she/he is an international student? ( 3 points)
+
+\newpage
+
+4. In a city, $60 \%$ of the residents live in houses and $40 \%$ of the residents live in apartments. Of the people who live in houses, $20 \%$ own their own business. Of the people who live in apartments, $10 \%$ own their own business. If a person owns his or her own business, find the probability that he or she lives in a house. A) 0.75
+
+\newpage
+
+5. A statistics professor has noted from past experience that a student who follows a program of studying two hours for each hour in class has a probability of 0.9 of getting a grade of $\mathrm{C}$ or better, while a student who does not follow a regular study program has a probability of 0.2 of getting a C or better. It is known that $70 \%$ of the students follow the study program. Find the probability that a student who has earned a $\mathrm{C}$ or better grade, followed the program. A)$\approx$ 0.913
+
+\newpage
+
+6. If $\mathrm{A}$ and $\mathrm{B}$ are independent events with $\mathrm{P}(\mathrm{A})=0.65$ and $\mathrm{P}(\mathrm{A} \cap \mathrm{B})=0.26$, then find the value of $\mathrm{P}(\mathrm{B}), \mathrm{P}(\mathrm{B} \mid \mathrm{A})$ and $\mathrm{P}(\mathrm{A} \cup \mathrm{B})$. A) 0.4 - 0.4- 0.79.
+
+\vspace{6cm}
+
+7. If $\mathrm{P}(\mathrm{A})=0.4, \mathrm{P}(\mathrm{B} \mid \mathrm{A})=0.35, \mathrm{P}(\mathrm{A} \cup \mathrm{B})=0.69$, then what is the value of $\mathrm{P}(\mathrm{B})$ ? A) 0.43
+
+
