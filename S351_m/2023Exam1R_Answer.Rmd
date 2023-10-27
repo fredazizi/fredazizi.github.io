@@ -78,7 +78,7 @@ output: pdf_document
 
 > b. $P(A \cup B)=P(A) P(B)$
 
-> c. \fbox{$P(A \cup B)=P(A)+P(B)$}
+> \fbox{c. $P(A \cup B)=P(A)+P(B)$}
 
 > d. $P(A \cap B)=P(A)+P(B)$
 
@@ -127,24 +127,37 @@ Female & 30 & 20 & 70 & 120 \\
 
 > a. Transform the above table to a probability table. (5 points)
 
-> b. What is the probability of selecting an individual who is majoring in Marketing? (2 points)
+>> A)
 
-> c. What is the probability of selecting an individual who is majoring in Management, given that the person is female? (3 points)
+\begin{center}
+\begin{tabular}{|l|ccc|c|}
+\hline Gender & Management & Marketing & Others & Total \\
+\hline Male & 0.2 & 0.05 & 0.15 & 0.4 \\
+Female & 0.15 & 0.1 & 0.35 & 0.6 \\
+\hline Total & 0.35 & 0.15 & 0.5 & 1 \\
+\hline
+\end{tabular}
+\end{center}
 
-> d. Given that a person is male, what is the probability that he is majoring in Management? (3 points)
 
-> e. What is the probability of selecting a male individual? (2 points)
+> b. What is the probability of selecting an individual who is majoring in Marketing?  A) 0.15
+
+> c. What is the probability of selecting an individual who is majoring in Management, given that the person is female?  A) 0.25
+
+> d. Given that a person is male, what is the probability that he is majoring in Management?  A) 0.5
+
+> e. What is the probability of selecting a male individual? A) 0.4
 
 \newpage
 
 
 3. Sixty percent of the student body at UTC is from the state of Tennessee (T), $30 \%$ percent are from other states $(\mathrm{O})$, and the remainder constitutes international students (I). Twenty percent of students from Tennessee lives in the dormitories, whereas, $50 \%$ of students from other states live in the dormitories. Finally, $80 \%$ of the international students live in the dormitories.
 
-> a. What percentage of UTC students lives in the dormitories? (3 points)
+> a. What percentage of UTC students lives in the dormitories? A) 0.35
 
-> b. Given that a student lives in the dormitory, what is the probability that she/he is an international student? (3 points)
+> b. Given that a student lives in the dormitory, what is the probability that she/he is an international student? A)0.229
 
-> c. Given that a student does not live in the dormitory, what is the probability that she/he is an international student? ( 3 points)
+> c. Given that a student does not live in the dormitory, what is the probability that she/he is an international student? A) 0.0308
 
 \newpage
 

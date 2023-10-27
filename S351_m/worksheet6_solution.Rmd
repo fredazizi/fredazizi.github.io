@@ -1,89 +1,126 @@
 ---
 title: "Worksheet 6 Solution"
 author: "Fred Azizi"
-date: "2023-03-14"
+date: "2023-10-24"
 output: pdf_document
 ---
-1.  $60 \%$ of the student body at UTC is from the state of Tennessee (T), 30\% are from other states $(\mathrm{O})$, and the remainder constitutes international students (I). Twenty percent of students from Tennessee lives in the dormitories, whereas, $50 \%$ of students from other states live in the dormitories. Finally, $80 \%$ of the international students live in the dormitories.
 
-> (a) What percentage of UTC students lives in the dormitories?
-
-> (b) Given that a student lives in the dormitory, what is the probability that they are an international student?
-
-> (c) Given that a student does not live in the dormitory, what is the probability that they are an international student?
-
-> **\underline{Answer:}**
-
-> (a)
-
-> $P(T)=0.6, P(O)=0.3, P(I)=0.1.$
-
-> $P(D \mid T)=0.2\rightarrow P(D^{c} \mid T)=1-P(D \mid T)=0.8$. $P(D \mid O)=0.5 \rightarrow P(D^{C} \mid O)=0.5$. And $P(D \mid I)=0.8 \rightarrow P(D^C \mid I)=0.2$.
-
-\begin{align}
-P(D)&=P(D \cap T)+P(D \cap O)+P(D \cap I)\notag\\
-&= P(D \mid T) \times P(T)+P(D \mid O) \times P(O)+P(D \mid I) \times P(I) \notag \\
-&= 0.2 \times 0.6+0.5 \times 0.3+0.8 \times 0.1 \notag\\
-&=0.12+0.15+0.08=0.35 \notag
-\end{align}
-
-> (b) $P(I \mid D)=\frac{P(I \cap D)}{P(D)}=\frac{0.8 \times 0.1}{0.35}=0.229$. Note that for $P(I \cap D)$, we used what we had in the calculation of part a.
-
->> Alternatively, using Bayes rule: $P(I \mid D)=\frac{P(D \mid I) \cdot P(I)}{P(D)}=\frac{0.8 \times 0.1}{0.35}=0.229$.
-
-> (c)
-
-$$P\left(I \mid D^{c}\right)=\frac{P\left(I \cap D^{c}\right)}{P\left(D^{c}\right)}=\frac{P\left(D^{c} \mid I\right) \cdot P(I)}{P\left(D^{c}\right)}=\frac{P\left(D^{c} \mid I\right) \cdot P(I)}{1-P\left(D\right)}$$
-$$
-=\frac{0.2 \times 0.1}{0.65}={0.0308}
-$$
-
-
-\newpage
-
-2. A survey asked 100 residents in a town whether they are smokers. Given the following information on the residents' response:
+1. The number of pizzas delivered to university students each month is a random variable with the following probability distribution.
 
 \begin{center}
-\begin{tabular}{|l|l|l|l|}
-\hline &  Daily Workout & No daily workout & Total \\
-\hline Non-smoker & 40 & 30 & 70 \\
-\hline Smoker & 20 & 10 & 30 \\
-\hline Total & 60 & 40 & 100 \\
+\begin{tabular}{|l|l|l|l|l|}
+\hline $\mathrm{X}$ & 0 & 1 & 2 & 3 \\
+\hline $\mathrm{P}(\mathrm{x})$ & $0.1$ & $0.3$ & $0.4$ & $0.2$ \\
 \hline
 \end{tabular}
 \end{center}
 
-> (a) Find the joint probability table.
+> (a) Find $\mathrm{P}(\mathrm{X} \leq 2)$.
 
-> (b) What is the probability that a randomly selected resident worksout daily?
+> (b) $\mathrm{P}(1 \leq \mathrm{X} \leq 2)$.
 
-> (c) What is the probability that a randomly selected resident doesn't workout daily?
+> (c) Determine the mean and variance of $X$.
 
-> (d) What is the probability that a randomly selected resident worksout daily and is a smoker?
+> (d) Suppose $Y=3 X+4$ for each value of $X$,  Calculate the mean and sd of $Y$.
 
-> (e) What is the probability that a randomly selected resident worksout daily or is a smoker?
-
-> (f) A randomly selected resident doesn't workout daily. What is the probability that the resident is a smoker?
 
 > **\underline{Answer:}**
 
-> (a)
+> (a) $P(X \leq 2)=P(x=0)+P(x=1)+P(x=2)=0.1+0.3+0.4=0.8$
 
-$$\begin{array}{cccc}\text { }&\text{DW} & \text { NDW } & \text { Total } \\NS & 0.4 & 0.3 & 0.7 \\ S & 0.2 & 0.1 & 0.3 \\\text{Total} & 0.6 & 0.4 & 1\end{array}$$
+> (b) $P(1 \leq x \leq 2)=P(x=1)+P(x=2)=0.7$
 
-> (b) $P(DW)=0.6$.
-
-> (c) $P(NDW)=1-P(DW)=0.4$
-
-> (d) $P(DW \cap S)=0.2$
-
-> (e)
+> (c) 
 
 $$
 \begin{aligned}
-P(DW \cup S)=P(DW)+P(S)-P(DW \cap S) &=0.6+0.3-0.2 \\
-&=0.7
+\mu=E(x)=\sum x \cdot P(x)=& 0 \times 0.1+1 \times 0.3+2 \times 0.4+3 \times 0.2=1.7 \\
+V(x)=\sum(x-\mu)^{2} \cdot P(x)=&(0-1.7)^{2} \times 0.1+(1-1.7)^{2} \times 0.3+(2-1.7)^{2} \times 0.4 \\
+&+3 \times(3-1.7)^{2} \times 0.2=0.81
 \end{aligned}
 $$
 
-> (f) $P(S|NDW)=\frac{P(S \cap NDW)}{P(NDW)}=\frac{0.1}{0.4}=0.25$
+
+> (d)
+
+$$
+\begin{aligned}
+&E(y)=E(3 x+4)=3 E(x)+4=3 \times 1 \cdot 7+4=9.1 \\
+&V(y)=V(3 x+4)=9 V(x)+0=7.29 \\
+&sd(y)=\sqrt{V(y)}=\sqrt{7.29}= 2.7
+\end{aligned}
+$$
+\newpage
+
+2. The number of persons living per household in a city was collected and were summarized. The frequency table is given below:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\hline Number of persons & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline Number of households (millions) & $3.1$ & $4.5$ & $3.8$ & $2.5$ & $2.4$ & $2.5$ & $1.2$ \\
+\hline
+\end{tabular}
+\end{center}
+
+> Define $X$ as the number of people per household.
+
+
+> (a) Write down the probability distribution of $X$.
+
+> (b) Find $P[X \geq 4]$
+
+> (c) Find $\mathrm{P}[2 \leq \mathrm{X}<4]$
+
+> **\underline{Answer:}**
+
+> (a) 
+
+$$\begin{array}{c|ccccccc}X & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
+\hline
+P(x) & 0.155 & 0.225 & 0.19 & 0.125 & 0.12 & 0.125 & 0.06 \end{array}$$
+
+> (b) $P[X \geq 4]=P(x=4)+P(x=5)+P(x=6)+P(x=7)=0.125+0.12+0.125+0.06=0.43$
+
+> (c) $\mathrm{P}[2 \leq X<4] =P(x=2)+P(x=3)=0.225+0.19=0.415$
+
+\newpage
+
+3. Indicate whether each random variable is Binomial, Poisson or neither:
+
+> a. A random variable $X$ counts the number of visits to a webpage in a one-hour period. **Poisson**
+
+> b. A random variable $X$ counts the number of defectives in a sample of 100 stamps. **Binomial**
+
+> c. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn one at a time without replacement. **Neither**
+
+> d. A random variable $X$ counts the number of hearts drawn from a well shuffled deck of 52 playing cards if 10 cards were drawn with replacement. **Binomial**
+
+
+4. 5 students are giving a make-up quiz. The probability of any of them scoring more than 25 is $0.6$. Let $X$ be the number of students who get over 25.
+
+> a. Identify the distribution of $X$ and its parameters.
+
+
+
+> b. What is the probability that none of the students score over 25 ?
+
+
+
+> c. What is the probability that at least one of them score over 25 ?
+
+
+> d. What is the probability that all of them score over 25 ?
+
+> **\underline{Answer:}**
+
+> (a) $X \sim \operatorname{Bin}(n=5, p=0.6)$.
+
+> (b) Using table in the textbook: $P[X=0]=P[X \leqslant 0]=0.0102$.
+
+>> Or you can calculate directly. $P[X=0]= 5C0 \;p^0 (1-p)^{5-0}=0.1024$.
+
+> (c) $P(X \geqslant 1)=1-P(X<1)=1-P(X \leqslant 0)=1-0.0102=0.9898$.
+
+> (d) $P(X=5)=P(X \leqslant 5)-P(X \leqslant 4)=1-0.9222=0.0788$. 
+
+>> Or (again) you can calculte directly: $P[X=5]= 5C5 \;p^5 (1-p)^{5-5}=0.07776$
