@@ -1,7 +1,7 @@
 ---
-title: "Chapter 7 review"
+title: "Chapter 7 (Part 2) and Chapter 8"
 author: "Fred Azizi"
-date: "2023-03-28"
+date: "2023-11-07"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
@@ -15,30 +15,7 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
-## Quick review (1)
-
-* Discrete Probability distribution
-   + $0 \leq P(x) \leq 1 \quad$ for all $x$
-   + $\sum_{\text {all } x} P(x)=1$
-   
-* Population Mean: $E(X)=\mu=\sum_{\text {all } x} x P(x)$
-
-* Population Variance: $V(X)=\sigma^2=\sum_{\text {all } x}(x-\mu)^2 P(x)$
-
-## Quick review (2)
-
-* Laws of Expected Value (note that $c$ means a constant, a number)
-  + $E(c)=c$
-  + $E(X+c)=E(X)+c$
-  + $E(c X)=c E(X)$
-  
-* Laws of Variance
-  + $V(c)=0$
-  + $V(X+c)=V(X)$
-  + $V(c X)=c^2 V(X)$
-  
-## Quick review (3)
+## Quick review 
 
 Binomial random variable
 
@@ -54,7 +31,7 @@ Binomial random variable
 
 * $E(x)=np$, $Var(x)=np(1-p)$.
 
-## Quick review (4)
+## Quick review 
 
 The Poisson  random  variable 
 
@@ -69,3 +46,20 @@ The Poisson  random  variable
 * $P(x)=\frac{e^{-\mu}\mu^x}{x!}$ where $\mu$ is the mean number of successes in the interval or region.
 
 * $E(x)=\mu$, $Var(x)=\mu$.
+
+## Quick review  
+
+Continuous random variable:
+
+* Probability Density Function (PDF)
+   + Usually is shown by $f(x)$
+   + Whole area under PDF is 1
+   + $f(x)\geq 0$.
+   + Probability of interval $(a, b)$ with PDF $f(x)$ is the area under PDF from $a$ to $b$.
+* Special case (Uniform RV)
+   + Uniform random variable defined on min=$a$ and max=$b$
+   + $f(x)=\frac{1}{b-a}$ when $a\leq x\leq b$
+* Special case (Normal RV)
+   + Always defined with a mean $(\mu)$ and variance $(\sigma^2)$.
+   + For finding probabilities of interval $(a,b)$, we need tables/computer programs
+   
