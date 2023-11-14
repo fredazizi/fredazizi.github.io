@@ -1,48 +1,103 @@
 ---
-title: "Chapter 7 (Part 2)"
+title: "Chapter 8 (part 2)"
 author: "Fred Azizi"
-date: "2023-04-04"
+institues:
+date: "2023-11-14"
 output: 
    beamer_presentation:
      theme: "Frankfurt"
      colortheme: "crane"
 header-includes:
-- \usepackage{xcolor}
-- \usepackage{adjustbox}
+  - \setbeamertemplate{navigation symbols}{}
+  - \setbeamertemplate{footline}[page number]
+  - \usepackage{xcolor}
+  - \usepackage{adjustbox}
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(latex2exp)
+library(ggplot2)
+
 ```
 
-## Quick review 
+## Quick review (1)
 
-Binomial random variable
+Continuous random variable:
 
-* The binomial experiment consists of a **fixed number of trials** ($n$).
+* Normal Random variable
+   + Always defined with a mean $(\mu)$ and variance $(\sigma^2)$. Standard Normal is Normal with $\mu=0$, $\sigma^2=1$.
+   + For finding probabilities of interval $(a,b)$, we need tables/computer programs.
+   + Can convert any Normal RV (X) to standard Normal by $\frac{X-\mu}{\sigma}$.
+   + Percentiles in Normal distribution, $Z_A$ is defined as $P(Z>Z_A)=A$. 
 
-* Each trial has **two possible outcomes**: S/F.
+```{r, echo=F, out.width="40%", fig.align='center'}
+ggplot(data = data.frame(x = c(-3, 3)), aes(x)) + xlab("Z")+
+  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
+  scale_y_continuous(breaks = NULL)+
+  geom_segment(x=1.5, y=0, xend=1.5, yend=dnorm(1.5),linetype = "dashed") +
+   stat_function(fun = dnorm,
+                geom = "area",
+                fill = "steelblue",
+                xlim = c(1.5, 3), alpha=0.5) +
+   annotate("text", x = 2, y = 0.025, label = "A")+
+    theme_bw()+
+  scale_x_continuous(breaks = c(-3, 0, 1.5, 3),
+                     labels = c(-3, 0, TeX("$Z_{A}$"), 3),
+                     limits = c(-3, 3)) 
 
-* The probability of success is $p$ (**fixed**). The probability of failure is 1-$p$ (fixed). 
 
-* The trials are **independent**.
+```
 
-* $P(x)= nCx \; \;p^x (1-p)^{n-x}$.
+## Quick review (2)
 
-* $E(x)=np$, $Var(x)=np(1-p)$.
 
-## Quick review 
+* Exponential Random Variable:
+   + Defined by parameter $\lambda$.
+   + $\mu=\sigma=\frac{1}{\lambda}$.
+   + $P(X<x)=1-e^{-\lambda x}$ 
+   + $P\left(x_1<X<x_2\right)=P\left(X<x_2\right)-P\left(X<x_1\right)=e^{-\lambda x_1}-e^{-\lambda x_2}$
+   + relationship between Poisson RV and Exp RV, read [this](https://medium.com/swlh/the-link-between-poisson-and-exponential-distribution-817e92344d1b).
+   
+```{r, echo=F, fig.align='center', out.width="50%", warning=F}
+x_lower <- 0
+x_upper <- 5
+ 
+max_height2 <- max(dexp(x_lower:x_upper, rate = 1, log = FALSE), 
+                    dexp(x_lower:x_upper, rate = 2, log = FALSE),
+                    dexp(x_lower:x_upper, rate = 3, log = FALSE),
+                    dexp(x_lower:x_upper, rate = 0.5, log = FALSE))
+ 
 
-The Poisson  random  variable 
+ggplot(data.frame(x = c(x_lower, x_upper)), aes(x = x)) + xlim(x_lower, x_upper) + 
+     ylim(0, max_height2) +
+     stat_function(fun = dexp, args = list(rate = 0.5), aes(colour = "0.5")) + 
+     stat_function(fun = dexp, args = list(rate = 1), aes(colour = "1")) + 
+     stat_function(fun = dexp, args = list(rate = 2), aes(colour = "2")) + 
+     stat_function(fun = dexp, args = list(rate = 3), aes(colour = "3")) + 
+     scale_color_manual("Rate", values = c("blue", "green", "red", "purple")) +
+     labs(x = "\n x", y = "f(x) \n", 
+        title = "Exponential Distribution Density Plots \n") + 
+     theme(plot.title = element_text(hjust = 0.5), 
+         axis.title.x = element_text(face="bold", colour="blue", size = 12),
+         axis.title.y = element_text(face="bold", colour="blue", size = 12),
+         legend.title = element_text(face="bold", size = 10),
+         legend.position = "right")+theme_bw()
+```
 
-* Defined as  **number  of  successes**  that  occur  in  a  period of time or an interval of space.
 
-* The number of successes that occur in any interval is **independent** of the number of successes that occur in any other interval.
+## Quick review (3)
 
-* The probability of a success in an interval is the same for all equal-size intervals.
+Other distributions:
 
-* The probability of a success in an interval is **proportional to the size of the interval**.
-
-* $P(x)=\frac{e^{-\mu}\mu^x}{x!}$ where $\mu$ is the mean number of successes in the interval or region.
-
-* $E(x)=\mu$, $Var(x)=\mu$.
+* Student's $t$ distribution with parameter $\nu$ (called **"degrees of freedom"**).
+   + $E(t)=0$ 
+   + $V(t)=\frac{\nu}{\nu-2} \text { for } \nu>2$
+* $\chi^2$ (pronounced Chi-squared) distribution  with parameter $\nu$.
+   + $E\left(\chi^2_{\nu}\right)=\nu$.
+   + $V\left(\chi^2_\nu\right)=2 \nu$.
+   
+* $F$ distribution with two parameters $\nu_1$ and $\nu_2$.
+   + $E(F_{\nu_1,\nu_2})=\frac{\nu_2}{\nu_2-2} \quad \nu_2>2$ .
+   + $V(F_{\nu_1,\nu_2})=\frac{2 \nu_2^2\left(\nu_1+\nu_2-2\right)}{\nu_1\left(\nu_2-2\right)^2\left(\nu_2-4\right)} \quad \nu_2>4$ 
+   
