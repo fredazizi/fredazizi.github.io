@@ -1,65 +1,78 @@
 ---
 title: "Worksheet 9"
 author: "Fred Azizi"
-date: "2023-04-11"
+date: "2023-11-21"
+header-include:
+  - \usepackage[utf8]{inputenc}
+  - \usepackage[T1]{fontenc}
+  - \usepackage{amsmath}
+  - \usepackage{amsfonts}
+  - \usepackage{amssymb}
+  - \usepackage[version=4]{mhchem}
+  - \usepackage{stmaryrd}
+  - \usepackage{graphicx}
+  - \usepackage[export]{adjustbox}
 output: pdf_document
 ---
 
-1. $X$ is a Uniformly distributed random variable that has maximum and minimum values of 10 and 50.
+1. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
+pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
 
-> a. What is the density function and its graph?
+> a. What is the probability that a transaction is completed in less than 5 minutes?
 
-> b. Calculate the mean of $X$.
+> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
 
-> c. Calculate $P[10<X<20]$ and mark the corresponding area on the graph from (a).
-
-> d. Calculate $P[25<X<45]$ and mark the corresponding area on the graph from (a).
-
-> e. Find $P[X=22.5]$.
+> c. What is the standard deviation of time until a transaction is completed?
 
 \newpage
 
-2. Calculate the following Probabilities from using a standard Normal distribution, $Z$ $\sim$ N(0,1).
+2. Find the mean and standard deviations:
 
-> a. $P[Z < 0]$.
+> a. $t_5$.
 
-> b. $P[Z < -1.5]$.
+> b. $\chi^2_9$.
 
-> c. $P[Z > 1]$.
+> c. $F_{5,15}$. 
 
-> d. $P[Z > -1.44]$.
 
-> e. $P[Z > 3.09]$.
-
-> f. $P[-0.71 < Z < 0.92]$.
-
-> g. $P[-1.5 < Z < -1.44]$.
-
-> h. $P[Z < -0.71 \text{ or } Z > 0.92]$.
-
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-library(ggplot2)
-ggplot(data = data.frame(x = c(-3.5, 3.5)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+theme_bw()+
-  scale_x_continuous(breaks = round(seq(-3.5, 3.5, by = 0.5),1)) 
-```
 \newpage
 
-3. Find values of $z$ such that:
+3. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
 
-> a. The area under the normal curve to the left is 0.0202.
 
-> b. The area under the normal curve to the left is 0.7517.
+> a. What is the distribution of the sample mean? 
 
-> c. The area under the normal curve to the right is 0.025.
+> b. What is the probability that the mean age of the sample exceeds 73 years old?
 
-> d. The area under the normal curve to the right is 0.3015.
 
-```{r, echo=F,out.width="70%",fig.align = 'center'}
-library(ggplot2)
-ggplot(data = data.frame(x = c(-3.5, 3.5)), aes(x)) + xlab("Z")+
-  stat_function(fun = dnorm, n = 101, args = list(mean = 0, sd = 1)) + ylab("") +
-  scale_y_continuous(breaks = NULL)+theme_bw()+
-  scale_x_continuous(breaks = round(seq(-3.5, 3.5, by = 0.5),1)) 
-```
+> c. What is the probability that the mean age of the sample is at most 73 years old?
+
+
+> d. What is the probability that the mean age of the sample is between 72 and 75 years old?
+
+
+> e. What is the probability that a randomly selected retiree is over 73 years old?
+
+\newpage
+
+4. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.  If four American adults are randomly selected, find the probability that: 
+
+> a. their average number of hours spent playing Poker is more than  5  hours per week. 
+
+> b. their average number of hours spent playing Poker is between 3 and 6 hours per week.
+
+> c. all four play Poker for more than 5 hours per week.
+
+\newpage
+
+
+5. To estimate the mean salary for a population of 500 employees, the president of a certain company selected at random a sample of 40 employees.
+
+> a. Would you use the finite population correction factor in calculating the standard error of the sample mean in this case? Explain.
+
+
+> b. If the population standard deviation is $\$ 800$, compute the standard error both with and without using the finite population correction factor.
+
+\newpage
+
+
