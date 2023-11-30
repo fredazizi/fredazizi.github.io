@@ -1,0 +1,88 @@
+---
+title: "Exam solution"
+author: "Fred Azizi"
+date: "2023-11-28"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+6- Shoppers enter Hamilton Place Mall at an average of 120 per hour. What is the probability that at least 19 shoppers will enter the mall between 5:00 and 5:07 p.m.?
+
+**\underline{Answer:}**
+
+We use Poisson expeiment property of proportionality. If the rate for an hour is 120, then the rate for 7 minutes is $\frac{7 \times 120}{60}=14$. Now if $X\sim$ Poisson(14), then $P(X\geq 19)=1- P(X<19)=1-P(X\leq 18)$. We can find $P(X \leq 18)=0.8826$ from table. Therefore the final answer is 1-0.8826=0.1174. 
+
+$$
+\blacksquare
+$$
+
+8- The student body of a large university consists of $30 \%$ Business majors. A random sample of 20 students is selected. What is the probability that at least 16 are not Business majors?
+
+**\underline{Answer:}**
+
+P(Not Business Major)=1-0.3=0.7 (considered probability of success.) We have a binomial experiment. We want $P(X\geq 16)=1-P(X<16)=1-P(X\leq 15)$. We need to use table. The answer would be 1-0.7625= 0.2374.
+
+$$
+\blacksquare
+$$
+
+11- A manufacturing process produces items whose weights are normally distributed. It is known that $22.57 \%$ of all the items produced weigh between 100 grams up to the mean and $49.18 \%$ weigh from the mean up to 190 grams. Determine the mean and the standard deviation. (Round up to 4 places of decimals)
+
+**\underline{Answer:}**
+
+$P(100<X<\mu)=0.2257$. $P(\mu<X<190)=0.4918$.  50% of Normal data is to the left of the $\mu$. Therefore: $P(X<100)=0.5-P(100<X<\mu)=0.5-0.2257=0.2743$. Also, $P(X<190)=0.5+P(\mu<X<190)=0.5+0.4918=0.9918$. Now, we need the table, So we need to convert $X$ to $Z$. $P(X<100)=P(Z<\frac{100-\mu}{\sigma})=0.2743$ and $P(X<190)=P(Z<\frac{190-\mu}{\sigma})=0.9918$. Using Table, $\frac{100-\mu}{\sigma}=-0.6$ and $\frac{190-\mu}{\sigma}=2.4$. Solve this equation for $\mu=118$ and $\sigma=30$.
+
+$$
+\blacksquare
+$$
+
+13- Delta Airlines quotes a flight time of 2 hours 5 minutes for its flights from Point A to Point B. Assume that actual flight times are uniformly distributed between 2 hours and 2 hours 20 minutes. Find (i) the probability that the flight will be no more than 5 minutes late, and (ii) the probability that the flight will be more than 10 minutes late.
+
+**\underline{Answer:}**
+
+For (i), this means flight land between 2 hours and 5 minutes (125 minutes) to 2 hours  and 10 minutes (130 minutes). Flight time $T$ is Uniform(120, 140). PDF of $T$ is $\frac{1}{140-120}=\frac{1}{20}$ if $120<T<140$. Therefore, P(125<T<130)=$\frac{130-125}{20}=0.25$.
+
+For (ii), this means flight land between 2 hours and 5 minutes (125 minutes) to 2 hours  and 15 minutes (135 minutes). Therefore, P(125<T<135)=$\frac{135-125}{20}=0.5$.
+
+$$
+\blacksquare
+$$
+
+18- The Mathematics part of the SAT scores of students at UTC are normally distributed with a mean of 500 and a standard deviation of 75 . If 2.28 percent of the students who had the highest scores received scholarships, what was the minimum score among those who received scholarships? (Round up to 4 places of decimals)
+
+**\underline{Answer:}**
+
+$P(S>s)=0.0228\rightarrow P(S<s)=0.9772 \rightarrow P(Z<\frac{s-500}{75})=0.9772$. Using table, $\frac{s-500}{75}=2 \rightarrow s=650$
+
+$$
+\blacksquare
+$$
+
+19- The Mathematics part of the SAT scores of students at UTC are normally distributed with a mean of 500 and a standard deviation of 75. It is known that 6.3 percent of students who applied to UTC were not accepted. What is the highest score of those who were denied acceptance? (Round up to 4 places of decimals)
+
+**\underline{Answer:}**
+
+$P(S<s)=0.063 \rightarrow P(Z<\frac{s-500}{75})=0.063$. Using table, $\frac{s-500}{75}=-1.53 \rightarrow s=385.24$
+
+$$
+\blacksquare
+$$
+
+20- The Mathematics part of the SAT scores of students at UTC are normally distributed with a mean of 500 and a standard deviation of 75 . What percentage of students had scores between 575 and 650 ? (Round up to 4 places of decimals)
+
+**\underline{Answer:}**
+
+$P(575<S<650)=P(S<650)-P(S<575)=P(Z<\frac{650-500}{75})-P(Z<\frac{575-500}{75})=P(Z<2)-P(Z<1)=0.9772-0.8413=0.1359$.
+
+$$
+\blacksquare
+$$
+
+21- The monthly income of residents of Daisy City is normally distributed with a mean of $\$ 3000$ and a standard deviation of $\$ 500$. What are the minimum and the maximum incomes of the middle $95 \%$ of the residents? (Round up to 4 places of decimals)
+
+**\underline{Answer:}**
+
+First, we need the 2.5% percentile and 97.5% percentile in standard normal: $Z_{0.025}=-1.96$, and $Z_{0.975}=1.96$. Now we need to to convert that to the original scale of monthly income and find $m_{0.025}$ and $m_{0.975}$. $\frac{m_{0.025}-3000}{500}=-1.96 \rightarrow m_{0.025}=2020$. $\frac{m_{0.975}-3000}{500}=1.96 \rightarrow m_{0.025}=3980$.

@@ -27,7 +27,7 @@ sched_table<-tibble(Date=c("Sep 05", "Sep 12", "Sep 19","Sep 26", "Oct 03", "Oct
               cell_spec("Slides", "html", link = "Week9slides.pdf"),
               cell_spec("Slides", "html", link = "Week10slides.pdf"),
               cell_spec("Slides", "html", link = "Week11slides.pdf"),
-             "Exam 2",
+             "slides",
              "slides"),
 
 
@@ -44,8 +44,8 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
              cell_spec("Worksheet 8", "html", link = "Worksheet8.pdf"),
              cell_spec("Worksheet 9", "html", link = "Worksheet9.pdf"),
              cell_spec("Worksheet 9", "html", link = "Worksheet10.pdf"),
-            "____________",
-            "Worksheet 11"
+            "Worksheet 11",
+            "Worksheet 12"
             ),
 
 `Worksheet solution` = c( cell_spec("Worksheet 1", "html", link = "worksheet1_solution.pdf"),
@@ -60,9 +60,9 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
            cell_spec("Worksheet 7", "html", link = "worksheet7_solution.pdf"),
            cell_spec("Worksheet 8", "html", link = "worksheet8_solution.pdf"),
            cell_spec("Worksheet 9", "html", link = "worksheet9_solution.pdf"),
-           "Worksheet 10", 
-           "___________",
-           "Worksheet 11"
+           cell_spec("Worksheet 10", "html", link = "worksheet10_solution.pdf"),
+           "Worksheet 11",
+           "Worksheet 12"
             ),
               
           Note = c("______",
@@ -78,7 +78,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
                    "Quiz 3 on Nov 18-19th",
                    "Chp 8 HW due on Oct 26th",
                    "______",
-                   "Exam 2 (during discussion) and Chp 9 HW due on Dec 10th",
+                   "Exam 2 online and Chp 9 HW due on Dec 10th",
                    "Last day of classes"))
 
 sched_table %>% 

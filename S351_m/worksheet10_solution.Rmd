@@ -1,126 +1,283 @@
 ---
 title: "Worksheet 10 Solution"
 author: "Fred Azizi"
-date: "2023-04-18"
+date: "2023-11-28"
 output: pdf_document
 ---
 
-1. The long term distance calls made by the employees of a company are normally distributed with a mean of $6.5$ minutes and a standard deviation of 2 minutes. 
 
-> a. What is the probability that a call lasts less than 4 minutes? 
+1. Michael is running for president. The proportion of voters who favor Michael is 0.8. A random sample of 100 voters is taken.
 
-> b. What is the probability that a call lasts between 5 to 10 minutes. 
-
-> c. What percentage of calls lasts more than 7 minutes?
+a. What is the distribution of the sample proportion $\hat{p}$ ?
 
 > **\underline{Answer:}**
 
-> We note that $T\sim$N$(\mu=6.5, \sigma=2)$. 
+$$
+p=0.8 \quad n=100 \rightarrow n\times p=80, \quad n(1-p)=20 \geqslant 5
+$$
 
-> (a) $P(T<4)= P\left(\frac{T-\mu}{\sigma}<\frac{4-6.5}{2}\right)=P(Z<-1.25)=0.1056$.
+> Therefore $\hat{p}$ is Normal. $\hat{\mu}_{\hat{p}}=p=0.8$
 
-> (b) $P(5<T<10)= P(T<10)-P(T\leq 5)= P\left(\frac{T-\mu}{\sigma}<\frac{10-6.5}{2}\right)-P\left(\frac{T-\mu}{\sigma}<\frac{5-6.5}{2}\right)=P(Z<1.75)-P(Z<-0.75)=0.9599 - 0.2266=0.7333$.
-
-> (c) $P(T>7)= 1-P \left(Z \leq \frac{7-6.5}{2}\right)=P(Z<0.25)=0.5987$.
-
-\newpage
-
-2. You want to see if you want to take a course with a Statistics prof. in the upcoming spring semester. Grades are important to you and because of that, you want to know the average score for his past classes. You can't find this data, so you directly contact him. Prof replied your email by saying class grades are Normally distributed with $\sigma=3$ and more than 40% of students received 90 or higher...You find the average for fun!
-
-> Naturally, you want to run away from the course! But grades distribution is interesting so you decide to use you S351 knowledge. What is the mean of this distribution?
-
-> **\underline{Answer:}**
-
-> Let $X$ be grades of that course. We know that $X\sim$ N($\mu$, $\sigma$=3). We also know that $P(X\geq 90)=0.4$. Therefore, $P\left(\frac{X-\mu}{\sigma}\geq \frac{90-\mu}{\sigma=3}\right)=P\left(Z>\frac{90-\mu}{3}\right)=0.4$. We can also conclude that $P\left(Z \leq \frac{90-\mu}{3}\right)=1-0.4=0.6$. Using table, we figure out that:
-
-$$\frac{90-\mu}{3}=0.255 \rightarrow \mu=90-0.255\times 3= 89.235$$
+$$
+\sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}=\sqrt{\frac{0.8 \times 0.2}{100}}=0.04 \quad \therefore \hat{p} \sim N\left(0.8,0.04^{2}\right)
+$$
+\  
 
 
-\newpage
-
-3. The manager of a gas station has observed that the times required by drivers to fill their car's tank and
-pay are quite variable. In fact, the times are exponentially distributed with a mean of 7.5 minutes. 
-
-> a. What is the probability that a transaction is completed in less than 5 minutes?
-
-> b. What is the probability that a car can complete the transaction between 5 minutes to 10 minutes?
-
-> c. What is the standard deviation of time until a transaction is completed?
+b. What is the probability that the number of voters in the sample who will vote for Michael will be between 80 and 90 ?
 
 > **\underline{Answer:}**
 
-> $\mu=7.5$. We know $\frac{1}{\lambda}=\mu$. Hence, $\lambda=\frac{1}{7.5}=0.13$. Therefore, $T\sim \text{exp}(\lambda=0.13)$.
+> Let $X$ be the number of voters in the sample voting for Michael
 
-> (a) Using formula in the textbook or slides: $P(T<5)=1-e^{-0.13 \times 5}=0.4779542$.
+$$
+\begin{aligned}
+P[80<X<90] &=P\left[\frac{80}{100}<\frac{X}{100}<\frac{90}{100}\right] \notag \\
+&=P[0.8<\hat{p}<0.9] \notag\\
+&=P\left[\frac{0.8-0.8}{0.04}<\frac{\hat{p}-0.8}{0.04}<\frac{0.9 .0 .8}{0.04}\right] \notag\\
+&=P[0<z<2.5] \\
+&=P[z<2.5]-P[z<0] \\
+&=0.9938-0.5\\
+&=0.4938
+\end{aligned}
+$$
 
-> (b)  Using formula in the textbook or slides: $P(5<T<10)=e^{-0.13 \times 5}-e^{-0.13 \times 10}=0.249514$.
+c. What is the probability that the number of voters in the sample who will not favor Michael will be more than 16?
 
-> (c) For Exponential distribution, $\sigma=\mu=7.5$.
+> **\underline{Answer:}**
+
+> If we define $X$ as what we had in part b, then we are looking for the probability  of 100-$X$>16.
+
+$$
+\begin{aligned}
+P[100-X>16]&=p[100-16>X] \\
+&= P[X<84]\\
+&=P\left[\frac{X}{100}<\frac{84}{100}\right]\\
+&=P[\hat{p}<0.84]\\
+&=P\left[\frac{\hat{p}-0.8}{0.04}<\frac{0.84-0.8}{0.04}\right] \\
+&=P[Z<1]\\
+&=0.8413
+\end{aligned}
+$$
 
 \newpage
 
-4. Find the mean and standard deviations:
+2. The chairman of the Biology department in a certain college believes that $70 \%$ of the department's graduate internships are given to international students. A random sample of 50 graduate interns is taken.
 
-> a. $t_5$.
+a. What is the distribution of the sample proportion? 
 
->> A: $E(t)=0$ regardless of degrees of freedom. $V(t)=\frac{5}{5-2}=\frac{5}{3}$. $Sd(t)=\sqrt{\frac{5}{3}}=1.291$.
+> **\underline{Answer:}**
 
-> b. $\chi^2_9$.
 
->> A: $E\left(\chi^2_{9}\right)=9$. $V\left(\chi^2_9\right)=2\times 9=18$. $Sd\left(\chi^2_9\right)=\sqrt{18}=4.243$.
+$$
+\begin{aligned}
+&p=0.7 \quad n=50 \\
+&\rightarrow \;n p=35 \geq5 \\
+& \quad \quad n(1-p)=15 \geq 5
+\end{aligned}
+$$
 
-> c. $F_{5,15}$. 
+> Therefore, we can use Central Limit Theorem. 
 
->> A: $E(F_{5,15})=\frac{15}{15-2}=\frac{15}{13}$. $V(F_{5,15})=\frac{2 \times 15^2\left(5+15-2\right)}{5\left(15-2\right)^2\left(15-4\right)} \approx 0.8714363$. $Sd(F_{5,15})=\sqrt{V(F_{5,15})}=0.935$.
+$$
+\begin{aligned}
+& \mu_{\hat{p}}=p=0.7 \quad \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}=\sqrt{\frac{0.7 \times 0.3}{50}}=0.065 \\
+& \therefore \hat{p} \sim N\left(0.7,0.065^{2}\right) 
+\end{aligned}
+$$
 
-\newpage 
+\  
 
-5. A sample of 40 retirees is drawn at random from a population whose mean age is 72 and standard deviation is 9. 
 
-> a. What is the distribution of the sample mean? 
+b. What is the probability that the sample proportion $\hat{p}$ is between $0.65$ and $0.73$ ?
 
->> **\underline{Answer:}**
+> **\underline{Answer:}**
 
->> $\bar{X} \rightarrow$ mean age of retirees based on a sample of $n=40\rightarrow$ $\bar{X} \sim N(72 , \frac{9}{\sqrt{40}})=N(72,1.423)$
+$$
+\begin{aligned}
+P[0.65<\hat{p}<0.73]&=P\left[\frac{0.65-0.7}{0.065}<Z<\frac{0.73-0.7}{0.065}\right] \\
+&= P[-0.77<Z<0.46]\\
+&=P[Z<0.46]-P[Z<-0.77] \\
+&= 0.6772-0.2206\\
+&=0.4566
+\end{aligned}
+$$
 
-> b. What is the probability that the mean age of the sample exceeds 73 years old?
+\  
 
->> **\underline{Answer:}**
+c. What is the probability that the sample proportion $\hat{p}$ is within $\pm .05$ of the population proportion p?
 
+> **\underline{Answer:}**
+
+$$
+\begin{aligned}
+ P[\hat{p} \text { is between } p \pm 0.05]&=P[p-0.05<\hat{p}<p+0.05] \\
+&= P[0.7-0.05<\hat{p}<0.7+0.05]\\
+&=P[0.65<\hat{p}<0.75] \\
+&= P\left[\frac{0.65-0.7}{0.065}<Z<\frac{0.75-0.7}{0.065}\right]\\
+&=P[-0.77<z<0.77] \\
+&= P[z<0.77]-P[z<-0.77]\\
+&=0.7794-0.2206 \\
+&= 0.5588
+\end{aligned}
+$$
+
+\newpage
+
+3. A professor of statistics noticed that the marks in his course are normally distributed. He has also noticed
+that his morning classes average 73%, with a standard deviation of 12% on their final exams. His afternoon
+classes average 77%, with a standard deviation of 10%. What is the probability that the mean mark of four randomly selected students from a morning class is greater than the average mark of four randomly selected students from an afternoon class?
+
+> **\underline{Answer:}**
+
+> Since both populations are Normally distributed, we don't care that sample sizes are less than 30. 
+
+> We want $P(\bar{X}_{\text{Morning}}>\bar{X}_{\text{Afternoon}})$ or equivalently $P(\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}>0)$. We know that $\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}\sim N(.73-.77=-0.04,\sqrt{\frac{.12^2}{4}+\frac{.1^2}{4}}=.078)$.
 
 \begin{align}
-P(\bar{X}> 73)&= 1- P(\bar{X}\leq 73) \notag\\
-&= 1- P(\frac{\bar{X}-72}{1.423}\leq \frac{73-72}{1.423}) \tag{Standardize to use table}\\
-&=1-P(Z \leq 0.70) \tag{From table, $P(Z<0.70)=0.758$}\\
-&=1-0.7580=0.242 \notag
+P(\bar{X}_{\text{Morning}}-\bar{X}_{\text{Afternoon}}>0)&=P(Z>\frac{0-(-0.04)}{.078}) \notag\\
+&= P(Z>0.51) \notag\\
+&=0.305\notag
 \end{align}
-
-
-> c. What is the probability that the mean age of the sample is at most 73 years old?
-
->> **\underline{Answer:}**
-
->>Using part b:
-
-$$P(\bar{X}\leq73)=1-P(\bar{X}>73)=0.7580$$ 
-
-> d. What is the probability that the mean age of the sample is between 72 and 75 years old?
-
->> **\underline{Answer:}**
-
-\begin{align}
-P(72<\bar{X}<75) &=P(\bar{X}<75)-P(\bar{X}\leq 72)\notag\\
-&=P(\frac{\bar{X}-72}{1.423}<\frac{75-72}{1.423})-P(\frac{\bar{X}-72}{1.423}\leq \frac{72-72}{1.423})\notag\\
-&=P(Z<2.11)-P(Z< 0) \notag \\
-&=0.9826-0.5=0.4826 \notag
-\end{align}
-
-
-> e. What is the probability that a randomly selected retiree is over 73 years old?
-
->> **\underline{Answer:}**
- 
->> This question is asking for $P(X>73)$. We can't answer this question since we don't know the distribution of the population. We only know the distribution of $\bar X$, not $X$ itself (later, we will learn how we may be able to estimiate this from data).  
 
 \newpage
+
+4. In 200 tosses of a fair coin:
+
+a. What is the expected value and standard deviation of number of heads?
+
+> **\underline{Answer:}**
+
+> Let $X$ be the number of heads in 200 tosses of a fair coin. By properties of Binomial distribution, $E(X)=np=200\times 0.5=100$ and $sd(X)=\sqrt{np(1-p)}=\sqrt{200\times0.5\times0.5}=7.07$.
+
+\  
+
+b. Use the normal distribution approximation to find the probability of exactly 110 heads.
+
+> **\underline{Answer:}**
+
+> To use Normal approximation, we need $Y\sim N(100, 7.07)$. Since $P(Y=110)$ is zero, we need to use continuity correction factor. Hence:
+
+\begin{align}
+P(X=110)&\approx P(110-0.5 \leq Y \leq 110+0.5) \notag\\
+&= P(109.5 \leq Y \leq 110.5) \notag\\
+&= P(Y \leq 110.5)- P(Y \leq 109.5) \notag\\
+&= P\left(Z \leq \frac{110.5-100}{7.07}\right)-P\left(Z \leq \frac{109.5-100}{7.07}\right) \notag\\
+&= P(Z\leq 1.49)-P(Z\leq 1.34) \notag\\
+&= 0.9318-0.9099=0.0219
+\end{align}
+
+c. Use formula of binomial probability to compare the results. 
+
+> **\underline{Answer:}**
+
+> Exact probability can be calculated as:
+
+$$
+P(X=110) = \binom{200}{110}(0.5)^{110}(1-0.5)^{200-110}=0.021
+$$
+
+\  
+
+d. What is the probability that we have less than or equal to 95 heads? (Use continuity correction factor)
+
+> **\underline{Answer:}**
+
+\begin{align}
+P(X\leq 95)&\approx P(Y<95+0.5) \tag{Using  continuity correction factor}\\
+&=P(Z<\frac{95.5-100}{7.07}) \notag\\
+&=P(Z<-0.64)=0.2611 \notag
+\end{align}
+
+> Fun fact! using a modern programming languages, $P(X\leq 95)=0.2623112$. Therefore, our approximation is within 2 decimal places of the correct answer.
+
+\newpage
+
+5. Suppose that the amount of time teenagers spend weekly working at part-time jobs is normally distributed with a mean of 300 minutes and standard deviation of 40 minutes. Suppose that we sampled this population with a sample size of $n$ and the average of the sample is $\bar{X}_n=360$. Construct confidence intervals for the population mean with the following confidence levels and sample sizes:
+
+> a. Does the CI become larger or smaller as the confidence level increases?
+
+>>  **\underline{Answer:}**
+
+>> We first need to figure out the $z_{\alpha/2}$. For 90\% CI,  $z_{\alpha/2}=1.645$. For 95\% CI,  $z_{\alpha/2}=1.96$. For 99\% CI,  $z_{\alpha/2}=2.575$. 
+
+>> The confidence interval for $\mu$ can be constructed as $\bar{x}_n \pm z_{\alpha/2}\frac{\sigma}{\sqrt n}$. Therefore, for $n=9$ and $90\%$ confidence level:
+
+$$
+\bar{x}_n \pm z_{\alpha/2}\frac{\sigma}{\sqrt n}= 360\pm1.645\times\frac{36}{\sqrt 9}=360\pm 19.74= (340.26, \; 379.74)
+$$
+
+>> Using similar calculation, we get: 
+
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$\\
+\hline
+90\% &(340.26, 379.74) & (348.156, 371.844) \\
+95\% & (336.48, 383.52) & (345.888, 374.112) \\
+99\% & (329.1, 390.9) & (341.46, 378.54) \\
+\hline
+\end{tabular}
+\end{center}
+
+\  
+
+> b. Does the CI become larger or smaller as the confidence level increases?
+
+>> **\underline{Answer:}**
+
+>> It becomes wider (larger). It makes sense since in the formula, $z_{\alpha/2}$ is in the numerator, therefore as $z_{\alpha/2}$ gets bigger $z_{\alpha/2}\frac{\sigma}{\sqrt n}$ becomes bigger 
+
+\  
+
+> c. Does the CI become larger or smaller as the sample size increases?
+
+>> **\underline{Answer:}**
+
+>> It shrinks (becomes smaller). It makes sense since in the formula, $n$ is in the denominator, therefore as $n$ gets bigger $\frac{\sigma}{\sqrt n}$ becomes smaller. 
+
+\  
+
+
+> d. With fixed confidence level and sample size, would the CI become larger/smaller/not change if the sample mean were smaller than 360?
+
+>> **\underline{Answer:}**
+
+>> It won't change since the width of the confidence interval depends only on confidence level and sample size. Therefore, the confidence interval will only **shift** when we change the sample mean.
+
+\vspace{2cm}
+
+6. A sample of 121 cans of coffee showed an average weight of 16 ounces and a standard deviation of $1$ ounces. Find an 80\%  and a 98\% confidence interval for the population mean.
+
+> **\underline{Answer:}**
+
+> Since $\sigma$ is unknown, We must use $t$-distribution. $df=n-1= 121-1=120$. We note that for a $80\%$ CI, we need to find $t_{0.2/2}=t_{0.1, df=120}=1.289$ and for $98\%$ CI, we need to find $t_{0.02/2}=t_{0.01, df=120}=2.358$.
+
+> The 80% CI: $\bar{x} \pm t_{\alpha/2}\frac{s}{\sqrt n}= 16 \pm 1.289\times \frac{1}{\sqrt{121}}= (15.88, 16.12)$.
+
+> The 98% CI: $\bar{x} \pm t_{\alpha/2}\frac{s}{\sqrt n}= 16 \pm 2.358\times \frac{1}{\sqrt{121}}= (15.79, 16.21)$.
+
+
+\vspace{2cm}
+
+7. Among 81 individuals sampled from the population, 24 smokers were observed. 
+
+> a. Develop the $90 \% \mathrm{Cl}$ for the population proportion.
+
+>>  **\underline{Answer:}**
+
+>> $\hat{p}=\frac{24}{81}=0.2963$. Therefore,  $E=z_{\alpha / 2} \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}= 1.645 \times 0.0507 = 0.0835$
+
+>> Now we can find the 90 \% CI as $\hat{p} \pm E=0.2963 \pm 0.0835=(0.2128,0.3798)$
+
+\  
+
+> b. If now you have a new sample of 150 individuals, determine an interval for the number of smokers based on your answer from question 3.
+
+>>  **\underline{Answer:}**
+
+>> If we know the true proportion $\frac{x}{N}$ of smokers is between $(0.2128,0.3798)$ then number of smokers among 150 people is $150 \times$ (0.2128, 0.3798)= (31.92, 56.97). But since we want the **number** of smokers (i.e. an integer), this should be an integer. We need to round it to (31, 57).  
+
 
