@@ -44,7 +44,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
              cell_spec("Worksheet 8", "html", link = "Worksheet8.pdf"),
              cell_spec("Worksheet 9", "html", link = "Worksheet9.pdf"),
              cell_spec("Worksheet 10", "html", link = "Worksheet10.pdf"),
-             cell_spec("Worksheet 11", "html", link = "Worksheet10.pdf"),
+             cell_spec("Worksheet 11", "html", link = "Worksheet11.pdf"),
             "Worksheet 12"
             ),
 
