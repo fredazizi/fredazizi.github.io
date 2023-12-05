@@ -1,7 +1,7 @@
 ---
-title: "Chapter 9 (Part 2) and Chapter 10"
+title: "Chapter 12"
 author: "Fred Azizi"
-date: "2023-11-28"
+date: "2023-12-05"
 fontsize: 9pt
 output: 
    beamer_presentation:
@@ -18,75 +18,45 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 ## Quick review (1)
 
-**Central Limit Theorem**
+- In **hypothesis testing** we want to consider the plausibility of a specific claim (claims are called hypotheses)
 
- **The sampling distribution of the mean of a random sample drawn from any population is approximately normal for a sufficiently large sample size.**
- 
- * \textcolor{red}{Mean} of distribution of the sampling mean is the same as mean of the population, $\mu_{\bar{X}}=\mu$.
- * Standard deviation of the sampling distribution (\textcolor{red}{standard error} of the mean is $\sigma_{\bar{X}}=\frac{\sigma}{\sqrt n}$.
- * $\bar{X} \sim N(\mu,\frac{\sigma}{\sqrt n})$.
- * Finite population correction for standard error: 
- $$\sigma_{\bar{X}}=\sqrt{\frac{N-n}{N-1}} \cdot \frac{\sigma}{\sqrt{n}}$$
-    + Rule of thumb: Use for population that is at least 20 times larger than the sample size
+>> $\mathrm{H}_0$ : "H-naught," "H-null," or "null hypothesis."
+
+>> $\mathrm{H}_1$ (sometimes written as $H_a$ ): "alternative hypothesis."
+
+- The null hypothesis $(H_0)$
+   + Gets the benefit of the doubt
+   + The default belief or “status quo”
+   + Associated with no change in course
+
+- The alternative hypothesis $(H_1)$
+   + Carries the burden of proof
+   + Change our belief
+   + Requires us to take some action or change our action
+
+- Three setup for tests: 
+   + Alternative: $\mu\neq \mu_0$ (two tailed test) 
+   + Alternative:  $\mu> \mu_0$ or $\mu< \mu_0$(right/left tail  test)
 
 ## Quick review (2)
 
-**Goal: Estimating population proportion (or number of) of successes**
+Procedure of testing When $\sigma$ is known, $\quad Z_{\bar{X}}=\frac{\bar{X}-\mu}{\sigma / \sqrt{n}} \sim N(0,1)$
 
-Examples: Proportion of people voting for a certain candidate, Number of defectives in a production system, etc. 
+(1) Identify the hypotheses with a hypothesized value for $\mu, \mu_{H_0}$.
 
-* Our estimate: $\hat{p}= \frac{x}{n}$ where $x$ is the number of successes in sample and $n$ is sample size.
+(2) Determine the significance level, $\alpha$
 
-* Distribution of $\hat{p}$ using CLT:
-   + Under the conditions that $np\geq 5$ and $n(1-p) \geq 5$, by CLT, $\hat{p}\sim N\left(\mu=p, \sigma=\sqrt{\frac{p(1-p)}{n}}\right)$.
-   + For calculation of $\sigma$ above, if $p$ is not known, replace it with $\hat{p}$. 
- 
-## Quick review (3)
+(3) Calculate the $z$-test statistic $z_{\bar{x}}=\frac{\bar{x}-\mu_{H_0}}{\sigma / \sqrt{n}}$
 
-**Approximation of Binomial Probability using Normal distribution**
-
-* If $X\sim \text{Bin}(n,p)$, then We can use $Y\sim N\left(np, \sqrt{np(1-p)}\right)$ to approximate probabilities
-
-* $P(X=x)\approx P(x-0.5\leq Y \leq x+0.5)$ (0.5 is **continuity correction factor**)
-
-* $P(X\leq x) \approx P(Y< x+0.5)$
-
-## Quick review (4)
-
-Distribution of difference between two sample means. Now we are interested in $\mu_1-\mu_2$.
-
-* Using CLT and the fact that difference of Normally distributed RVs is Normal, $\bar{X}_1-\bar{X}_2\sim N\left(\mu=\mu_1-\mu_2, \sigma_{\bar{X}_1-\bar{X}_2}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}\right)$.
-* To use CLT, $n_1\geq30$ and $n_2\geq30$. If this is not satisfied, we need Normal populations for both samples.   
-
-## Quick review (5)
-
-
-\begin{block}{interval estimate}An \textbf{interval estimator} draws inferences about a population by estimating the value of an unknown parameter using an interval.
-\end{block}
-
-* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$?
-   + $\bar{X}\pm Z_{\alpha/2}\frac{\sigma}{\sqrt n}$.
-   + Note the relationship between Confidence level and $Z_{\alpha/2}$. 
-   + For example, for a 95% confidence level, we need to use $Z_{0.05/2}$.
-
-* How to interpret the confidence interval?
-
-* Relationship between sample size and width of confidence interval.
-
-* Relationship between confidence level and width of confidence interval.
-
-
-## Quick review (6)
-
-* How to find a confidence interval for a population proportion ($p$) with  **confidence level** of $1-\alpha$?
-   + $\hat{p}\pm Z_{\alpha/2}\sqrt{\frac{\hat p(1-\hat p)}{n}}$.
-
-* How to find a confidence interval for mean of population ($\mu$) with  **confidence level** of $1-\alpha$ when we don't know $\sigma$?
-   + Use $t$-distribution and sample standard deviation ($s$). 
-   + $\bar{X}\pm t_{df,\alpha/2}\frac{s}{\sqrt n}$
-   + Remember that $t$-distribution has a parameter named **degrees of freedom**. 
-   + For the puropose of building CI, we set $df=n-1$ where $n$ is the sample size.  
-
+(4) Critical value method (or rejection region method)
+   + critical $z$-score identifies the rejection region
+   + determined by $\alpha: z_{\alpha}$ (upper-tail), $-z_{\alpha}$ (lower-tail) or $\pm z_{\alpha / 2}$ (2-tail)
+   +  compare the test statistic with the critical value(s): Reject $H_0$ if test statistic falls in the rejection region
+   
+(5)  p-value method:
+   +  The p-value (sometimes referred to as the observed level of significance) is the probability of observing a sample mean (or test statistic) at least as extreme as the one selected for the hypothesis test, assuming the null hypothesis is true.
+   + Compare p-value with $\alpha$. Reject $H_o$ if p-value is less than $\alpha$.
 

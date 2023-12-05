@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 11"
 author: "Fred Azizi"
-date: "2023-04-25"
+date: "2023-12-05"
 header-include:
   - \usepackage[utf8]{inputenc}
   - \usepackage[T1]{fontenc}
@@ -16,59 +16,34 @@ output: pdf_document
 ---
 
 
-1. The amount of time spent by American adults playing Poker is Normally distributed with a mean of 4 hours and standard deviation of $1.25$ hours.  If four American adults are randomly selected, find the probability that: 
+1. A battery manufacturer claims their product has a life expectancy of 90 hours. An improvement production process is believed to make an increase in the life expectancy of batteries. A sample of 36 batteries showed an average life of $93$ hours. Assume from past information, the standard deviation of the life expectancy is 9 hours.
 
-> a. their average number of hours spent playing Poker is more than  5  hours per week. 
+> a. Formulate the hypotheses for this problem.
 
-> b. their average number of hours spent playing Poker is between 3 and 6 hours per week.
+> b. Calculate the test statistic.
 
-> c. all four play Poker for more than 5 hours per week.
+> c. Make a decision at $0.1$ significance level. State your conclusion in terms of the problem.
 
-\newpage
-
-2. To estimate the mean salary for a population of 500 employees, the president of a certain company selected at random a sample of 40 employees.
-
-> a. Would you use the finite population correction factor in calculating the standard error of the sample mean in this case? Explain.
-
-
-> b. If the population standard deviation is $\$ 800$, compute the standard error both with and without using the finite population correction factor.
+> d. Make a decision at $0.01$ significance level. What is your conclusion. 
 
 \newpage
 
-3. Michael is running for president. The proportion of voters who favor Michael is 0.8. A random sample of 100 voters is taken.
+2. The average gasoline price of one of the major oil companies is $\$ 1.75$ per gallon. Because of cost reduction measures, it is believed that there has been a significant reduction in the average price. In order to test this belief, a sample of 36 of the company's gas stations were randomly selected and yielded an average price $\$ 1.65$ per gallon. Assume the standard deviation of the population is $\$ 0.12$.
 
-> a. What is the distribution of the sample proportion $\hat{p}$ ?
+> a. State the null and the alternative hypothesis for this problem.
 
-> b. What is the probability that the number of voters in the sample who will vote for Michael will be between 80 and 90?
+> b. Calculate the test statistic. 
 
-> c. What is the probability that the number of voters in the sample who will not favor Michael will be more than 16?
-
-\newpage
-
-4. The chairman of the Biology department in a certain college believes that $70 \%$ of the department's graduate internships are given to international students. A random sample of 50 graduate interns is taken.
-
-> a. What is the distribution of the sample proportion? 
-
-> b. What is the probability that the sample proportion $\hat{p}$ is between $0.65$ and $0.73$?
-
-> c. What is the probability that the sample proportion $\hat{p}$ is within $\pm .05$ of the population proportion $p$?
+> c. At $5 \%$ level of significance, test the company's claim.
 
 \newpage
 
-5. A professor of statistics noticed that the marks in his course are normally distributed. He has also noticed
-that his morning classes average 73%, with a standard deviation of 12% on their final exams. His afternoon
-classes average 77%, with a standard deviation of 10%. What is the probability that the mean mark of four randomly selected students from a morning class is greater than the average mark of four randomly selected students from an afternoon class?
+3. To determine the average price of hotel rooms in Atlanta, a sample of 49 hotels was selected and yielded an average price of hotel rooms being $\$ 120$. The population standard deviation was found to be $\$ 16$.
 
+> a. Formulate the hypotheses to determine whether the average price of hotel rooms is significantly different from $\$ 124.5$.
 
-\newpage
+> b. Calculate the test statistic.
 
-6. In 200 tosses of a fair coin:
+> c. At $10 \%$ level of significance, use critical value approach to test the hypotheses. What is the conclusion? 
 
-> a. What is the expected value and standard deviation of number of heads?
-
-> b. Use the normal distribution approximation to find the probability of exactly 110 heads.
-
-> c. Use formula of binomial probability to compare the results. 
-
-> d. What is the probability that we have less than or equal to 95 heads? (Use continuity correction factor)
-
+> d. At $90 \%$ confidence, using the confidence interval approach to test the hypotheses. What is the conclusion?
