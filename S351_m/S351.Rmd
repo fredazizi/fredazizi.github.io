@@ -61,7 +61,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
            cell_spec("Worksheet 8", "html", link = "worksheet8_solution.pdf"),
            cell_spec("Worksheet 9", "html", link = "worksheet9_solution.pdf"),
            cell_spec("Worksheet 10", "html", link = "worksheet10_solution.pdf"),
-           "Worksheet 11",
+           cell_spec("Worksheet 11", "html", link = "worksheet11_solution.pdf"),
            "Worksheet 12"
             ),
               
