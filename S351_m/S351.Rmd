@@ -28,7 +28,7 @@ sched_table<-tibble(Date=c("Sep 05", "Sep 12", "Sep 19","Sep 26", "Oct 03", "Oct
               cell_spec("Slides", "html", link = "Week10slides.pdf"),
               cell_spec("Slides", "html", link = "Week11slides.pdf"),
               cell_spec("Slides", "html", link = "Week11slides.pdf"),
-             "slides"),
+             "______"),
 
 
 Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
@@ -45,8 +45,8 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
              cell_spec("Worksheet 9", "html", link = "Worksheet9.pdf"),
              cell_spec("Worksheet 10", "html", link = "Worksheet10.pdf"),
              cell_spec("Worksheet 11", "html", link = "Worksheet11.pdf"),
-            "Worksheet 12"
-            ),
+ cell_spec("Worksheet 12", "html", link = "Worksheet12.pdf")
+ ),
 
 `Worksheet solution` = c( cell_spec("Worksheet 1", "html", link = "worksheet1_solution.pdf"),
            cell_spec("Worksheet 2", "html", link = "worksheet2_solution.pdf"),
@@ -62,7 +62,7 @@ Worksheet = c( cell_spec("Worksheet 1", "html", link = "Worksheet1.pdf"),
            cell_spec("Worksheet 9", "html", link = "worksheet9_solution.pdf"),
            cell_spec("Worksheet 10", "html", link = "worksheet10_solution.pdf"),
            cell_spec("Worksheet 11", "html", link = "worksheet11_solution.pdf"),
-           "Worksheet 12"
+             "___________"
             ),
               
           Note = c("______",

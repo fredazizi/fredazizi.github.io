@@ -1,7 +1,7 @@
 ---
 title: "Worksheet 12"
 author: "Fred Azizi"
-date: "2023-05-02"
+date: "2023-12-12"
 header-include:
   - \usepackage[utf8]{inputenc}
   - \usepackage[T1]{fontenc}
@@ -15,45 +15,35 @@ header-include:
 output: pdf_document
 ---
 
-1. Suppose that the amount of time teenagers spend weekly working at part-time jobs is normally distributed with a mean of 300 minutes and standard deviation of 36 minutes. Suppose that we sampled this population with a sample size of $n$ and the average of the sample is $\bar{X}_n=360$. 
-
-> a. Construct confidence intervals for the population mean with the following confidence levels and sample sizes:
-
-
-
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
-Confidence Level& $\quad \quad n=9 \quad \quad$ & $\quad \quad n=25 \quad \quad$\\
-\hline
-90\% & & \\
-95\% & & \\
-99\% & & \\
-\hline
-\end{tabular}
-\end{center}
-
-
-
-> b. Does the CI become larger or smaller as the confidence level increases?
-
-> c. Does the Cl become larger or smaller as the sample size increases?
-
-> d. With fixed confidence level and sample size, would the CI become larger/smaller/not change if the sample mean were smaller than 360?
-
-\newpage
-
-
-2. A sample of 121 cans of coffee showed an average weight of 16 ounces and a standard deviation of $1$ ounces. Find an 80\%  and a 98\% confidence interval for the population mean.
-
+1. A pollster in Maryland wants to estimate the proportion (to within 0.05) of registered voters that are Socialists, using 95% confidence. What sample size should he use, if he has no previous ideas about the proportion of Socialists in Maryland?
 
 
 \newpage
 
-3. Among 81 individuals sampled from the population, 24 smokers were observed. 
+2. An electronics retailer is interested in studying the incomes of consumers in a particular area. The population standard deviation is known to be \$5,000. What sample size would the researcher need to use for a 90% confidence interval if the difference between UCL and LCL should not be more than \$1000? Hint: consider the relationship between the width of the confidence interval and the margin of error.
 
-> a. Develop the $90 \% \mathrm{Cl}$ for the population proportion.
-
-> b. If now you have a new sample of 150 individuals, determine an interval for the number of smokers based on your answer from question 3.
+\newpage
 
 
+3.  A random sample of 49 marketing brochures was drawn, and the number of hours to design each brochure was recorded. The population of the number of hours required is normally distributed, with a standard deviation of one hour. The sample average was 6.3 hours. Is there evidence to support the hypothesis that it takes more than 6 hours to design a marketing brochure? Use $\alpha=0.05$.
+
+> a. What are the hypotheses being tested?
+
+> b. What is the test statistic?
+
+> c. What is the rejection region?
+
+> d. Can you conclude at the $1 \%$ level of significance that it takes more than 3 hours to design a marketing brochure? (Answer yes or no).
+
+\newpage
+
+
+4. Researchers determined that 60 Puffs tissues is the average number of tissues used during a cold. Suppose a random sample of 100 Puffs users yielded the following data on the number of tissues used during a cold: $\bar{x}=52$ and $s=22$. Suppose the alternative we wanted to test was $H_1: \mu<60$. The correct rejection region for $\alpha=0.1$ is:
+
+> a. reject $H_0$ if $t>1.2902$
+
+> b. reject $H_0$ if $t<-1.2902$
+
+> c. reject $H_0$ if $t>0.9442$ or $Z<-0.9442$
+
+> d. reject $H_0$ if $t<-0.9442$
