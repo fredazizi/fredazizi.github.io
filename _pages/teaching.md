@@ -2,11 +2,16 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: A list of the courses that I have contributed to:  
 nav: true
 nav_order: 2
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## STAT 351
 
-Organize your courses by years, topics, or universities, however you like!
+Fall 2024- Fall 2023- Spring 2022- Fall 2022
+
+## STAT 350
+
+Spring 2024- Summer 2024
+
