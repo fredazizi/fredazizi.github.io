@@ -2,16 +2,21 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: A list of the courses that I have contributed to:  
+description: Statistics courses taught at UMBC.
 nav: true
 nav_order: 2
 ---
 
+I teach statistics with an emphasis on understanding what a result means, choosing an appropriate method, and communicating conclusions clearly.
+
 ## STAT 351
 
-Fall 2024- Fall 2023- Spring 2022- Fall 2022
+Instructor, Spring 2026 and Spring 2025. Earlier teaching contributions include Fall 2024, Fall 2023, and 2022.
+
+## STAT 355
+
+Teaching assistant, Fall 2025.
 
 ## STAT 350
 
-Spring 2024- Summer 2024
-
+Teaching contributions, Spring and Summer 2024.
