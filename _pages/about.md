@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info:  
+  more_info:
 
 news: false
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -21,7 +21,7 @@ social: false # includes social icons at the bottom of the page
   <div class="personal-actions">
     <a class="personal-action-primary" href="mailto:{{ site.email }}">Email me</a>
     <a href="https://github.com/fredazizi">GitHub</a>
-    <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a href="/teaching/">Teaching</a>
   </div>
 </div>
 

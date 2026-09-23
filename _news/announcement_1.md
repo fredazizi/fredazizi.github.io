@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Finally done with all the comprehensive exams!  
+Finally done with all the comprehensive exams!
