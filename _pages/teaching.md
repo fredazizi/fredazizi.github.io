@@ -11,6 +11,8 @@ I teach statistics with an emphasis on understanding what a result means, choosi
 
 ## STAT 351
 
+[STAT 351 course page and interactive apps]({{ '/teaching/stat351/' | relative_url }})
+
 Instructor, Spring 2026 and Spring 2025. Earlier teaching contributions include Fall 2024, Fall 2023, and 2022.
 
 ## STAT 355
