@@ -12,7 +12,7 @@ ui <- fluidPage(
     pre {padding:18px;white-space:pre-wrap}
     .btn-primary {background:#bb6f1b;border-color:#bb6f1b}
   "))),
-  titlePanel("STAT 351 | t-Test Calculator"),
+  titlePanel("STAT 351 | Two population t-test Calculator"),
   p("Upload a spreadsheet, select columns and test settings, then read R's statistical output."),
   fluidRow(
     column(4, wellPanel(
@@ -45,7 +45,7 @@ ui <- fluidPage(
       textOutput("counts"),
       tags$hr(),
       h4("R output"),
-      p("This is the output of R's t.test(). Interpretation is intentionally not provided."),
+      p("This is the output of R's t.test():"),
       verbatimTextOutput("result",placeholder=TRUE),
       tags$hr(),
       tags$small("Paired measurements must appear in matching rows; missing pairs are removed together. For independent groups, missing values are removed separately.")
