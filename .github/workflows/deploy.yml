@@ -102,6 +102,13 @@ jobs:
         run: |
           Rscript -e 'install.packages("shinylive", repos="https://cloud.r-project.org")'
           Rscript -e 'shinylive::export("apps/stat351-ttest", "_site/teaching/stat351/ttest")'
+      - name: Check STAT 351 regression app
+        run: |
+          Rscript -e 'install.packages(c("shiny", "readxl"), repos="https://cloud.r-project.org")'
+          Rscript tests/stat351-regression.R
+      - name: Export STAT 351 regression app
+        run: |
+          Rscript -e 'shinylive::export("apps/stat351-regression", "_site/teaching/stat351/regression")'
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
