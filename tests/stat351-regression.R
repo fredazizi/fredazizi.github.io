@@ -45,9 +45,9 @@ fails(fit_regression(data.frame(x = 1:4, y = 2*(1:4)), "x", "y", .95, .95), "Res
 
 # Verify XLSX import using the workbook shipped with readxl.
 book <- readxl::readxl_example("datasets.xlsx")
-excel <- read_regression_data(book, "datasets.xlsx", "iris")
-stopifnot(nrow(excel) == 150L, ncol(excel) == 5L)
-invisible(fit_regression(excel, "Sepal.Length", "Sepal.Width", .95, .95, "5"))
+excel <- read_regression_data(book, "datasets.xlsx", "mtcars")
+stopifnot(nrow(excel) == 32L, ncol(excel) == 11L)
+invisible(fit_regression(excel, "wt", "mpg", .95, .95, "3"))
 
 # Verify the Run button and stale-result clearing in a real Shiny session.
 root <- getwd()
