@@ -118,7 +118,10 @@ server <- function(input, output, session) {
   })
   output$results <- renderUI({
     ans <- analysis()
-    tabsetPanel(
+    tagList(
+      h4("Scatter diagram"),
+      plotOutput("scatter_plot", height = "420px"),
+      tabsetPanel(
       tabPanel("R output", h4("Linear model"), verbatimTextOutput("lm_output")),
       tabPanel("Coefficient CIs", h4(sprintf("%g%% coefficient confidence intervals", 100 * ans$ci_level)),
                verbatimTextOutput("coefficient_output")),
@@ -127,7 +130,8 @@ server <- function(input, output, session) {
                div(class = "table-wrap", tableOutput("interval_table")),
                textOutput("interval_count"), downloadButton("download_intervals", "Download intervals (CSV)")),
       tabPanel("Fitted line and intervals", plotOutput("fit_plot", height = "520px")),
-      tabPanel("Diagnostics", plotOutput("diagnostics", height = "760px"))
+      tabPanel("Diagnostics", plotOutput("diagnostics", height = "440px"))
+      )
     )
   })
   output$lm_output <- renderPrint({
@@ -149,6 +153,12 @@ server <- function(input, output, session) {
     filename = function() "regression-intervals.csv",
     content = function(file) write.csv(analysis()$intervals, file, row.names = FALSE)
   )
+  output$scatter_plot <- renderPlot({
+    ans <- analysis()
+    plot(ans$data[[ans$x_name]], ans$data[[ans$y_name]],
+         xlab = ans$x_name, ylab = ans$y_name,
+         pch = 19, col = "#254d70")
+  }, res = 96)
   output$fit_plot <- renderPlot({
     ans <- analysis()
     x <- ans$data[[ans$x_name]]; y <- ans$data[[ans$y_name]]
@@ -164,13 +174,13 @@ server <- function(input, output, session) {
   }, res = 96)
   output$diagnostics <- renderPlot({
     ans <- analysis()
-    old <- par(mfrow = c(2, 2), mar = c(5, 4.5, 3, 1.5), oma = c(0, 0, 2, 0))
+    old <- par(mfrow = c(1, 2), mar = c(5, 4.5, 3, 1.5))
     on.exit(par(old))
-    for (which in c(1, 2, 3, 5)) {
-      tryCatch(plot(ans$model, which = which, ask = FALSE), error = function(e) {
-        plot.new(); text(0.5, 0.5, paste("Plot unavailable:", conditionMessage(e)), cex = 0.8)
-      })
-    }
+    plot(ans$data[[ans$x_name]], residuals(ans$model),
+         xlab = ans$x_name, ylab = "Residual",
+         main = "Residuals vs x", pch = 19, col = "#254d70")
+    abline(h = 0, col = "#bb6f1b", lty = 2)
+    plot(ans$model, which = 2, ask = FALSE)
   }, res = 96)
 }
 
